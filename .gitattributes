@@ -1,0 +1,20 @@
+# Normalise line endings so the repository does not churn between machines.
+* text=auto eol=lf
+
+# Binary assets -- never diff or merge these.
+*.blend   binary
+*.blend1  binary
+*.hdr     binary
+*.exr     binary
+*.png     binary
+*.jpg     binary
+*.jpeg    binary
+*.mp4     binary
+*.pdf     binary
+*.docx    binary
+*.xlsx    binary
+*.zip     binary
+
+# Generated / vendored content
+*.png     -diff
+*.jpg     -diff

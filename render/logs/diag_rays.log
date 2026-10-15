@@ -1,0 +1,138 @@
+﻿blender.exe : Traceback (most recent call last):
+At line:2 char:1
++ & $b -b "Courtyard Apartments 50x100 v3.blend" --python diag_rays.py  ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Traceback (most recent call last)::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  File "C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\modules\addon_utils.py", line 544, in enable
+    mod.register()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Roaming\Blender Foundation\Blender\5.2\extensions\blender_org\bonsai\__init__.py", line 
+269, in register
+    bonsai.bim.register()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Roaming\Blender 
+Foundation\Blender\5.2\extensions\.local\lib\python3.13\site-packages\bonsai\bim\__init__.py", line 292, in register
+    mod.register()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Roaming\Blender 
+Foundation\Blender\5.2\extensions\.local\lib\python3.13\site-packages\bonsai\bim\module\light\__init__.py", line 67, 
+in register
+    file.chmod(file.stat().st_mode | stat.S_IEXEC)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Blender Foundation\Blender 5.2\5.2\python\Lib\pathlib\_local.py", line 738, in chmod
+    os.chmod(self, mode, follow_symlinks=follow_symlinks)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [WinError 5] Access is denied: 'C:\\Users\\Admin\\AppData\\Roaming\\Blender 
+Foundation\\Blender\\5.2\\extensions\\.local\\lib\\python3.13\\site-packages\\pyradiance\\bin\\3ds2mgf.exe'
+Error in bpy.app.handlers.load_post[4]:
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Roaming\Blender 
+Foundation\Blender\5.2\extensions\.local\lib\python3.13\site-packages\bonsai\bim\handler.py", line 573, in load_post
+    _apply_user_preferences()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Roaming\Blender 
+Foundation\Blender\5.2\extensions\.local\lib\python3.13\site-packages\bonsai\bim\handler.py", line 470, in 
+_apply_user_preferences
+    if not preferences.should_setup_toolbar:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'should_setup_toolbar'
+00:17.078  blend            | Read blend: "C:\Users\Admin\Documents\Personal projects\Blender house design\Courtyard Apartments 50x100 v3.blend"
+Error in bpy.app.handlers.load_post[4]:
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Roaming\Blender 
+Foundation\Blender\5.2\extensions\.local\lib\python3.13\site-packages\bonsai\bim\handler.py", line 573, in load_post
+    _apply_user_preferences()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Roaming\Blender 
+Foundation\Blender\5.2\extensions\.local\lib\python3.13\site-packages\bonsai\bim\handler.py", line 470, in 
+_apply_user_preferences
+    if not preferences.should_setup_toolbar:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'should_setup_toolbar'
+Exception in module register(): C:\Users\Admin\AppData\Roaming\Blender Foundation\Blender\5.2\extensions\blender_org\bonsai\__init__.py
+BlenderMCP addon registered
+
+====================================================================================================
+  RAY DIAGNOSTIC
+====================================================================================================
+
+--- shot 01  from (11.6, 7.45, 2.3) toward (9.0, 20.0, 5.6) ---
+   0: GF_Tree_Canopy_1                             mat=Mat_Garden_Foliage     at    6.72 m  z=  3.97
+   1: GF_Tree_Canopy_1                             mat=Mat_Garden_Foliage     at    9.12 m  z=  4.57
+   2: L1_2BedR_Living_Glaze                        mat=Mat_Glass_Arch         at   16.31 m  z=  6.37
+   3: L1_2BedR_Living_Glaze                        mat=Mat_Glass_Arch         at   16.40 m  z=  6.39
+   4: Slab_L2_RearBlock                            mat=Mat_RC_Slab            at   18.85 m  z=  7.00
+   5: Slab_L2_RearBlock                            mat=Mat_RC_Slab            at   19.65 m  z=  7.20
+
+--- shot 03  from (13.5, -30.0, 3.6) toward (7.0, 0.0, 8.8) ---
+   0: L2_1Bed_Wall_Street_Kit                      mat=Mat_Stone_Render       at   31.13 m  z=  8.80
+   1: L2_1Bed_Living_Wall_Recess                   mat=Mat_ISSB_Terracotta    at   32.27 m  z=  8.99
+   2: L2_1Bed_Living_Glazing                       mat=Mat_Glass_Arch         at   32.33 m  z=  9.00
+   3: L2_1Bed_Living_Glazing                       mat=Mat_Glass_Arch         at   32.41 m  z=  9.01
+   4: L2_1Bed_Living_Wall_Recess                   mat=Mat_ISSB_Terracotta    at   32.43 m  z=  9.02
+   5: L2_1Bed_Wall_Gallery_Rear                    mat=Mat_ISSB_Terracotta    at   37.00 m  z=  9.78
+
+--- shot 04  from (2.85, 8.2, 11.85) toward (10.5, 14.5, 9.6) ---
+   0: L3_2BedL_Courtyard_Wall                      mat=Mat_ISSB_Terracotta    at    4.38 m  z= 10.88
+   1: L3_2BedL_Living_Glaze                        mat=Mat_Glass_Arch         at    4.48 m  z= 10.86
+   2: L3_2BedL_Living_Glaze                        mat=Mat_Glass_Arch         at    4.58 m  z= 10.84
+   3: Col_L3_x6.30_y11.2                           mat=Mat_Concrete           at    4.78 m  z= 10.79
+   4: L3_Balc_Living_Rail_South                    mat=Mat_Dark_Steel         at    5.08 m  z= 10.73
+   5: L3_Balc_Living_Rail_South                    mat=Mat_Dark_Steel         at    5.16 m  z= 10.71
+
+--- shot 05  from (7.4, 9.8, 11.75) toward (10.5, 19.0, 4.5) ---
+   0: GF_Tree_Canopy_1                             mat=Mat_Garden_Foliage     at    6.55 m  z=  7.83
+   1: GF_Tree_Canopy_2                             mat=Mat_Garden_Foliage     at    7.01 m  z=  7.56
+   2: GF_Tree_Canopy_3                             mat=Mat_Garden_Foliage     at    7.34 m  z=  7.36
+   3: GF_Tree_Canopy_2                             mat=Mat_Garden_Foliage     at    7.53 m  z=  7.25
+   4: GF_Tree_Canopy_3                             mat=Mat_Garden_Foliage     at    8.52 m  z=  6.65
+   5: GF_Tree_Canopy_1                             mat=Mat_Garden_Foliage     at    8.82 m  z=  6.48
+
+--- shot 06  from (4.6, 17.2, 17.75) toward (1.4, 4.5, 16.4) ---
+   0: Roof_Planter_Plants_1                        mat=Mat_Garden_Foliage     at    8.76 m  z= 16.85
+   1: Roof_Planter_Plants_1                        mat=Mat_Garden_Foliage     at    9.28 m  z= 16.80
+   2: Slab_Roof_FrontBlock                         mat=Mat_RC_Slab            at   15.12 m  z= 16.20
+   3: Slab_Roof_FrontBlock                         mat=Mat_RC_Slab            at   17.07 m  z= 16.00
+   4: L4_1Bed_Wall_Street_Bed                      mat=Mat_Stone_Render       at   17.62 m  z= 15.94
+   5: L4_1Bed_Wall_Street_Bed                      mat=Mat_Stone_Render       at   17.69 m  z= 15.94
+
+
+--- MATERIALS ON FURNITURE (are the blocks dressed properly?) ---
+   ('Mat_ISSB_Terracotta',)           x 93  e.g. GF_Rear_Part_Bed2
+   ('Mat_Warm_Timber',)               x 46  e.g. GF_Guard_Desk
+   ('Mat_Glass_Arch',)                x 36  e.g. L1_1Bed_Living_Glazing
+   ('Mat_Dark_Steel',)                x 16  e.g. L1_1Bed_Balc_Balustrade
+   ('Mat_Garden_Foliage',)            x  9  e.g. GF_Shrub_Bed_Plants
+   ('Mat_Permeable_Paver',)           x  8  e.g. L1_1Bed_Balc_Floor
+   ('Mat_Stone_Render',)              x  8  e.g. L1_1Bed_Wall_Street_Bed
+   ('Mat_Concrete',)                  x  7  e.g. GF_Rain_Garden_Bed
+   ('Mat_RC_Slab',)                   x  4  e.g. L1_2BedR_Loggia_Slab
+
+--- MATERIALS ON WINDOW / GLAZING OBJECTS ---
+   ('Mat_Glass_Arch',)                x 19  e.g. GF_Core_Glass_Entry
+   ('Mat_Dark_Steel',)                x  1  e.g. GF_Rear_Living_Glazing_Frame
+
+--- IS THE L3 COURTYARD WALL SOLID? (mesh stats) ---
+   L3_2BedL_Courtyard_Wall            verts=    8 polys=    6 mats=['Mat_ISSB_Terracotta']
+   L3_2BedL_Living_Glaze              verts=    8 polys=    6 mats=['Mat_Glass_Arch']
+   L2_2BedL_Courtyard_Wall            verts=    8 polys=    6 mats=['Mat_ISSB_Terracotta']
+   GF_Colonnade_Floor                 verts=    4 polys=    1 mats=['Mat_Permeable_Paver']
+
+--- ALL MATERIALS USED BY L3 OBJECTS ---
+   Mat_ISSB_Terracotta          27
+   Mat_Dark_Steel               12
+   Mat_Warm_Timber              11
+   Mat_Glass_Arch               9
+   Mat_RC_Slab                  8
+   Mat_Garden_Foliage           6
+   Mat_Permeable_Paver          6
+   Mat_Stone_Render             5
+   Mat_Concrete                 3
+====================================================================================================
+
+BlenderMCP addon unregistered
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

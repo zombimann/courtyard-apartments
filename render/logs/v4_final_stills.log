@@ -1,0 +1,129 @@
+﻿blender.exe : Traceback (most recent call last):
+At line:5 char:1
++ & $b -b "Courtyard Apartments 50x100 v3.blend" --python scripts\rende ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Traceback (most recent call last)::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  File "C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\modules\addon_utils.py", line 544, in enable
+    mod.register()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Roaming\Blender Foundation\Blender\5.2\extensions\blender_org\bonsai\__init__.py", line 
+269, in register
+    bonsai.bim.register()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Roaming\Blender 
+Foundation\Blender\5.2\extensions\.local\lib\python3.13\site-packages\bonsai\bim\__init__.py", line 292, in register
+    mod.register()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Roaming\Blender 
+Foundation\Blender\5.2\extensions\.local\lib\python3.13\site-packages\bonsai\bim\module\light\__init__.py", line 67, 
+in register
+    file.chmod(file.stat().st_mode | stat.S_IEXEC)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Blender Foundation\Blender 5.2\5.2\python\Lib\pathlib\_local.py", line 738, in chmod
+    os.chmod(self, mode, follow_symlinks=follow_symlinks)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [WinError 5] Access is denied: 'C:\\Users\\Admin\\AppData\\Roaming\\Blender 
+Foundation\\Blender\\5.2\\extensions\\.local\\lib\\python3.13\\site-packages\\pyradiance\\bin\\3ds2mgf.exe'
+Error in bpy.app.handlers.load_post[4]:
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Roaming\Blender 
+Foundation\Blender\5.2\extensions\.local\lib\python3.13\site-packages\bonsai\bim\handler.py", line 573, in load_post
+    _apply_user_preferences()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Roaming\Blender 
+Foundation\Blender\5.2\extensions\.local\lib\python3.13\site-packages\bonsai\bim\handler.py", line 470, in 
+_apply_user_preferences
+    if not preferences.should_setup_toolbar:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'should_setup_toolbar'
+00:10.609  blend            | Read blend: "C:\Users\Admin\Documents\Personal projects\Blender house design\Courtyard Apartments 50x100 v3.blend"
+Error in bpy.app.handlers.load_post[4]:
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Roaming\Blender 
+Foundation\Blender\5.2\extensions\.local\lib\python3.13\site-packages\bonsai\bim\handler.py", line 573, in load_post
+    _apply_user_preferences()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Roaming\Blender 
+Foundation\Blender\5.2\extensions\.local\lib\python3.13\site-packages\bonsai\bim\handler.py", line 470, in 
+_apply_user_preferences
+    if not preferences.should_setup_toolbar:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'should_setup_toolbar'
+Exception in module register(): C:\Users\Admin\AppData\Roaming\Blender Foundation\Blender\5.2\extensions\blender_org\bonsai\__init__.py
+BlenderMCP addon registered
+[v4     0.0s] mode=stills out=C:\Users\Admin\Documents\Personal projects\Blender house design\render\v4 shots=all
+[v4     0.0s] annotations/helpers hidden: 52
+[v4     0.0s] engine=BLENDER_EEVEE 1920x1080 samples=80 quality=final aspect=wide
+C:\Users\Admin\Documents\Personal projects\Blender house design\scripts\render_v4.py:195: DeprecationWarning: 
+'Material.use_nodes' is expected to be removed in Blender 6.0
+  m.use_nodes = True
+[v4     0.1s]   (skip) use_backtrace: 'Material' object has no attribute 'use_backtrace'
+[v4     0.1s] materials built: 31
+[v4     0.1s] material slots re-styled: 707
+[v4     0.1s] internal partitions plastered: 56
+[v4     5.6s] glazed openings cut: 43 panels across 28 walls (0 already open)
+[v4     5.6s] furniture re-dressed: 37
+[v4     5.6s] site context: 63 objects
+[v4     5.6s] planting cores darkened: 36
+[v4     5.9s]     leaf cards 'tree': 1019 cards
+[v4     5.9s]     leaf cards 'bed': 496 cards
+[v4     6.1s]     placed 'pot0': scale=1.746 bbox X[7.08,8.82] Y[8.43,10.01] Z[1.36,2.46]
+[v4     6.4s]     placed 'pot1': scale=1.229 bbox X[10.96,12.24] Y[10.05,11.20] Z[1.36,2.14]
+[v4     6.6s]     placed 'pot2': scale=1.302 bbox X[7.45,8.45] Y[18.62,19.58] Z[1.36,2.18]
+[v4     6.8s]     placed 'pot3': scale=1.297 bbox X[10.92,12.28] Y[17.73,18.96] Z[1.36,2.18]
+[v4     7.1s]     placed 'pot4': scale=1.541 bbox X[2.45,3.75] Y[10.99,12.19] Z[16.30,17.27]
+[v4     7.3s]     placed 'pot5': scale=1.523 bbox X[4.20,5.60] Y[13.70,14.97] Z[16.30,17.26]
+[v4     7.3s] potted plants placed: 6
+[v4     7.4s] glazing units given reveal frames: 41
+[v4     8.0s] balustrades given vertical-bar infill: 12
+[v4    16.4s] detail joined to 6 objects
+[v4    16.4s] detail objects: 6
+[v4    44.2s] bevelled structural objects: 163
+[v4    44.9s] box-projected UVs: 780 meshes / 21813 faces
+C:\Users\Admin\Documents\Personal projects\Blender house design\scripts\render_v4.py:1242: DeprecationWarning: 
+'World.use_nodes' is expected to be removed in Blender 6.0
+  w.use_nodes = True
+[v4    44.9s] 8 cameras placed
+[v4    44.9s]   !! camera 01_Courtyard_Garden inside V4_Cards_bed
+[v4    44.9s]   !! camera 04_LivingRoom_L3 inside V4_Cards_bed
+[v4    44.9s]   !! camera 05_L3_Gallery_Overlook inside V4_Cards_bed
+[v4    44.9s] camera clearance: 3 problem(s)
+[v4    44.9s] ======================================================================
+[v4    44.9s]   01_Courtyard_Garden  20mm  Courtyard at eye level: tree, lawn, colonnade, stacked balconies
+04:01.063  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\v4\01_Courtyard_Garden.png'
+[v4   230.4s]   -> 01_Courtyard_Garden.png  3197 KB  186s
+[v4   234.4s] ======================================================================
+[v4   234.4s]   02_Courtyard_Void_Aerial  45mm  Looking down the void: garden, tree from above, four balcony tiers
+06:44.859  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\v4\02_Courtyard_Void_Aerial.png'
+[v4   394.2s]   -> 02_Courtyard_Void_Aerial.png  3645 KB  160s
+[v4   398.2s] ======================================================================
+[v4   398.2s]   03_Street_Facade  28mm  Golden hour on the west elevation: fins, portal, guardhouse, gate
+08:14.000  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\v4\03_Street_Facade.png'
+[v4   483.4s]   -> 03_Street_Facade.png  2420 KB  85s
+[v4   487.4s] ======================================================================
+[v4   487.4s]   04_LivingRoom_L3  24mm  Inside the L3 living room looking through the glazed wall
+11:07.469  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\v4\04_LivingRoom_L3.png'
+[v4   656.8s]   -> 04_LivingRoom_L3.png  3480 KB  169s
+[v4   660.8s] ======================================================================
+[v4   660.8s]   05_L3_Gallery_Overlook  28mm  From the L3 gallery over the balustrade into the courtyard
+14:31.109  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\v4\05_L3_Gallery_Overlook.png'
+[v4   860.4s]   -> 05_L3_Gallery_Overlook.png  3256 KB  200s
+[v4   864.4s] ======================================================================
+[v4   864.4s]   06_Roof_Pergola_Sunset  22mm  Roof garden under the pergola at golden hour
+16:09.188  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\v4\06_Roof_Pergola_Sunset.png'
+[v4   958.5s]   -> 06_Roof_Pergola_Sunset.png  2874 KB  94s
+[v4   962.5s] ======================================================================
+[v4   962.5s]   07_Twilight_Street  30mm  Blue-hour street elevation with the interior lights on
+17:43.469  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\v4\07_Twilight_Street.png'
+[v4  1052.8s]   -> 07_Twilight_Street.png  2072 KB  90s
+[v4  1056.8s] ======================================================================
+[v4  1056.8s]   08_Aerial_Hero  30mm  Aerial three-quarter of the whole building and its courtyard
+19:42.703  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\v4\08_Aerial_Hero.png'
+[v4  1172.1s]   -> 08_Aerial_Hero.png  2520 KB  115s
+[v4  1176.1s] stills done
+BlenderMCP addon unregistered
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

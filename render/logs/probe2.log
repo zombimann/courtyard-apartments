@@ -1,0 +1,184 @@
+﻿blender.exe : Traceback (most recent call last):
+At line:2 char:1
++ & $b -b --python probe2.py 2>&1 | Out-File -Encoding utf8 "render\pro ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Traceback (most recent call last)::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  File "C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\modules\addon_utils.py", line 544, in enable
+    mod.register()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Roaming\Blender Foundation\Blender\5.2\extensions\blender_org\bonsai\__init__.py", line 
+269, in register
+    bonsai.bim.register()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Roaming\Blender 
+Foundation\Blender\5.2\extensions\.local\lib\python3.13\site-packages\bonsai\bim\__init__.py", line 292, in register
+    mod.register()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Roaming\Blender 
+Foundation\Blender\5.2\extensions\.local\lib\python3.13\site-packages\bonsai\bim\module\light\__init__.py", line 67, 
+in register
+    file.chmod(file.stat().st_mode | stat.S_IEXEC)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Blender Foundation\Blender 5.2\5.2\python\Lib\pathlib\_local.py", line 738, in chmod
+    os.chmod(self, mode, follow_symlinks=follow_symlinks)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [WinError 5] Access is denied: 'C:\\Users\\Admin\\AppData\\Roaming\\Blender 
+Foundation\\Blender\\5.2\\extensions\\.local\\lib\\python3.13\\site-packages\\pyradiance\\bin\\3ds2mgf.exe'
+Error in bpy.app.handlers.load_post[4]:
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Roaming\Blender 
+Foundation\Blender\5.2\extensions\.local\lib\python3.13\site-packages\bonsai\bim\handler.py", line 573, in load_post
+    _apply_user_preferences()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Roaming\Blender 
+Foundation\Blender\5.2\extensions\.local\lib\python3.13\site-packages\bonsai\bim\handler.py", line 470, in 
+_apply_user_preferences
+    if not preferences.should_setup_toolbar:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'should_setup_toolbar'
+C:\Users\Admin\Documents\Personal projects\Blender house design\probe2.py:11: DeprecationWarning: 'World.use_nodes' is 
+expected to be removed in Blender 6.0
+  nt.use_nodes = True
+C:\Users\Admin\Documents\Personal projects\Blender house design\probe2.py:75: DeprecationWarning: 'Material.use_nodes' 
+is expected to be removed in Blender 6.0
+  if m.use_nodes:
+Exception in module register(): C:\Users\Admin\AppData\Roaming\Blender Foundation\Blender\5.2\extensions\blender_org\bonsai\__init__.py
+BlenderMCP addon registered
+
+##########################################################################################
+# PROBE 2
+##########################################################################################
+
+--- ShaderNodeTexSky ---
+  sky_type: MULTIPLE_SCATTERING
+  inputs:
+    Vector                 = (0.0, 0.0, 0.0)
+  outputs:
+    Color
+  python props:
+    aerosol_density            = 1.0
+    air_density                = 1.0
+    altitude                   = 100.0
+    bl_description             ! type str doesn't define __round__ method
+    bl_height_default          = 100.0
+    bl_height_max              = 3.4028234663852886e+38
+    bl_height_min              = 30.0
+    bl_icon                    ! type str doesn't define __round__ method
+    bl_idname                  ! type str doesn't define __round__ method
+    bl_label                   ! type str doesn't define __round__ method
+    bl_static_type             ! type str doesn't define __round__ method
+    bl_width_default           = 160.0
+    bl_width_max               = 700.0
+    bl_width_min               = 100.0
+    color_mapping              = <bpy_struct, ColorMapping at 0x000001DE779C9DA8>
+    color_tag                  ! type str doesn't define __round__ method
+    ground_albedo              = 0.3
+    location_absolute          = (0.0, 0.0)
+    ozone_density              = 1.0
+    panel_states               = ()
+    sky_type                   ! type str doesn't define __round__ method
+    sun_direction              = (0.0, 0.0, 1.0)
+    sun_disc                   = True
+    sun_elevation              = 0.2618
+    sun_intensity              = 1.0
+    sun_rotation               = 0.0
+    sun_size                   = 0.0095
+    turbidity                  = 2.2
+    use_custom_color           = False
+
+--- sun_direction calibration (MULTIPLE_SCATTERING) ---
+   elev= 45 rot=  0 -> sun_direction=( 0.0000, 0.0000, 1.0000)  actual_elev= 90.00  azim=   0.00
+   elev= 45 rot= 90 -> sun_direction=( 0.0000, 0.0000, 1.0000)  actual_elev= 90.00  azim=   0.00
+   elev= 30 rot=180 -> sun_direction=( 0.0000, 0.0000, 1.0000)  actual_elev= 90.00  azim=   0.00
+   elev= 60 rot=270 -> sun_direction=( 0.0000, 0.0000, 1.0000)  actual_elev= 90.00  azim=   0.00
+
+--- Material API (EEVEE-relevant) ---
+   Material.blend_method                 = HASHED
+   Material.shadow_method                ! AttributeError
+   Material.surface_render_method        = DITHERED
+   Material.use_transparency_overlap     = True
+   Material.use_raytrace_refraction      = False
+   Material.use_screen_refraction        = False
+   Material.refraction_depth             = 0.0
+   Material.use_backface_culling         = False
+   Material.use_thickness                ! AttributeError
+   Material.thickness_mode               = SPHERE
+   Material.show_transparent_back        = True
+   Material.use_raytracing               ! AttributeError
+   Material.displacement_method          = BUMP
+
+--- Glass material current values ---
+   Base Color             = (0.8, 0.8, 0.8, 1.0)
+   Metallic               = 0.0
+   Roughness              = 0.5
+   IOR                    = 1.5
+   Alpha                  = 1.0
+   Transmission Weight    = 0.0
+   Specular IOR Level     = 0.5
+   Coat Weight            = 0.0
+   Thin Wall              = 0
+
+--- Color management ---
+   current view_transform: AgX  look: None
+   view_transform 'AgX' OK
+   view_transform 'Filmic' OK
+   view_transform 'Standard' OK
+   view_transform 'Khronos PBR Neutral' OK
+   look 'None' OK
+   look 'AgX - Punchy' OK
+   look 'AgX - Medium High Contrast' OK
+   look 'AgX - Medium Low Contrast' OK
+   look 'AgX - Very High Contrast' OK
+   look 'AgX - Very Low Contrast' OK
+   look 'Punchy' FAIL
+
+--- Node types we plan to use ---
+   ShaderNodeTexNoise           YES
+   ShaderNodeTexBrick           YES
+   ShaderNodeBump               YES
+   ShaderNodeValToRGB           YES
+   ShaderNodeMixRGB             YES
+   ShaderNodeMix                YES
+   ShaderNodeTexVoronoi         YES
+   ShaderNodeTexWave            YES
+   ShaderNodeMapRange           YES
+   ShaderNodeTexCoord           YES
+   ShaderNodeMapping            YES
+   ShaderNodeTexMusgrave        no
+   ShaderNodeTexImage           YES
+   ShaderNodeAmbientOcclusion   YES
+   ShaderNodeLightPath          YES
+   ShaderNodeTexGradient        YES
+   ShaderNodeSeparateXYZ        YES
+   ShaderNodeMath               YES
+
+--- Scene render / film ---
+   render.film_transparent       = False
+   render.use_compositing        = True
+   render.use_sequencer          = True
+   render.filter_size            = 1.5
+   render.image_settings         = <bpy_struct, ImageFormatSettings at 0x000001DE6692E2C0>
+   render.engine                 = BLENDER_EEVEE
+   render.use_motion_blur        = False
+   render.dither_intensity       = 1.0
+
+--- Camera DOF / lens API ---
+   camera.dof.use_dof              = False
+   camera.dof.aperture_fstop       = 2.799999952316284
+   camera.dof.focus_distance       = 10.0
+   camera.dof.focus_object         = None
+   camera.lens                     = 50.0
+   camera.sensor_width             = 36.0
+   camera.sensor_fit               = AUTO
+   camera.shift_x                  = 0.0
+   camera.shift_y                  = 0.0
+   camera.clip_start               = 0.10000000149011612
+   camera.clip_end                 = 1000.0
+##########################################################################################
+
+BlenderMCP addon unregistered
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

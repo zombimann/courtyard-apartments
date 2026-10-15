@@ -1,0 +1,237 @@
+﻿blender.exe : Traceback (most recent call last):
+At line:2 char:1
++ & $b -b "Courtyard Apartments 50x100 v3.blend" --python probe.py 2>&1 ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Traceback (most recent call last)::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  File "C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\modules\addon_utils.py", line 544, in enable
+    mod.register()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Roaming\Blender Foundation\Blender\5.2\extensions\blender_org\bonsai\__init__.py", line 
+269, in register
+    bonsai.bim.register()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Roaming\Blender 
+Foundation\Blender\5.2\extensions\.local\lib\python3.13\site-packages\bonsai\bim\__init__.py", line 292, in register
+    mod.register()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Roaming\Blender 
+Foundation\Blender\5.2\extensions\.local\lib\python3.13\site-packages\bonsai\bim\module\light\__init__.py", line 67, 
+in register
+    file.chmod(file.stat().st_mode | stat.S_IEXEC)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Blender Foundation\Blender 5.2\5.2\python\Lib\pathlib\_local.py", line 738, in chmod
+    os.chmod(self, mode, follow_symlinks=follow_symlinks)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [WinError 5] Access is denied: 'C:\\Users\\Admin\\AppData\\Roaming\\Blender 
+Foundation\\Blender\\5.2\\extensions\\.local\\lib\\python3.13\\site-packages\\pyradiance\\bin\\3ds2mgf.exe'
+Error in bpy.app.handlers.load_post[4]:
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Roaming\Blender 
+Foundation\Blender\5.2\extensions\.local\lib\python3.13\site-packages\bonsai\bim\handler.py", line 573, in load_post
+    _apply_user_preferences()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Roaming\Blender 
+Foundation\Blender\5.2\extensions\.local\lib\python3.13\site-packages\bonsai\bim\handler.py", line 470, in 
+_apply_user_preferences
+    if not preferences.should_setup_toolbar:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'should_setup_toolbar'
+00:12.156  blend            | Read blend: "C:\Users\Admin\Documents\Personal projects\Blender house design\Courtyard Apartments 50x100 v3.blend"
+Error in bpy.app.handlers.load_post[4]:
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Roaming\Blender 
+Foundation\Blender\5.2\extensions\.local\lib\python3.13\site-packages\bonsai\bim\handler.py", line 573, in load_post
+    _apply_user_preferences()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Roaming\Blender 
+Foundation\Blender\5.2\extensions\.local\lib\python3.13\site-packages\bonsai\bim\handler.py", line 470, in 
+_apply_user_preferences
+    if not preferences.should_setup_toolbar:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'should_setup_toolbar'
+C:\Users\Admin\Documents\Personal projects\Blender house design\probe.py:10: DeprecationWarning: 'World.use_nodes' is 
+expected to be removed in Blender 6.0
+  print("  world:", w, "use_nodes:", w.use_nodes if w else None)
+C:\Users\Admin\Documents\Personal projects\Blender house design\probe.py:11: DeprecationWarning: 'World.use_nodes' is 
+expected to be removed in Blender 6.0
+  if w and w.use_nodes:
+C:\Users\Admin\Documents\Personal projects\Blender house design\probe.py:80: DeprecationWarning: 'Material.use_nodes' 
+is expected to be removed in Blender 6.0
+  if not m.use_nodes:
+C:\Users\Admin\Documents\Personal projects\Blender house design\probe.py:90: DeprecationWarning: 'Material.use_nodes' 
+is expected to be removed in Blender 6.0
+  if m and m.use_nodes:
+Exception in module register(): C:\Users\Admin\AppData\Roaming\Blender Foundation\Blender\5.2\extensions\blender_org\bonsai\__init__.py
+BlenderMCP addon registered
+
+##########################################################################################
+# API PROBE
+##########################################################################################
+
+--- World ---
+  world: <bpy_struct, World("World") at 0x0000014CCD0DA9A0> use_nodes: True
+    node OUTPUT_WORLD 'World Output'
+       in  Surface              = <no default>
+       in  Volume               = <no default>
+    node BACKGROUND 'Background'
+       in  Color                = (0.45, 0.62, 0.88, 1.0)
+       in  Strength             = 2.2
+       in  Weight               = 0.0
+
+--- Sky texture enum options ---
+    SINGLE_SCATTERING | Single Scattering
+    MULTIPLE_SCATTERING | Multiple Scattering
+    PREETHAM | Preetham
+    HOSEK_WILKIE | Hosek / Wilkie
+
+--- EEVEE properties (Blender 5.2) ---
+   bl_rna                                     = <bpy_struct, Struct("SceneEEVEE") at 0x0000014CA252F100>
+   bokeh_max_size                             = 100.0
+   bokeh_neighbor_max                         = 10.0
+   bokeh_overblur                             = 5.0
+   bokeh_threshold                            = 1.0
+   clamp_surface_direct                       = 0.0
+   clamp_surface_indirect                     = 10.0
+   clamp_volume_direct                        = 0.0
+   clamp_volume_indirect                      = 0.0
+   direct_light_intensity                     = 1.0
+   fast_gi_bias                               = 0.05
+   fast_gi_distance                           = 0.0
+   fast_gi_method                             ! type str doesn't define __round__ method
+   fast_gi_quality                            = 0.25
+   fast_gi_ray_count                          = 2
+   fast_gi_resolution                         ! type str doesn't define __round__ method
+   fast_gi_step_count                         = 8
+   fast_gi_thickness_near                     = 0.1
+   gi_cubemap_resolution                      ! type str doesn't define __round__ method
+   gi_diffuse_bounces                         = 3
+   gi_glossy_clamp                            = 0.0
+   gi_irradiance_pool_size                    ! type str doesn't define __round__ method
+   gi_visibility_resolution                   ! type str doesn't define __round__ method
+   indirect_light_intensity                   = 1.0
+   light_threshold                            = 0.01
+   motion_blur_depth_scale                    = 100.0
+   motion_blur_max                            = 32
+   motion_blur_steps                          = 1
+   overscan_size                              = 3.0
+   ray_tracing_method                         ! type str doesn't define __round__ method
+   ray_tracing_options                        = <bpy_struct, RaytraceEEVEE at 0x0000014CCD57BB28>
+   rna_type                                   = <bpy_struct, Struct("SceneEEVEE") at 0x0000014CA252F100>
+   shadow_pool_size                           ! type str doesn't define __round__ method
+   shadow_ray_count                           = 1
+   shadow_resolution_scale                    = 1.0
+   shadow_step_count                          = 6
+   taa_render_samples                         = 64
+   taa_samples                                = 16
+   use_bokeh_jittered                         = False
+   use_fast_gi                                = True
+   use_overscan                               = False
+   use_raytracing                             = False
+   use_shadow_jitter_viewport                 = False
+   use_shadows                                = True
+   use_taa_reprojection                       = True
+   use_volume_custom_range                    = False
+   use_volumetric_shadows                     = False
+   volumetric_end                             = 100.0
+   volumetric_light_clamp                     = 0.0
+   volumetric_ray_depth                       = 16
+   volumetric_sample_distribution             = 0.8
+   volumetric_samples                         = 64
+   volumetric_shadow_samples                  = 16
+   volumetric_start                           = 0.1
+   volumetric_tile_size                       ! type str doesn't define __round__ method
+
+--- scene.eevee.ray_tracing_options ---
+    <bpy_struct, RaytraceEEVEE at 0x0000014CCD57BB28>
+   backface_radiance_scale                    = 0.25
+   bl_rna                                     = <bpy_struct, Struct("RaytraceEEVEE") at 0x0000014CA252F200>
+   denoise_bilateral                          = True
+   denoise_spatial                            = True
+   denoise_temporal                           = True
+   resolution_scale                           = 2
+   rna_type                                   = <bpy_struct, Struct("RaytraceEEVEE") at 0x0000014CA252F200>
+   screen_trace_quality                       = 0.25
+   screen_trace_thickness                     = 0.10000000149011612
+   trace_max_roughness                        = 0.5
+   use_backface_hit                           = True
+   use_denoise                                = True
+
+--- view_transform / look enum ---
+   VT: NONE
+   look options via bl_rna:
+   LOOK: NONE
+
+--- Materials: node inventory ---
+   CONFLICT_Red               nodes={'BSDF_PRINCIPLED': 1, 'OUTPUT_MATERIAL': 1} blend=BLEND
+   Mat_Annotation_Text        nodes={'BSDF_PRINCIPLED': 1, 'OUTPUT_MATERIAL': 1} blend=HASHED
+   Mat_Bay_Accessible         nodes={'BSDF_PRINCIPLED': 1, 'OUTPUT_MATERIAL': 1} blend=HASHED
+   Mat_Bay_EV                 nodes={'BSDF_PRINCIPLED': 1, 'OUTPUT_MATERIAL': 1} blend=HASHED
+   Mat_Concrete               nodes={'BSDF_PRINCIPLED': 1, 'OUTPUT_MATERIAL': 1} blend=HASHED
+   Mat_Courtyard_Lawn         nodes={'BSDF_PRINCIPLED': 1, 'OUTPUT_MATERIAL': 1} blend=HASHED
+   Mat_Dark_Steel             nodes={'BSDF_PRINCIPLED': 1, 'OUTPUT_MATERIAL': 1} blend=HASHED
+   Mat_Epoxy_Floor            nodes={'BSDF_PRINCIPLED': 1, 'OUTPUT_MATERIAL': 1} blend=HASHED
+   Mat_Garden_Foliage         nodes={'BSDF_PRINCIPLED': 1, 'OUTPUT_MATERIAL': 1} blend=HASHED
+   Mat_Glass_Arch             nodes={'BSDF_PRINCIPLED': 1, 'OUTPUT_MATERIAL': 1} blend=HASHED
+   Mat_Hazard_Yellow          nodes={'BSDF_PRINCIPLED': 1, 'OUTPUT_MATERIAL': 1} blend=HASHED
+   Mat_ISSB_Terracotta        nodes={'BSDF_PRINCIPLED': 1, 'OUTPUT_MATERIAL': 1} blend=HASHED
+   Mat_Line_White             nodes={'BSDF_PRINCIPLED': 1, 'OUTPUT_MATERIAL': 1} blend=HASHED
+   Mat_Permeable_Paver        nodes={'BSDF_PRINCIPLED': 1, 'OUTPUT_MATERIAL': 1} blend=HASHED
+   Mat_RC_Slab                nodes={'BSDF_PRINCIPLED': 1, 'OUTPUT_MATERIAL': 1} blend=HASHED
+   Mat_Ramp_Groove            nodes={'BSDF_PRINCIPLED': 1, 'OUTPUT_MATERIAL': 1} blend=HASHED
+   Mat_Roller_Shutter         nodes={'BSDF_PRINCIPLED': 1, 'OUTPUT_MATERIAL': 1} blend=HASHED
+   Mat_Stone_Render           nodes={'BSDF_PRINCIPLED': 1, 'OUTPUT_MATERIAL': 1} blend=HASHED
+   Mat_Tree_Trunk             nodes={'BSDF_PRINCIPLED': 1, 'OUTPUT_MATERIAL': 1} blend=HASHED
+   Mat_Warm_Timber            nodes={'BSDF_PRINCIPLED': 1, 'OUTPUT_MATERIAL': 1} blend=HASHED
+
+--- One material in detail (Mat_Concrete) ---
+   node BSDF_PRINCIPLED 'Principled BSDF'
+      Base Color             = (0.58, 0.6, 0.62, 1.0)
+      Metallic               = 0.0
+      Roughness              = 0.7
+      IOR                    = 1.5
+      Alpha                  = 1.0
+      Thin Wall              = 0
+      Normal                 = (0.0, 0.0, 0.0)
+      Weight                 = 0.0
+      Diffuse Roughness      = 0.0
+      Subsurface Weight      = 0.0
+      Subsurface Radius      = (1.0, 0.2, 0.1)
+      Subsurface Scale       = 0.005
+      Subsurface IOR         = 1.4
+      Subsurface Anisotropy  = 0.0
+      Specular IOR Level     = 0.5
+      Specular Tint          = (1.0, 1.0, 1.0, 1.0)
+      Anisotropic            = 0.0
+      Anisotropic Rotation   = 0.0
+      Tangent                = (0.0, 0.0, 0.0)
+      Transmission Weight    = 0.0
+      Coat Weight            = 0.0
+      Coat Roughness         = 0.03
+      Coat IOR               = 1.5
+      Coat Tint              = (1.0, 1.0, 1.0, 1.0)
+      Coat Normal            = (0.0, 0.0, 0.0)
+      Sheen Weight           = 0.0
+      Sheen Roughness        = 0.5
+      Sheen Tint             = (1.0, 1.0, 1.0, 1.0)
+      Emission Color         = (1.0, 1.0, 1.0, 1.0)
+      Emission Strength      = 0.0
+      Thin Film Thickness    = 0.0
+      Thin Film IOR          = 1.33
+   node OUTPUT_MATERIAL 'Material Output'
+      Surface                = ?
+      Volume                 = ?
+      Displacement           = (0.0, 0.0, 0.0)
+      Thickness              = 0.0
+   link Principled BSDF.BSDF -> Material Output.Surface
+
+--- Image textures loaded ---
+   Render Result                                      size=(0, 0) src=VIEWER
+   Viewer Node                                        size=(256, 256) src=VIEWER
+##########################################################################################
+
+BlenderMCP addon unregistered
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

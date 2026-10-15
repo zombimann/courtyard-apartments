@@ -1,0 +1,32 @@
+# ─── Downloaded assets ─────────────────────────────────────────────────
+# 227 MB of CC0 HDRIs, PBR textures and models. All of it is re-fetchable:
+#   python scripts/assets/fetch_assets.py --all
+#   python scripts/assets/fetch_model_textures.py potted_plant_02
+#   python scripts/assets/make_leaf_atlas.py
+assets/
+
+# ─── Superseded renders ────────────────────────────────────────────────
+# Earlier passes, kept locally for reference only.
+render/archive/
+render/basement/
+render/walkthrough/
+
+# ─── Not part of this project's deliverables ───────────────────────────
+render/videos/video screenshot 1.mp4
+
+# ─── Scratch, intermediates and caches ─────────────────────────────────
+render/_*/
+scripts/__pycache__/
+__pycache__/
+*.pyc
+*.pyo
+*.blend1
+*.blend2
+*.tmp
+
+# ─── OS and editor ─────────────────────────────────────────────────────
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+.idea/

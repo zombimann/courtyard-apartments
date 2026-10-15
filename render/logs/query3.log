@@ -1,0 +1,487 @@
+﻿blender.exe : Traceback (most recent call last):
+At line:2 char:1
++ & $b -b "Courtyard Apartments 50x100 v3.blend" --python query3.py 2>& ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Traceback (most recent call last)::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  File "C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\modules\addon_utils.py", line 544, in enable
+    mod.register()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Roaming\Blender Foundation\Blender\5.2\extensions\blender_org\bonsai\__init__.py", line 
+269, in register
+    bonsai.bim.register()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Roaming\Blender 
+Foundation\Blender\5.2\extensions\.local\lib\python3.13\site-packages\bonsai\bim\__init__.py", line 292, in register
+    mod.register()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Roaming\Blender 
+Foundation\Blender\5.2\extensions\.local\lib\python3.13\site-packages\bonsai\bim\module\light\__init__.py", line 67, 
+in register
+    file.chmod(file.stat().st_mode | stat.S_IEXEC)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Blender Foundation\Blender 5.2\5.2\python\Lib\pathlib\_local.py", line 738, in chmod
+    os.chmod(self, mode, follow_symlinks=follow_symlinks)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [WinError 5] Access is denied: 'C:\\Users\\Admin\\AppData\\Roaming\\Blender 
+Foundation\\Blender\\5.2\\extensions\\.local\\lib\\python3.13\\site-packages\\pyradiance\\bin\\3ds2mgf.exe'
+00:12.891  blend            | Read blend: "C:\Users\Admin\Documents\Personal projects\Blender house design\Courtyard Apartments 50x100 v3.blend"
+Error in bpy.app.handlers.load_post[4]:
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Roaming\Blender 
+Foundation\Blender\5.2\extensions\.local\lib\python3.13\site-packages\bonsai\bim\handler.py", line 573, in load_post
+    _apply_user_preferences()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Roaming\Blender 
+Foundation\Blender\5.2\extensions\.local\lib\python3.13\site-packages\bonsai\bim\handler.py", line 470, in 
+_apply_user_preferences
+    if not preferences.should_setup_toolbar:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'should_setup_toolbar'
+Error in bpy.app.handlers.load_post[4]:
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Roaming\Blender 
+Foundation\Blender\5.2\extensions\.local\lib\python3.13\site-packages\bonsai\bim\handler.py", line 573, in load_post
+    _apply_user_preferences()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Roaming\Blender 
+Foundation\Blender\5.2\extensions\.local\lib\python3.13\site-packages\bonsai\bim\handler.py", line 470, in 
+_apply_user_preferences
+    if not preferences.should_setup_toolbar:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'should_setup_toolbar'
+Exception in module register(): C:\Users\Admin\AppData\Roaming\Blender Foundation\Blender\5.2\extensions\blender_org\bonsai\__init__.py
+BlenderMCP addon registered
+
+====================================================================================================
+  QUERY 3 - INTERIOR CLEARANCES
+====================================================================================================
+
+--- L3 north wing, around the courtyard living room  X(0.0, 7.0) Y(6.5, 14.0) Z(9.8, 13.2) ---
+  Col_L2_x3.48_y7.3                              X[  3.33,  3.63] Y[  7.15,  7.45] Z[  7.20, 10.20]
+  Col_L2_x6.30_y11.2                             X[  6.15,  6.45] Y[ 11.05, 11.35] Z[  7.20, 10.20]
+  Col_L2_x6.30_y7.3                              X[  6.15,  6.45] Y[  7.15,  7.45] Z[  7.20, 10.20]
+  Col_L3_x3.48_y7.3                              X[  3.33,  3.63] Y[  7.15,  7.45] Z[ 10.20, 13.20]
+  Col_L3_x6.30_y11.2                             X[  6.15,  6.45] Y[ 11.05, 11.35] Z[ 10.20, 13.20]
+  Col_L3_x6.30_y7.3                              X[  6.15,  6.45] Y[  7.15,  7.45] Z[ 10.20, 13.20]
+  Col_L4_x3.48_y7.3                              X[  3.33,  3.63] Y[  7.15,  7.45] Z[ 13.20, 16.20]
+  Col_L4_x6.30_y11.2                             X[  6.15,  6.45] Y[ 11.05, 11.35] Z[ 13.20, 16.20]
+  Col_L4_x6.30_y7.3                              X[  6.15,  6.45] Y[  7.15,  7.45] Z[ 13.20, 16.20]
+  L2_2BedL_Courtyard_Wall                        X[  6.15,  6.30] Y[  7.30, 23.00] Z[  7.20, 10.00]
+  L2_2BedL_Part_Bath1                            X[  0.30,  2.40] Y[ 11.00, 11.15] Z[  7.20, 10.00]
+  L2_2BedL_Part_Bath2                            X[  0.30,  2.40] Y[ 13.50, 13.65] Z[  7.20, 10.00]
+  L2_2BedL_Part_Living_Bed2                      X[  2.40,  6.30] Y[ 13.50, 13.65] Z[  7.20, 10.00]
+  L2_2BedL_Spine_Wall                            X[  2.40,  2.55] Y[  7.30, 23.00] Z[  7.20, 10.00]
+  L2_2BedL_Wall_Gallery                          X[  0.00,  6.30] Y[  7.15,  7.30] Z[  7.20, 10.00]
+  L2_Boundary_Wall_North                         X[  0.00,  0.30] Y[  0.00, 30.48] Z[  7.20, 10.00]
+  L2_Store_Wall_East                             X[  2.85,  3.00] Y[  5.80,  7.30] Z[  7.20, 10.00]
+  L2_Vent_Shaft_1                                X[  0.30,  1.10] Y[  5.90,  6.70] Z[  7.20, 10.00]
+  L2_Vent_Shaft_2                                X[  1.30,  2.10] Y[  5.90,  6.70] Z[  7.20, 10.00]
+  L3_2BedL_Courtyard_Wall                        X[  6.15,  6.30] Y[  7.30, 23.00] Z[ 10.20, 13.00]
+  L3_2BedL_DiningTable                           X[  3.00,  4.60] Y[ 11.80, 12.70] Z[ 10.20, 10.95]
+  L3_2BedL_Entry_Door                            X[  3.50,  4.40] Y[  7.25,  7.35] Z[ 10.20, 12.30]
+  L3_2BedL_Kitchen_Counter                       X[  0.35,  0.95] Y[  7.50, 10.70] Z[ 10.20, 11.10]
+  L3_2BedL_Living_Glaze                          X[  6.22,  6.30] Y[  8.50, 12.00] Z[ 10.20, 12.60]
+  L3_2BedL_Part_Bath1                            X[  0.30,  2.40] Y[ 11.00, 11.15] Z[ 10.20, 13.00]
+  L3_2BedL_Part_Bath2                            X[  0.30,  2.40] Y[ 13.50, 13.65] Z[ 10.20, 13.00]
+  L3_2BedL_Part_Living_Bed2                      X[  2.40,  6.30] Y[ 13.50, 13.65] Z[ 10.20, 13.00]
+  L3_2BedL_Sofa                                  X[  3.00,  5.10] Y[  9.00,  9.90] Z[ 10.20, 10.95]
+  L3_2BedL_Spine_Wall                            X[  2.40,  2.55] Y[  7.30, 23.00] Z[ 10.20, 13.00]
+  L3_2BedL_Wall_Gallery                          X[  0.00,  6.30] Y[  7.15,  7.30] Z[ 10.20, 13.00]
+  L3_Balc_Living_Floor                           X[  6.30,  7.50] Y[  8.20, 11.40] Z[ 10.21, 10.21]
+  L3_Balc_Living_Rail_North                      X[  6.30,  7.50] Y[  8.20,  8.25] Z[ 10.20, 11.30]
+  L3_Balc_Living_Rail_South                      X[  6.30,  7.50] Y[ 11.35, 11.40] Z[ 10.20, 11.30]
+  L3_Balc_Living_Slab                            X[  6.30,  7.50] Y[  8.20, 11.40] Z[ 10.00, 10.20]
+  L3_Boundary_Wall_North                         X[  0.00,  0.30] Y[  0.00, 30.48] Z[ 10.20, 13.00]
+  L3_Front_Gallery_Balustrade                    X[  6.30, 13.44] Y[  7.25,  7.30] Z[ 10.20, 11.30]
+  L3_Front_Gallery_Floor                         X[  3.00, 10.49] Y[  5.80,  7.30] Z[ 10.21, 10.21]
+  L3_Front_Gallery_Planter                       X[  6.35, 13.39] Y[  7.00,  7.25] Z[ 10.20, 10.60]
+  L3_Front_Gallery_Plants                        X[  6.37, 13.37] Y[  7.02,  7.23] Z[ 10.55, 10.75]
+  L3_Store_Door                                  X[  2.80,  2.90] Y[  6.20,  7.00] Z[ 10.20, 12.30]
+  L3_Store_Wall_East                             X[  2.85,  3.00] Y[  5.80,  7.30] Z[ 10.20, 13.00]
+  L3_Vent_Shaft_1                                X[  0.30,  1.10] Y[  5.90,  6.70] Z[ 10.20, 13.00]
+  L3_Vent_Shaft_2                                X[  1.30,  2.10] Y[  5.90,  6.70] Z[ 10.20, 13.00]
+  L4_2BedL_Courtyard_Wall                        X[  6.15,  6.30] Y[  7.30, 23.00] Z[ 13.20, 16.00]
+  L4_2BedL_DiningTable                           X[  3.00,  4.60] Y[ 11.80, 12.70] Z[ 13.20, 13.95]
+  L4_2BedL_Entry_Door                            X[  3.50,  4.40] Y[  7.25,  7.35] Z[ 13.20, 15.30]
+  L4_2BedL_Kitchen_Counter                       X[  0.35,  0.95] Y[  7.50, 10.70] Z[ 13.20, 14.10]
+  L4_2BedL_Living_Glaze                          X[  6.22,  6.30] Y[  8.50, 12.00] Z[ 13.20, 15.60]
+  L4_2BedL_Part_Bath1                            X[  0.30,  2.40] Y[ 11.00, 11.15] Z[ 13.20, 16.00]
+  L4_2BedL_Part_Bath2                            X[  0.30,  2.40] Y[ 13.50, 13.65] Z[ 13.20, 16.00]
+  L4_2BedL_Part_Living_Bed2                      X[  2.40,  6.30] Y[ 13.50, 13.65] Z[ 13.20, 16.00]
+  L4_2BedL_Sofa                                  X[  3.00,  5.10] Y[  9.00,  9.90] Z[ 13.20, 13.95]
+  L4_2BedL_Spine_Wall                            X[  2.40,  2.55] Y[  7.30, 23.00] Z[ 13.20, 16.00]
+  L4_2BedL_Wall_Gallery                          X[  0.00,  6.30] Y[  7.15,  7.30] Z[ 13.20, 16.00]
+  L4_Balc_Living_Rail_North                      X[  6.30,  7.50] Y[  9.80,  9.85] Z[ 13.20, 14.30]
+  L4_Balc_Living_Rail_South                      X[  6.30,  7.50] Y[ 12.95, 13.00] Z[ 13.20, 14.30]
+  L4_Balc_Living_Slab                            X[  6.30,  7.50] Y[  9.80, 13.00] Z[ 13.00, 13.20]
+  L4_Boundary_Wall_North                         X[  0.00,  0.30] Y[  0.00, 30.48] Z[ 13.20, 16.00]
+  L4_Front_Gallery_Balustrade                    X[  6.30, 13.44] Y[  7.25,  7.30] Z[ 13.20, 14.30]
+  L4_Front_Gallery_Planter                       X[  6.35, 13.39] Y[  7.00,  7.25] Z[ 13.20, 13.60]
+  L4_Store_Door                                  X[  2.80,  2.90] Y[  6.20,  7.00] Z[ 13.20, 15.30]
+  L4_Store_Wall_East                             X[  2.85,  3.00] Y[  5.80,  7.30] Z[ 13.20, 16.00]
+  L4_Vent_Shaft_1                                X[  0.30,  1.10] Y[  5.90,  6.70] Z[ 13.20, 16.00]
+  L4_Vent_Shaft_2                                X[  1.30,  2.10] Y[  5.90,  6.70] Z[ 13.20, 16.00]
+  Slab_L3_FrontBlock                             X[  0.00, 10.49] Y[  0.00,  7.30] Z[ 10.00, 10.20]
+  Slab_L3_LeftWing                               X[  0.00,  6.30] Y[  7.30, 23.00] Z[ 10.00, 10.20]
+  Slab_L4_FrontBlock                             X[  0.00, 10.49] Y[  0.00,  7.30] Z[ 13.00, 13.20]
+  Slab_L4_LeftWing                               X[  0.00,  6.30] Y[  7.30, 23.00] Z[ 13.00, 13.20]
+  SunHood_L2_Bed2                                X[  6.30,  6.90] Y[ 14.00, 16.80] Z[  9.70,  9.82]
+  SunHood_L2_Living                              X[  6.30,  6.90] Y[  8.00, 12.00] Z[  9.70,  9.82]
+  SunHood_L3_Bed2                                X[  6.30,  6.90] Y[ 14.00, 16.80] Z[ 12.70, 12.82]
+  SunHood_L3_Living                              X[  6.30,  6.90] Y[  8.00, 12.00] Z[ 12.70, 12.82]
+  (72 objects)
+
+--- L3 courtyard balcony + its immediate surroundings  X(5.0, 9.0) Y(7.0, 13.0) Z(9.8, 13.5) ---
+  Col_L2_x6.30_y11.2                             X[  6.15,  6.45] Y[ 11.05, 11.35] Z[  7.20, 10.20]
+  Col_L2_x6.30_y7.3                              X[  6.15,  6.45] Y[  7.15,  7.45] Z[  7.20, 10.20]
+  Col_L3_x6.30_y11.2                             X[  6.15,  6.45] Y[ 11.05, 11.35] Z[ 10.20, 13.20]
+  Col_L3_x6.30_y7.3                              X[  6.15,  6.45] Y[  7.15,  7.45] Z[ 10.20, 13.20]
+  Col_L4_x6.30_y11.2                             X[  6.15,  6.45] Y[ 11.05, 11.35] Z[ 13.20, 16.20]
+  Col_L4_x6.30_y7.3                              X[  6.15,  6.45] Y[  7.15,  7.45] Z[ 13.20, 16.20]
+  L2_2BedL_Courtyard_Wall                        X[  6.15,  6.30] Y[  7.30, 23.00] Z[  7.20, 10.00]
+  L2_2BedL_Wall_Gallery                          X[  0.00,  6.30] Y[  7.15,  7.30] Z[  7.20, 10.00]
+  L3_2BedL_Courtyard_Wall                        X[  6.15,  6.30] Y[  7.30, 23.00] Z[ 10.20, 13.00]
+  L3_2BedL_Living_Glaze                          X[  6.22,  6.30] Y[  8.50, 12.00] Z[ 10.20, 12.60]
+  L3_2BedL_Sofa                                  X[  3.00,  5.10] Y[  9.00,  9.90] Z[ 10.20, 10.95]
+  L3_2BedL_Wall_Gallery                          X[  0.00,  6.30] Y[  7.15,  7.30] Z[ 10.20, 13.00]
+  L3_Balc_Living_Floor                           X[  6.30,  7.50] Y[  8.20, 11.40] Z[ 10.21, 10.21]
+  L3_Balc_Living_Planter                         X[  7.20,  7.45] Y[  8.20, 11.40] Z[ 10.20, 10.60]
+  L3_Balc_Living_Plants                          X[  7.22,  7.43] Y[  8.25, 11.35] Z[ 10.55, 10.80]
+  L3_Balc_Living_Rail_East                       X[  7.45,  7.50] Y[  8.20, 11.40] Z[ 10.20, 11.30]
+  L3_Balc_Living_Rail_North                      X[  6.30,  7.50] Y[  8.20,  8.25] Z[ 10.20, 11.30]
+  L3_Balc_Living_Rail_South                      X[  6.30,  7.50] Y[ 11.35, 11.40] Z[ 10.20, 11.30]
+  L3_Balc_Living_Slab                            X[  6.30,  7.50] Y[  8.20, 11.40] Z[ 10.00, 10.20]
+  L3_Front_Gallery_Balustrade                    X[  6.30, 13.44] Y[  7.25,  7.30] Z[ 10.20, 11.30]
+  L3_Front_Gallery_Floor                         X[  3.00, 10.49] Y[  5.80,  7.30] Z[ 10.21, 10.21]
+  L3_Front_Gallery_Planter                       X[  6.35, 13.39] Y[  7.00,  7.25] Z[ 10.20, 10.60]
+  L3_Front_Gallery_Plants                        X[  6.37, 13.37] Y[  7.02,  7.23] Z[ 10.55, 10.75]
+  L4_2BedL_Courtyard_Wall                        X[  6.15,  6.30] Y[  7.30, 23.00] Z[ 13.20, 16.00]
+  L4_2BedL_Living_Glaze                          X[  6.22,  6.30] Y[  8.50, 12.00] Z[ 13.20, 15.60]
+  L4_2BedL_Sofa                                  X[  3.00,  5.10] Y[  9.00,  9.90] Z[ 13.20, 13.95]
+  L4_2BedL_Wall_Gallery                          X[  0.00,  6.30] Y[  7.15,  7.30] Z[ 13.20, 16.00]
+  L4_Balc_Living_Floor                           X[  6.30,  7.50] Y[  9.80, 13.00] Z[ 13.21, 13.21]
+  L4_Balc_Living_Planter                         X[  7.20,  7.45] Y[  9.80, 13.00] Z[ 13.20, 13.60]
+  L4_Balc_Living_Rail_East                       X[  7.45,  7.50] Y[  9.80, 13.00] Z[ 13.20, 14.30]
+  L4_Balc_Living_Rail_North                      X[  6.30,  7.50] Y[  9.80,  9.85] Z[ 13.20, 14.30]
+  L4_Balc_Living_Rail_South                      X[  6.30,  7.50] Y[ 12.95, 13.00] Z[ 13.20, 14.30]
+  L4_Balc_Living_Slab                            X[  6.30,  7.50] Y[  9.80, 13.00] Z[ 13.00, 13.20]
+  L4_Front_Gallery_Balustrade                    X[  6.30, 13.44] Y[  7.25,  7.30] Z[ 13.20, 14.30]
+  L4_Front_Gallery_Floor                         X[  3.00, 10.49] Y[  5.80,  7.30] Z[ 13.21, 13.21]
+  L4_Front_Gallery_Planter                       X[  6.35, 13.39] Y[  7.00,  7.25] Z[ 13.20, 13.60]
+  Slab_L3_FrontBlock                             X[  0.00, 10.49] Y[  0.00,  7.30] Z[ 10.00, 10.20]
+  Slab_L3_LeftWing                               X[  0.00,  6.30] Y[  7.30, 23.00] Z[ 10.00, 10.20]
+  Slab_L4_FrontBlock                             X[  0.00, 10.49] Y[  0.00,  7.30] Z[ 13.00, 13.20]
+  Slab_L4_LeftWing                               X[  0.00,  6.30] Y[  7.30, 23.00] Z[ 13.00, 13.20]
+  SunHood_L2_Living                              X[  6.30,  6.90] Y[  8.00, 12.00] Z[  9.70,  9.82]
+  SunHood_L3_Living                              X[  6.30,  6.90] Y[  8.00, 12.00] Z[ 12.70, 12.82]
+  (42 objects)
+
+--- L3 whole north wing (X<6.4)  X(0.0, 6.4) Y(6.0, 24.0) Z(10.0, 13.2) ---
+  Col_L2_x3.48_y23.0                             X[  3.33,  3.63] Y[ 22.85, 23.15] Z[  7.20, 10.20]
+  Col_L2_x3.48_y7.3                              X[  3.33,  3.63] Y[  7.15,  7.45] Z[  7.20, 10.20]
+  Col_L2_x6.30_y11.2                             X[  6.15,  6.45] Y[ 11.05, 11.35] Z[  7.20, 10.20]
+  Col_L2_x6.30_y15.1                             X[  6.15,  6.45] Y[ 14.95, 15.25] Z[  7.20, 10.20]
+  Col_L2_x6.30_y19.1                             X[  6.15,  6.45] Y[ 18.95, 19.25] Z[  7.20, 10.20]
+  Col_L2_x6.30_y23.0                             X[  6.15,  6.45] Y[ 22.85, 23.15] Z[  7.20, 10.20]
+  Col_L2_x6.30_y7.3                              X[  6.15,  6.45] Y[  7.15,  7.45] Z[  7.20, 10.20]
+  Col_L3_x3.48_y23.0                             X[  3.33,  3.63] Y[ 22.85, 23.15] Z[ 10.20, 13.20]
+  Col_L3_x3.48_y7.3                              X[  3.33,  3.63] Y[  7.15,  7.45] Z[ 10.20, 13.20]
+  Col_L3_x6.30_y11.2                             X[  6.15,  6.45] Y[ 11.05, 11.35] Z[ 10.20, 13.20]
+  Col_L3_x6.30_y15.1                             X[  6.15,  6.45] Y[ 14.95, 15.25] Z[ 10.20, 13.20]
+  Col_L3_x6.30_y19.1                             X[  6.15,  6.45] Y[ 18.95, 19.25] Z[ 10.20, 13.20]
+  Col_L3_x6.30_y23.0                             X[  6.15,  6.45] Y[ 22.85, 23.15] Z[ 10.20, 13.20]
+  Col_L3_x6.30_y7.3                              X[  6.15,  6.45] Y[  7.15,  7.45] Z[ 10.20, 13.20]
+  Col_L4_x3.48_y23.0                             X[  3.33,  3.63] Y[ 22.85, 23.15] Z[ 13.20, 16.20]
+  Col_L4_x3.48_y7.3                              X[  3.33,  3.63] Y[  7.15,  7.45] Z[ 13.20, 16.20]
+  Col_L4_x6.30_y11.2                             X[  6.15,  6.45] Y[ 11.05, 11.35] Z[ 13.20, 16.20]
+  Col_L4_x6.30_y15.1                             X[  6.15,  6.45] Y[ 14.95, 15.25] Z[ 13.20, 16.20]
+  Col_L4_x6.30_y19.1                             X[  6.15,  6.45] Y[ 18.95, 19.25] Z[ 13.20, 16.20]
+  Col_L4_x6.30_y23.0                             X[  6.15,  6.45] Y[ 22.85, 23.15] Z[ 13.20, 16.20]
+  Col_L4_x6.30_y7.3                              X[  6.15,  6.45] Y[  7.15,  7.45] Z[ 13.20, 16.20]
+  L2_2BedL_Courtyard_Wall                        X[  6.15,  6.30] Y[  7.30, 23.00] Z[  7.20, 10.00]
+  L2_2BedL_Part_Bath1                            X[  0.30,  2.40] Y[ 11.00, 11.15] Z[  7.20, 10.00]
+  L2_2BedL_Part_Bath2                            X[  0.30,  2.40] Y[ 13.50, 13.65] Z[  7.20, 10.00]
+  L2_2BedL_Part_Bed2_Master                      X[  2.40,  6.30] Y[ 17.50, 17.65] Z[  7.20, 10.00]
+  L2_2BedL_Part_DryingYard                       X[  0.30,  2.40] Y[ 16.00, 16.15] Z[  7.20, 10.00]
+  L2_2BedL_Part_Living_Bed2                      X[  2.40,  6.30] Y[ 13.50, 13.65] Z[  7.20, 10.00]
+  L2_2BedL_Spine_Wall                            X[  2.40,  2.55] Y[  7.30, 23.00] Z[  7.20, 10.00]
+  L2_2BedL_Wall_Gallery                          X[  0.00,  6.30] Y[  7.15,  7.30] Z[  7.20, 10.00]
+  L2_2BedR_Courtyard_Wall_1                      X[  0.30,  6.30] Y[ 22.85, 23.00] Z[  7.20, 10.00]
+  L2_2BedR_Part_Living_Bed2                      X[  6.30,  6.45] Y[ 23.00, 27.00] Z[  7.20, 10.00]
+  L2_Boundary_Wall_North                         X[  0.00,  0.30] Y[  0.00, 30.48] Z[  7.20, 10.00]
+  L2_Store_Wall_East                             X[  2.85,  3.00] Y[  5.80,  7.30] Z[  7.20, 10.00]
+  L2_Vent_Shaft_1                                X[  0.30,  1.10] Y[  5.90,  6.70] Z[  7.20, 10.00]
+  L2_Vent_Shaft_2                                X[  1.30,  2.10] Y[  5.90,  6.70] Z[  7.20, 10.00]
+  L3_2BedL_Bed2                                  X[  3.00,  4.60] Y[ 14.50, 16.50] Z[ 10.20, 10.75]
+  L3_2BedL_Bed2_Win                              X[  6.22,  6.30] Y[ 14.50, 16.50] Z[ 11.10, 12.60]
+  L3_2BedL_BedMaster                             X[  3.00,  4.80] Y[ 19.50, 21.50] Z[ 10.20, 10.75]
+  L3_2BedL_Courtyard_Wall                        X[  6.15,  6.30] Y[  7.30, 23.00] Z[ 10.20, 13.00]
+  L3_2BedL_DiningTable                           X[  3.00,  4.60] Y[ 11.80, 12.70] Z[ 10.20, 10.95]
+  L3_2BedL_Entry_Door                            X[  3.50,  4.40] Y[  7.25,  7.35] Z[ 10.20, 12.30]
+  L3_2BedL_Kitchen_Counter                       X[  0.35,  0.95] Y[  7.50, 10.70] Z[ 10.20, 11.10]
+  L3_2BedL_Living_Glaze                          X[  6.22,  6.30] Y[  8.50, 12.00] Z[ 10.20, 12.60]
+  L3_2BedL_Master_Glaze                          X[  6.22,  6.30] Y[ 19.00, 22.00] Z[ 10.20, 12.60]
+  L3_2BedL_Part_Bath1                            X[  0.30,  2.40] Y[ 11.00, 11.15] Z[ 10.20, 13.00]
+  L3_2BedL_Part_Bath2                            X[  0.30,  2.40] Y[ 13.50, 13.65] Z[ 10.20, 13.00]
+  L3_2BedL_Part_Bed2_Master                      X[  2.40,  6.30] Y[ 17.50, 17.65] Z[ 10.20, 13.00]
+  L3_2BedL_Part_DryingYard                       X[  0.30,  2.40] Y[ 16.00, 16.15] Z[ 10.20, 13.00]
+  L3_2BedL_Part_Living_Bed2                      X[  2.40,  6.30] Y[ 13.50, 13.65] Z[ 10.20, 13.00]
+  L3_2BedL_Sofa                                  X[  3.00,  5.10] Y[  9.00,  9.90] Z[ 10.20, 10.95]
+  L3_2BedL_Spine_Wall                            X[  2.40,  2.55] Y[  7.30, 23.00] Z[ 10.20, 13.00]
+  L3_2BedL_Wall_Gallery                          X[  0.00,  6.30] Y[  7.15,  7.30] Z[ 10.20, 13.00]
+  L3_2BedR_Bed2_Win                              X[  2.00,  4.50] Y[ 22.88, 22.96] Z[ 11.10, 12.60]
+  L3_2BedR_Courtyard_Wall_1                      X[  0.30,  6.30] Y[ 22.85, 23.00] Z[ 10.20, 13.00]
+  L3_2BedR_Part_Living_Bed2                      X[  6.30,  6.45] Y[ 23.00, 27.00] Z[ 10.20, 13.00]
+  L3_Balc_Living_Floor                           X[  6.30,  7.50] Y[  8.20, 11.40] Z[ 10.21, 10.21]
+  L3_Balc_Living_Rail_North                      X[  6.30,  7.50] Y[  8.20,  8.25] Z[ 10.20, 11.30]
+  L3_Balc_Living_Rail_South                      X[  6.30,  7.50] Y[ 11.35, 11.40] Z[ 10.20, 11.30]
+  L3_Balc_Living_Slab                            X[  6.30,  7.50] Y[  8.20, 11.40] Z[ 10.00, 10.20]
+  L3_Balc_Master_Floor                           X[  6.30,  7.50] Y[ 19.20, 22.40] Z[ 10.21, 10.21]
+  L3_Balc_Master_Rail_North                      X[  6.30,  7.50] Y[ 19.20, 19.25] Z[ 10.20, 11.30]
+  L3_Balc_Master_Rail_South                      X[  6.30,  7.50] Y[ 22.35, 22.40] Z[ 10.20, 11.30]
+  L3_Balc_Master_Slab                            X[  6.30,  7.50] Y[ 19.20, 22.40] Z[ 10.00, 10.20]
+  L3_Boundary_Wall_North                         X[  0.00,  0.30] Y[  0.00, 30.48] Z[ 10.20, 13.00]
+  L3_Front_Gallery_Balustrade                    X[  6.30, 13.44] Y[  7.25,  7.30] Z[ 10.20, 11.30]
+  L3_Front_Gallery_Floor                         X[  3.00, 10.49] Y[  5.80,  7.30] Z[ 10.21, 10.21]
+  L3_Front_Gallery_Planter                       X[  6.35, 13.39] Y[  7.00,  7.25] Z[ 10.20, 10.60]
+  L3_Front_Gallery_Plants                        X[  6.37, 13.37] Y[  7.02,  7.23] Z[ 10.55, 10.75]
+  L3_Store_Door                                  X[  2.80,  2.90] Y[  6.20,  7.00] Z[ 10.20, 12.30]
+  L3_Store_Wall_East                             X[  2.85,  3.00] Y[  5.80,  7.30] Z[ 10.20, 13.00]
+  L3_Vent_Shaft_1                                X[  0.30,  1.10] Y[  5.90,  6.70] Z[ 10.20, 13.00]
+  L3_Vent_Shaft_2                                X[  1.30,  2.10] Y[  5.90,  6.70] Z[ 10.20, 13.00]
+  L4_2BedL_Bed2                                  X[  3.00,  4.60] Y[ 14.50, 16.50] Z[ 13.20, 13.75]
+  L4_2BedL_BedMaster                             X[  3.00,  4.80] Y[ 19.50, 21.50] Z[ 13.20, 13.75]
+  L4_2BedL_Courtyard_Wall                        X[  6.15,  6.30] Y[  7.30, 23.00] Z[ 13.20, 16.00]
+  L4_2BedL_DiningTable                           X[  3.00,  4.60] Y[ 11.80, 12.70] Z[ 13.20, 13.95]
+  L4_2BedL_Entry_Door                            X[  3.50,  4.40] Y[  7.25,  7.35] Z[ 13.20, 15.30]
+  L4_2BedL_Kitchen_Counter                       X[  0.35,  0.95] Y[  7.50, 10.70] Z[ 13.20, 14.10]
+  L4_2BedL_Living_Glaze                          X[  6.22,  6.30] Y[  8.50, 12.00] Z[ 13.20, 15.60]
+  L4_2BedL_Master_Glaze                          X[  6.22,  6.30] Y[ 19.00, 22.00] Z[ 13.20, 15.60]
+  L4_2BedL_Part_Bath1                            X[  0.30,  2.40] Y[ 11.00, 11.15] Z[ 13.20, 16.00]
+  L4_2BedL_Part_Bath2                            X[  0.30,  2.40] Y[ 13.50, 13.65] Z[ 13.20, 16.00]
+  L4_2BedL_Part_Bed2_Master                      X[  2.40,  6.30] Y[ 17.50, 17.65] Z[ 13.20, 16.00]
+  L4_2BedL_Part_DryingYard                       X[  0.30,  2.40] Y[ 16.00, 16.15] Z[ 13.20, 16.00]
+  L4_2BedL_Part_Living_Bed2                      X[  2.40,  6.30] Y[ 13.50, 13.65] Z[ 13.20, 16.00]
+  L4_2BedL_Sofa                                  X[  3.00,  5.10] Y[  9.00,  9.90] Z[ 13.20, 13.95]
+  L4_2BedL_Spine_Wall                            X[  2.40,  2.55] Y[  7.30, 23.00] Z[ 13.20, 16.00]
+  L4_2BedL_Wall_Gallery                          X[  0.00,  6.30] Y[  7.15,  7.30] Z[ 13.20, 16.00]
+  L4_2BedR_Courtyard_Wall_1                      X[  0.30,  6.30] Y[ 22.85, 23.00] Z[ 13.20, 16.00]
+  L4_2BedR_Part_Living_Bed2                      X[  6.30,  6.45] Y[ 23.00, 27.00] Z[ 13.20, 16.00]
+  L4_Balc_Living_Rail_North                      X[  6.30,  7.50] Y[  9.80,  9.85] Z[ 13.20, 14.30]
+  L4_Balc_Living_Rail_South                      X[  6.30,  7.50] Y[ 12.95, 13.00] Z[ 13.20, 14.30]
+  L4_Balc_Living_Slab                            X[  6.30,  7.50] Y[  9.80, 13.00] Z[ 13.00, 13.20]
+  L4_Balc_Master_Rail_North                      X[  6.30,  7.50] Y[ 17.60, 17.65] Z[ 13.20, 14.30]
+  L4_Balc_Master_Rail_South                      X[  6.30,  7.50] Y[ 20.75, 20.80] Z[ 13.20, 14.30]
+  L4_Balc_Master_Slab                            X[  6.30,  7.50] Y[ 17.60, 20.80] Z[ 13.00, 13.20]
+  L4_Boundary_Wall_North                         X[  0.00,  0.30] Y[  0.00, 30.48] Z[ 13.20, 16.00]
+  L4_Front_Gallery_Balustrade                    X[  6.30, 13.44] Y[  7.25,  7.30] Z[ 13.20, 14.30]
+  L4_Front_Gallery_Planter                       X[  6.35, 13.39] Y[  7.00,  7.25] Z[ 13.20, 13.60]
+  L4_Store_Door                                  X[  2.80,  2.90] Y[  6.20,  7.00] Z[ 13.20, 15.30]
+  L4_Store_Wall_East                             X[  2.85,  3.00] Y[  5.80,  7.30] Z[ 13.20, 16.00]
+  L4_Vent_Shaft_1                                X[  0.30,  1.10] Y[  5.90,  6.70] Z[ 13.20, 16.00]
+  L4_Vent_Shaft_2                                X[  1.30,  2.10] Y[  5.90,  6.70] Z[ 13.20, 16.00]
+  Slab_L3_FrontBlock                             X[  0.00, 10.49] Y[  0.00,  7.30] Z[ 10.00, 10.20]
+  Slab_L3_LeftWing                               X[  0.00,  6.30] Y[  7.30, 23.00] Z[ 10.00, 10.20]
+  Slab_L3_RearBlock                              X[  0.00, 15.24] Y[ 23.00, 30.48] Z[ 10.00, 10.20]
+  Slab_L4_FrontBlock                             X[  0.00, 10.49] Y[  0.00,  7.30] Z[ 13.00, 13.20]
+  Slab_L4_LeftWing                               X[  0.00,  6.30] Y[  7.30, 23.00] Z[ 13.00, 13.20]
+  Slab_L4_RearBlock                              X[  0.00, 15.24] Y[ 23.00, 30.48] Z[ 13.00, 13.20]
+  SunHood_L3_Bed2                                X[  6.30,  6.90] Y[ 14.00, 16.80] Z[ 12.70, 12.82]
+  SunHood_L3_Living                              X[  6.30,  6.90] Y[  8.00, 12.00] Z[ 12.70, 12.82]
+  SunHood_L3_Master                              X[  6.30,  6.90] Y[ 18.50, 22.50] Z[ 12.70, 12.82]
+  (112 objects)
+
+--- Roof deck around the pergola  X(0.0, 8.0) Y(8.0, 20.0) Z(16.0, 20.2) ---
+  Col_L4_x6.30_y11.2                             X[  6.15,  6.45] Y[ 11.05, 11.35] Z[ 13.20, 16.20]
+  Col_L4_x6.30_y15.1                             X[  6.15,  6.45] Y[ 14.95, 15.25] Z[ 13.20, 16.20]
+  Col_L4_x6.30_y19.1                             X[  6.15,  6.45] Y[ 18.95, 19.25] Z[ 13.20, 16.20]
+  L4_2BedL_Courtyard_Wall                        X[  6.15,  6.30] Y[  7.30, 23.00] Z[ 13.20, 16.00]
+  L4_2BedL_Part_Bath1                            X[  0.30,  2.40] Y[ 11.00, 11.15] Z[ 13.20, 16.00]
+  L4_2BedL_Part_Bath2                            X[  0.30,  2.40] Y[ 13.50, 13.65] Z[ 13.20, 16.00]
+  L4_2BedL_Part_Bed2_Master                      X[  2.40,  6.30] Y[ 17.50, 17.65] Z[ 13.20, 16.00]
+  L4_2BedL_Part_DryingYard                       X[  0.30,  2.40] Y[ 16.00, 16.15] Z[ 13.20, 16.00]
+  L4_2BedL_Part_Living_Bed2                      X[  2.40,  6.30] Y[ 13.50, 13.65] Z[ 13.20, 16.00]
+  L4_2BedL_Spine_Wall                            X[  2.40,  2.55] Y[  7.30, 23.00] Z[ 13.20, 16.00]
+  L4_Boundary_Wall_North                         X[  0.00,  0.30] Y[  0.00, 30.48] Z[ 13.20, 16.00]
+  Parapet_Roof_Courtyard_West                    X[  6.30,  6.60] Y[  7.30, 23.00] Z[ 16.20, 17.30]
+  Parapet_Roof_North                             X[  0.00,  0.30] Y[  0.00, 30.48] Z[ 16.20, 17.30]
+  Roof_Garden_Bench_1                            X[  2.00,  4.00] Y[ 12.00, 12.50] Z[ 16.20, 16.65]
+  Roof_Garden_Terrace_Floor                      X[  0.30,  6.00] Y[  8.00, 18.00] Z[ 16.21, 16.21]
+  Roof_Pergola_Beam_1                            X[  1.00,  5.40] Y[ 10.10, 10.25] Z[ 18.80, 19.00]
+  Roof_Pergola_Beam_2                            X[  1.00,  5.40] Y[ 15.70, 15.85] Z[ 18.80, 19.00]
+  Roof_Pergola_Post_x1.2_y10.2                   X[  1.12,  1.28] Y[ 10.12, 10.28] Z[ 16.20, 18.80]
+  Roof_Pergola_Post_x1.2_y13.0                   X[  1.12,  1.28] Y[ 12.92, 13.08] Z[ 16.20, 18.80]
+  Roof_Pergola_Post_x1.2_y15.8                   X[  1.12,  1.28] Y[ 15.72, 15.88] Z[ 16.20, 18.80]
+  Roof_Pergola_Post_x5.2_y10.2                   X[  5.12,  5.28] Y[ 10.12, 10.28] Z[ 16.20, 18.80]
+  Roof_Pergola_Post_x5.2_y13.0                   X[  5.12,  5.28] Y[ 12.92, 13.08] Z[ 16.20, 18.80]
+  Roof_Pergola_Post_x5.2_y15.8                   X[  5.12,  5.28] Y[ 15.72, 15.88] Z[ 16.20, 18.80]
+  Roof_Pergola_Rafter_10.5                       X[  0.80,  5.60] Y[ 10.50, 10.58] Z[ 18.95, 19.10]
+  Roof_Pergola_Rafter_11.5                       X[  0.80,  5.60] Y[ 11.50, 11.58] Z[ 18.95, 19.10]
+  Roof_Pergola_Rafter_12.5                       X[  0.80,  5.60] Y[ 12.50, 12.58] Z[ 18.95, 19.10]
+  Roof_Pergola_Rafter_13.5                       X[  0.80,  5.60] Y[ 13.50, 13.58] Z[ 18.95, 19.10]
+  Roof_Pergola_Rafter_14.5                       X[  0.80,  5.60] Y[ 14.50, 14.58] Z[ 18.95, 19.10]
+  Roof_Pergola_Rafter_15.5                       X[  0.80,  5.60] Y[ 15.50, 15.58] Z[ 18.95, 19.10]
+  Roof_Planter_Bed_1                             X[  0.50,  5.70] Y[  8.20,  8.80] Z[ 16.20, 16.70]
+  Roof_Planter_Bed_2                             X[  0.50,  5.70] Y[ 17.20, 17.80] Z[ 16.20, 16.70]
+  Roof_Planter_Plants_1                          X[  0.55,  5.65] Y[  8.25,  8.75] Z[ 16.70, 17.10]
+  Roof_Planter_Plants_2                          X[  0.55,  5.65] Y[ 17.25, 17.75] Z[ 16.70, 17.10]
+  Slab_Roof_LeftWing                             X[  0.00,  6.30] Y[  7.30, 23.00] Z[ 16.00, 16.20]
+  (34 objects)
+
+--- Street frontage  X(0.0, 15.24) Y(-1.0, 6.0) Z(0.0, 4.5) ---
+  CONFLICT_s18_FrontSetback                      X[  0.00, 15.24] Y[  0.00,  6.00] Z[  0.92,  0.92]
+  Col_B1_x3.48_y5.2                              X[  3.28,  3.68] Y[  5.00,  5.40] Z[ -2.00,  0.90]
+  Col_B1_x6.30_y5.2                              X[  6.10,  6.50] Y[  5.00,  5.40] Z[ -2.00,  0.90]
+  Col_GF_Colonnade_x6.30_y5.2                    X[  6.10,  6.50] Y[  5.00,  5.40] Z[  0.90,  4.20]
+  Col_GF_x10.49_y0.3                             X[ 10.29, 10.69] Y[  0.10,  0.50] Z[  0.90,  4.20]
+  Col_GF_x10.49_y5.2                             X[ 10.29, 10.69] Y[  5.00,  5.40] Z[  0.90,  4.20]
+  Col_GF_x3.48_y0.3                              X[  3.28,  3.68] Y[  0.10,  0.50] Z[  0.90,  4.20]
+  Col_GF_x3.48_y5.2                              X[  3.28,  3.68] Y[  5.00,  5.40] Z[  0.90,  4.20]
+  Col_L1_x10.49_y0.3                             X[ 10.34, 10.64] Y[  0.15,  0.45] Z[  4.20,  7.20]
+  Col_L1_x10.49_y5.8                             X[ 10.34, 10.64] Y[  5.65,  5.95] Z[  4.20,  7.20]
+  Col_L1_x3.48_y0.3                              X[  3.33,  3.63] Y[  0.15,  0.45] Z[  4.20,  7.20]
+  Col_L1_x3.48_y5.8                              X[  3.33,  3.63] Y[  5.65,  5.95] Z[  4.20,  7.20]
+  Core_Breeze_Band_0                             X[ 10.45, 12.73] Y[  5.12,  5.33] Z[  0.00,  0.06]
+  Core_Breeze_Band_1                             X[ 10.45, 12.73] Y[  5.12,  5.33] Z[  1.00,  1.06]
+  Core_Breeze_Band_2                             X[ 10.45, 12.73] Y[  5.12,  5.33] Z[  2.00,  2.06]
+  Core_Breeze_Band_3                             X[ 10.45, 12.73] Y[  5.12,  5.33] Z[  3.00,  3.06]
+  Core_Breeze_Band_4                             X[ 10.45, 12.73] Y[  5.12,  5.33] Z[  4.00,  4.06]
+  Core_Breeze_Block_Screen                       X[ 10.49, 12.69] Y[  5.15,  5.30] Z[  0.90, 16.20]
+  Core_Lift_Shaft_FullHeight                     X[ 10.49, 12.69] Y[  0.30,  2.50] Z[ -2.00, 19.80]
+  Core_Stair_Enclosure_FullHeight                X[ 12.69, 14.94] Y[  0.30,  5.20] Z[ -2.00, 19.00]
+  GF_Access_Ramp_Part1                           X[  5.80,  7.00] Y[  1.20,  5.20] Z[  0.01,  0.45]
+  GF_Access_Ramp_Part2                           X[  7.00, 10.50] Y[  5.20,  6.40] Z[  0.45,  0.90]
+  GF_Colonnade_Bench_Base_1                      X[  6.05,  6.55] Y[  5.60,  8.40] Z[  0.90,  1.32]
+  GF_Colonnade_Bench_Seat_1                      X[  6.02,  6.58] Y[  5.60,  8.40] Z[  1.32,  1.36]
+  GF_Colonnade_Floor                             X[  3.60,  6.30] Y[  5.20, 23.00] Z[  0.91,  0.91]
+  GF_Colonnade_Foliage_1                         X[  5.82,  6.38] Y[  5.27,  5.58] Z[  1.40,  1.70]
+  GF_Colonnade_Planter_1                         X[  5.80,  6.40] Y[  5.25,  5.60] Z[  0.90,  1.50]
+  GF_Core_Entry_Frame                            X[ 10.75, 13.05] Y[  5.12,  5.28] Z[  0.90,  3.60]
+  GF_Core_Glass_Entry                            X[ 10.80, 13.00] Y[  5.15,  5.25] Z[  0.90,  3.50]
+  GF_Entry_Step_1                                X[  6.00,  7.20] Y[  3.20,  3.55] Z[  0.00,  0.18]
+  GF_Entry_Step_2                                X[  6.00,  7.20] Y[  3.55,  3.90] Z[  0.00,  0.36]
+  GF_Entry_Step_3                                X[  6.00,  7.20] Y[  3.90,  4.25] Z[  0.00,  0.54]
+  GF_Entry_Step_4                                X[  6.00,  7.20] Y[  4.25,  4.60] Z[  0.00,  0.72]
+  GF_Entry_Step_5                                X[  6.00,  7.20] Y[  4.60,  4.95] Z[  0.00,  0.90]
+  GF_Gate_Lintel                                 X[  5.68,  7.28] Y[ -0.05,  0.05] Z[  2.25,  2.40]
+  GF_Gate_Post_Left                              X[  5.68,  5.80] Y[ -0.05,  0.05] Z[  0.00,  2.40]
+  GF_Gate_Post_Right                             X[  7.16,  7.28] Y[ -0.05,  0.05] Z[  0.00,  2.40]
+  GF_Guard_CCTV_Monitor                          X[  4.40,  4.90] Y[  0.60,  0.75] Z[  0.90,  1.25]
+  GF_Guard_Chamfer_Wall                          X[  3.48,  3.80] Y[  0.00,  0.60] Z[  0.15,  3.20]
+  GF_Guard_Desk                                  X[  4.10,  5.30] Y[  0.40,  1.00] Z[  0.15,  0.90]
+  GF_Guard_Plinth                                X[  3.48,  5.68] Y[  0.00,  3.00] Z[  0.00,  0.15]
+  GF_Guard_WC_Wall                               X[  3.48,  4.68] Y[  1.60,  1.72] Z[  0.15,  2.65]
+  GF_Guard_Wall_East_Courtyard                   X[  3.48,  5.68] Y[  2.85,  3.00] Z[  0.15,  3.20]
+  GF_Guard_Wall_North                            X[  3.48,  3.63] Y[  0.60,  3.00] Z[  0.15,  3.20]
+  GF_Guard_Wall_South                            X[  5.53,  5.68] Y[  0.00,  3.00] Z[  0.15,  3.20]
+  GF_Guard_Wall_West                             X[  3.80,  5.68] Y[  0.00,  0.15] Z[  0.15,  3.20]
+  GF_Guard_Window_Courtyard                      X[  4.00,  5.10] Y[  2.83,  3.02] Z[  1.10,  2.20]
+  GF_Guard_Window_Gate                           X[  5.51,  5.70] Y[  0.80,  2.00] Z[  1.00,  2.20]
+  GF_Guard_Window_Ramp                           X[  3.52,  3.75] Y[  0.08,  0.50] Z[  1.00,  2.20]
+  GF_Pedestrian_Entry_Floor                      X[  5.68,  7.28] Y[  0.00,  5.20] Z[  0.01,  0.01]
+  GF_Pedestrian_Intercom_Post                    X[  5.70,  5.85] Y[ -0.10,  0.05] Z[  0.00,  1.40]
+  GF_Portal_Lintel_Beam                          X[  0.00,  3.48] Y[  0.00,  0.60] Z[  3.10,  3.40]
+  GF_Portal_Pier_North                           X[  0.00,  0.30] Y[  0.00,  0.60] Z[  0.00,  3.40]
+  GF_Portal_Pier_South                           X[  3.18,  3.48] Y[  0.00,  0.60] Z[  0.00,  3.40]
+  GF_Portal_Sectional_Door                       X[  0.30,  3.18] Y[  1.80,  1.86] Z[  0.00,  2.90]
+  GF_Portal_Signal_Green                         X[  3.20,  3.24] Y[  0.57,  0.68] Z[  2.45,  2.56]
+  GF_Portal_Signal_Red                           X[  3.20,  3.24] Y[  0.57,  0.68] Z[  2.62,  2.73]
+  GF_Portal_Traffic_Signal                       X[  3.22,  3.37] Y[  0.55,  0.70] Z[  2.40,  2.80]
+  GF_Ramp_Climbers_Trellis                       X[  3.75,  3.80] Y[  5.20, 23.00] Z[  1.20,  3.60]
+  GF_Ramp_Rail_1                                 X[  5.78,  5.83] Y[  1.20,  5.20] Z[  0.00,  1.20]
+  GF_Ramp_Rail_2                                 X[  7.00, 10.50] Y[  5.20,  5.25] Z[  0.45,  1.80]
+  GF_Ramp_Screen_Coping                          X[  3.58,  3.77] Y[  0.00, 23.00] Z[  3.95,  4.03]
+  GF_Ramp_Screen_Wall                            X[  3.60,  3.75] Y[  0.00, 23.00] Z[  0.90,  3.95]
+  GF_Shop_Counter                                X[  7.80,  9.80] Y[  2.50,  3.10] Z[  0.00,  0.90]
+  GF_Shop_Display_Shelves                        X[ 10.15, 10.33] Y[  1.00,  4.50] Z[  0.00,  2.40]
+  GF_Shop_Floor                                  X[  7.28, 10.49] Y[  0.00,  5.20] Z[  0.01,  0.01]
+  GF_Shop_Glazed_Door                            X[  7.50, 10.25] Y[  0.15,  0.20] Z[  0.00,  3.00]
+  GF_Shop_Roller_Shutter                         X[  7.45, 10.30] Y[  0.00,  0.08] Z[  0.00,  3.20]
+  GF_Shop_Wall_East_Side                         X[ 10.34, 10.49] Y[  0.00,  5.00] Z[  0.00,  4.00]
+  GF_Shop_Wall_Rear_Courtyard                    X[  7.28, 10.49] Y[  5.00,  5.20] Z[  0.00,  4.00]
+  GF_Shop_Wall_West_Side                         X[  7.28,  7.43] Y[  0.00,  5.00] Z[  0.00,  4.00]
+  GF_Store_Louver_Door                           X[  5.51,  5.70] Y[  3.40,  4.80] Z[  0.15,  2.35]
+  GF_Store_Meter_Box                             X[  3.65,  3.90] Y[  3.20,  4.40] Z[  1.00,  2.00]
+  GF_Store_Wall_East                             X[  3.48,  5.68] Y[  5.05,  5.20] Z[  0.15,  3.20]
+  GF_Store_Wall_South                            X[  5.53,  5.68] Y[  3.00,  5.20] Z[  0.15,  3.20]
+  GF_Store_Waste_Bins                            X[  3.80,  5.00] Y[  4.30,  5.00] Z[  0.15,  1.05]
+  L1_1Bed_Balc_Balustrade                        X[  3.48,  7.00] Y[  0.00,  0.05] Z[  4.20,  5.30]
+  L1_1Bed_Balc_Floor                             X[  3.48,  7.00] Y[  0.00,  1.20] Z[  4.21,  4.21]
+  L1_1Bed_Balc_Planter                           X[  3.50,  6.98] Y[  0.05,  0.40] Z[  4.20,  4.60]
+  L1_1Bed_Bed                                    X[  0.80,  2.60] Y[  2.00,  4.00] Z[  4.20,  4.75]
+  L1_1Bed_DiningTable                            X[  7.50,  8.90] Y[  1.50,  2.30] Z[  4.20,  4.95]
+  L1_1Bed_Entry_Door                             X[  6.80,  7.70] Y[  5.60,  5.68] Z[  4.20,  6.30]
+  L1_1Bed_Living_Glazing                         X[  3.60,  6.80] Y[  1.15,  1.23] Z[  4.20,  6.60]
+  L1_1Bed_Living_Wall_Recess                     X[  3.48,  7.00] Y[  1.10,  1.25] Z[  4.20,  7.00]
+  L1_1Bed_Part_Bath_X                            X[  7.50,  7.65] Y[  3.60,  5.80] Z[  4.20,  7.00]
+  L1_1Bed_Part_Bath_Y                            X[  7.50, 10.49] Y[  3.60,  3.75] Z[  4.20,  7.00]
+  L1_1Bed_Part_Bed                               X[  3.48,  3.63] Y[  1.20,  5.80] Z[  4.20,  7.00]
+  L1_1Bed_Sofa                                   X[  3.90,  5.90] Y[  2.80,  3.65] Z[  4.20,  4.95]
+  L1_1Bed_Wall_Gallery_Rear                      X[  3.00, 10.49] Y[  5.65,  5.80] Z[  4.20,  7.00]
+  L1_1Bed_Wall_Street_Bed                        X[  0.30,  3.48] Y[  0.00,  0.20] Z[  4.20,  7.00]
+  L1_1Bed_Wall_Street_Kit                        X[  7.00, 10.49] Y[  0.00,  0.20] Z[  4.20,  7.00]
+  L1_Boundary_Wall_North                         X[  0.00,  0.30] Y[  0.00, 30.48] Z[  4.20,  7.00]
+  L1_Boundary_Wall_South                         X[ 14.94, 15.24] Y[  0.00, 30.48] Z[  4.20,  7.00]
+  L1_Front_Gallery_Floor                         X[  3.00, 10.49] Y[  5.80,  7.30] Z[  4.21,  4.21]
+  L1_Store_Wall_East                             X[  2.85,  3.00] Y[  5.80,  7.30] Z[  4.20,  7.00]
+  L1_Vent_Shaft_1                                X[  0.30,  1.10] Y[  5.90,  6.70] Z[  4.20,  7.00]
+  L1_Vent_Shaft_2                                X[  1.30,  2.10] Y[  5.90,  6.70] Z[  4.20,  7.00]
+  Ramp_Kerb_Barrier                              X[  3.48,  3.70] Y[  0.00, 23.00] Z[ -2.00,  0.60]
+  Ramp_Slice_1                                   X[  0.30,  3.48] Y[  0.00,  1.00] Z[ -0.25,  0.15]
+  Ramp_Slice_2                                   X[  0.30,  3.48] Y[  1.00,  6.00] Z[ -0.30,  0.15]
+  Room_Server_Utility_B1                         X[ 12.00, 14.94] Y[  5.20,  8.00] Z[ -2.00,  0.90]
+  Slab_L1_FrontBlock                             X[  0.00, 10.49] Y[  0.00,  7.30] Z[  4.00,  4.20]
+  Slab_L1_Gallery_FrontCore                      X[ 10.49, 15.24] Y[  5.20,  7.30] Z[  4.00,  4.20]
+  Slab_Podium_Courtyard                          X[  3.48, 15.24] Y[  5.20, 23.00] Z[  0.65,  0.90]
+  Slab_Podium_Front                              X[  3.48, 10.49] Y[  0.00,  5.20] Z[  0.65,  0.90]
+  Solid_Ground_Front_Block                       X[  3.48, 10.49] Y[  0.00,  5.20] Z[ -2.00,  0.00]
+  Stair_B1_to_GF                                 X[ 12.69, 13.89] Y[  0.30,  5.06] Z[ -2.00,  0.99]
+  Stair_GF_to_L1                                 X[ 12.69, 13.89] Y[  0.30,  5.06] Z[  0.90,  3.89]
+  Stair_L1_to_L2                                 X[ 12.69, 13.89] Y[  0.30,  5.06] Z[  4.20,  7.19]
+  SunFin_Street_West_1                           X[  0.77,  0.83] Y[ -0.30,  0.00] Z[  4.20, 16.20]
+  SunFin_Street_West_10                          X[  6.17,  6.23] Y[ -0.30,  0.00] Z[  4.20, 16.20]
+  SunFin_Street_West_11                          X[  6.77,  6.83] Y[ -0.30,  0.00] Z[  4.20, 16.20]
+  SunFin_Street_West_12                          X[  7.57,  7.63] Y[ -0.30,  0.00] Z[  4.20, 16.20]
+  SunFin_Street_West_13                          X[  8.17,  8.23] Y[ -0.30,  0.00] Z[  4.20, 16.20]
+  SunFin_Street_West_14                          X[  8.77,  8.83] Y[ -0.30,  0.00] Z[  4.20, 16.20]
+  SunFin_Street_West_15                          X[  9.37,  9.43] Y[ -0.30,  0.00] Z[  4.20, 16.20]
+  SunFin_Street_West_16                          X[  9.97, 10.03] Y[ -0.30,  0.00] Z[  4.20, 16.20]
+  SunFin_Street_West_2                           X[  1.37,  1.43] Y[ -0.30,  0.00] Z[  4.20, 16.20]
+  SunFin_Street_West_3                           X[  1.97,  2.03] Y[ -0.30,  0.00] Z[  4.20, 16.20]
+  SunFin_Street_West_4                           X[  2.57,  2.63] Y[ -0.30,  0.00] Z[  4.20, 16.20]
+  SunFin_Street_West_5                           X[  3.17,  3.23] Y[ -0.30,  0.00] Z[  4.20, 16.20]
+  SunFin_Street_West_6                           X[  3.77,  3.83] Y[ -0.30,  0.00] Z[  4.20, 16.20]
+  SunFin_Street_West_7                           X[  4.37,  4.43] Y[ -0.30,  0.00] Z[  4.20, 16.20]
+  SunFin_Street_West_8                           X[  4.97,  5.03] Y[ -0.30,  0.00] Z[  4.20, 16.20]
+  SunFin_Street_West_9                           X[  5.57,  5.63] Y[ -0.30,  0.00] Z[  4.20, 16.20]
+  Wall_Retaining_North                           X[  0.00,  0.30] Y[  0.00, 30.48] Z[ -2.00,  0.90]
+  Wall_Retaining_South                           X[ 14.94, 15.24] Y[  0.00, 30.48] Z[ -2.00,  0.90]
+  Wall_Retaining_West                            X[  3.48, 15.24] Y[  0.00,  0.30] Z[ -2.00,  0.00]
+  (128 objects)
+
+--- FREE-SPACE PROBE (are candidate camera points inside geometry?) ---
+  L3 living A (2.6, 9.8, 11.75)            INSIDE: L3_2BedL_Spine_Wall
+  L3 living B (3.6, 9.8, 11.70)            clear
+  L3 living C (4.4, 9.8, 11.70)            clear
+  L3 living D (3.6, 10.6, 11.70)           clear
+  L3 living E (2.2, 10.6, 11.75)           INSIDE: L3_2BedL_Spine_Wall
+  L3 balcony  (6.95, 9.6, 11.75)           clear
+  L3 balcony  (6.90, 10.8, 11.75)          clear
+  L3 gallery  (14.3, 12.0, 11.75)          clear
+  Courtyard   (11.6, 7.6, 2.30)            clear
+  Courtyard   (12.4, 9.0, 2.30)            clear
+  Courtyard   (7.0, 8.0, 2.30)             clear
+  Colonnade   (5.0, 9.0, 2.30)             clear
+  Roof        (4.6, 17.2, 17.75)           clear
+  Roof        (3.0, 13.0, 17.75)           clear
+  Roof        (7.0, 14.0, 17.75)           clear
+  Street      (13.0, -31.0, 4.0)           clear
+  Street      (6.0, -26.0, 3.0)            clear
+====================================================================================================
+
+BlenderMCP addon unregistered
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

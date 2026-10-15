@@ -1,0 +1,381 @@
+﻿blender.exe : Traceback (most recent call last):
+At line:2 char:1
++ & $b -b "Courtyard Apartments 50x100 v3.blend" --python scripts\rende ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Traceback (most recent call last)::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  File "C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\modules\addon_utils.py", line 544, in enable
+    mod.register()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Roaming\Blender Foundation\Blender\5.2\extensions\blender_org\bonsai\__init__.py", line 
+269, in register
+    bonsai.bim.register()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Roaming\Blender 
+Foundation\Blender\5.2\extensions\.local\lib\python3.13\site-packages\bonsai\bim\__init__.py", line 292, in register
+    mod.register()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Roaming\Blender 
+Foundation\Blender\5.2\extensions\.local\lib\python3.13\site-packages\bonsai\bim\module\light\__init__.py", line 67, 
+in register
+    file.chmod(file.stat().st_mode | stat.S_IEXEC)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Blender Foundation\Blender 5.2\5.2\python\Lib\pathlib\_local.py", line 738, in chmod
+    os.chmod(self, mode, follow_symlinks=follow_symlinks)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [WinError 5] Access is denied: 'C:\\Users\\Admin\\AppData\\Roaming\\Blender 
+Foundation\\Blender\\5.2\\extensions\\.local\\lib\\python3.13\\site-packages\\pyradiance\\bin\\3ds2mgf.exe'
+Error in bpy.app.handlers.load_post[4]:
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Roaming\Blender 
+Foundation\Blender\5.2\extensions\.local\lib\python3.13\site-packages\bonsai\bim\handler.py", line 573, in load_post
+    _apply_user_preferences()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Roaming\Blender 
+Foundation\Blender\5.2\extensions\.local\lib\python3.13\site-packages\bonsai\bim\handler.py", line 470, in 
+_apply_user_preferences
+    if not preferences.should_setup_toolbar:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'should_setup_toolbar'
+00:12.360  blend            | Read blend: "C:\Users\Admin\Documents\Personal projects\Blender house design\Courtyard Apartments 50x100 v3.blend"
+Error in bpy.app.handlers.load_post[4]:
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Roaming\Blender 
+Foundation\Blender\5.2\extensions\.local\lib\python3.13\site-packages\bonsai\bim\handler.py", line 573, in load_post
+    _apply_user_preferences()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Roaming\Blender 
+Foundation\Blender\5.2\extensions\.local\lib\python3.13\site-packages\bonsai\bim\handler.py", line 470, in 
+_apply_user_preferences
+    if not preferences.should_setup_toolbar:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'should_setup_toolbar'
+Exception in module register(): C:\Users\Admin\AppData\Roaming\Blender Foundation\Blender\5.2\extensions\blender_org\bonsai\__init__.py
+BlenderMCP addon registered
+[v4     0.0s] mode=video out=C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2 shots=all
+[v4     0.0s] annotations/helpers hidden: 52
+[v4     0.0s] engine=BLENDER_EEVEE 810x1440 samples=20 quality=draft aspect=wide
+C:\Users\Admin\Documents\Personal projects\Blender house design\scripts\render_v4.py:195: DeprecationWarning: 
+'Material.use_nodes' is expected to be removed in Blender 6.0
+  m.use_nodes = True
+[v4     0.1s]   (skip) use_backtrace: 'Material' object has no attribute 'use_backtrace'
+[v4     0.1s] materials built: 31
+[v4     0.1s] material slots re-styled: 707
+[v4     0.1s] internal partitions plastered: 56
+[v4     5.6s] glazed openings cut: 43 panels across 28 walls (0 already open)
+[v4     5.6s] furniture re-dressed: 37
+[v4     5.6s] site context: 63 objects
+[v4     5.7s] planting cores darkened: 36
+[v4     5.9s]     leaf cards 'tree': 1019 cards
+[v4     5.9s]     leaf cards 'bed': 496 cards
+[v4     6.1s]     placed 'pot0': scale=1.746 bbox X[7.08,8.82] Y[8.43,10.01] Z[1.36,2.46]
+[v4     6.3s]     placed 'pot1': scale=1.229 bbox X[10.96,12.24] Y[10.05,11.20] Z[1.36,2.14]
+[v4     6.5s]     placed 'pot2': scale=1.302 bbox X[7.45,8.45] Y[18.62,19.58] Z[1.36,2.18]
+[v4     6.7s]     placed 'pot3': scale=1.297 bbox X[10.92,12.28] Y[17.73,18.96] Z[1.36,2.18]
+[v4     6.9s]     placed 'pot4': scale=1.541 bbox X[2.45,3.75] Y[10.99,12.19] Z[16.30,17.27]
+[v4     7.1s]     placed 'pot5': scale=1.523 bbox X[4.20,5.60] Y[13.70,14.97] Z[16.30,17.26]
+[v4     7.1s] potted plants placed: 6
+[v4     7.2s] glazing units given reveal frames: 41
+[v4     7.6s] balustrades given vertical-bar infill: 12
+[v4    13.7s] detail joined to 6 objects
+[v4    13.7s] detail objects: 6
+[v4    36.2s] bevelled structural objects: 163
+[v4    36.8s] box-projected UVs: 780 meshes / 21813 faces
+C:\Users\Admin\Documents\Personal projects\Blender house design\scripts\render_v4.py:1242: DeprecationWarning: 
+'World.use_nodes' is expected to be removed in Blender 6.0
+  w.use_nodes = True
+[v4    36.8s] 8 cameras placed
+[v4    36.8s]   !! camera 01_Courtyard_Garden inside V4_Cards_bed
+[v4    36.8s]   !! camera 04_LivingRoom_L3 inside V4_Cards_bed
+[v4    36.8s]   !! camera 05_L3_Gallery_Overlook inside V4_Cards_bed
+[v4    36.8s] camera clearance: 3 problem(s)
+[v4    36.8s] video 'orbit': 240 frames from 1, 810x1440, out=C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit
+01:31.094  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00001.png'
+[v4    78.5s]   frame 1/240  41.7s  elapsed 0.7 min  eta 166.2 min
+01:42.313  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00002.png'
+01:53.750  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00003.png'
+02:05.157  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00004.png'
+02:16.578  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00005.png'
+02:28.157  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00006.png'
+02:39.532  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00007.png'
+02:50.969  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00008.png'
+[v4   158.4s]   frame 8/240  11.4s  elapsed 2.0 min  eta 58.8 min
+03:02.344  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00009.png'
+03:13.750  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00010.png'
+03:25.110  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00011.png'
+03:37.219  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00012.png'
+03:48.953  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00013.png'
+04:01.000  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00014.png'
+04:12.688  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00015.png'
+04:24.297  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00016.png'
+[v4   251.8s]   frame 16/240  11.7s  elapsed 3.6 min  eta 50.2 min
+04:35.860  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00017.png'
+04:47.250  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00018.png'
+04:58.672  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00019.png'
+05:09.938  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00020.png'
+[v4   297.4s]   cooldown 15s after 20 frames
+05:36.313  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00021.png'
+05:47.469  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00022.png'
+05:58.766  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00023.png'
+06:10.016  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00024.png'
+[v4   357.4s]   frame 24/240  11.3s  elapsed 5.3 min  eta 48.1 min
+06:21.313  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00025.png'
+06:32.657  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00026.png'
+06:43.891  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00027.png'
+06:55.188  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00028.png'
+07:06.469  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00029.png'
+07:17.828  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00030.png'
+07:29.157  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00031.png'
+07:40.469  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00032.png'
+[v4   447.9s]   frame 32/240  11.3s  elapsed 6.9 min  eta 44.5 min
+07:51.766  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00033.png'
+08:03.203  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00034.png'
+08:14.688  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00035.png'
+08:26.172  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00036.png'
+08:37.672  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00037.png'
+08:49.563  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00038.png'
+09:01.047  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00039.png'
+09:12.469  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00040.png'
+[v4   540.0s]   frame 40/240  11.5s  elapsed 8.4 min  eta 41.9 min
+[v4   540.0s]   cooldown 15s after 40 frames
+09:38.875  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00041.png'
+09:50.250  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00042.png'
+10:01.703  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00043.png'
+10:13.235  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00044.png'
+10:24.735  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00045.png'
+10:36.235  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00046.png'
+10:47.688  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00047.png'
+10:59.219  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00048.png'
+[v4   646.6s]   frame 48/240  11.5s  elapsed 10.2 min  eta 40.7 min
+11:10.719  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00049.png'
+11:22.250  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00050.png'
+11:33.875  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00051.png'
+11:45.453  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00052.png'
+11:57.063  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00053.png'
+12:08.625  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00054.png'
+12:20.328  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00055.png'
+12:32.157  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00056.png'
+[v4   739.6s]   frame 56/240  11.9s  elapsed 11.7 min  eta 38.5 min
+12:43.953  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00057.png'
+12:55.703  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00058.png'
+13:07.375  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00059.png'
+13:19.172  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00060.png'
+[v4   786.6s]   cooldown 15s after 60 frames
+13:45.688  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00061.png'
+13:57.375  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00062.png'
+14:09.125  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00063.png'
+14:20.969  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00064.png'
+[v4   848.4s]   frame 64/240  11.8s  elapsed 13.5 min  eta 37.2 min
+14:32.985  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00065.png'
+14:45.360  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00066.png'
+14:57.297  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00067.png'
+15:09.407  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00068.png'
+15:21.360  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00069.png'
+15:33.282  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00070.png'
+15:45.250  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00071.png'
+15:57.157  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00072.png'
+[v4   944.6s]   frame 72/240  11.9s  elapsed 15.1 min  eta 35.3 min
+16:09.235  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00073.png'
+16:21.297  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00074.png'
+16:33.344  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00075.png'
+16:45.500  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00076.png'
+16:57.735  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00077.png'
+17:10.000  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00078.png'
+17:22.328  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00079.png'
+17:34.782  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00080.png'
+[v4  1042.2s]   frame 80/240  12.4s  elapsed 16.8 min  eta 33.5 min
+[v4  1042.2s]   cooldown 15s after 80 frames
+18:02.282  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00081.png'
+18:15.125  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00082.png'
+18:27.578  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00083.png'
+18:39.985  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00084.png'
+18:52.422  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00085.png'
+19:05.016  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00086.png'
+19:17.797  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00087.png'
+19:30.563  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00088.png'
+[v4  1158.0s]   frame 88/240  12.7s  elapsed 18.7 min  eta 32.3 min
+19:43.375  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00089.png'
+19:56.188  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00090.png'
+20:09.047  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00091.png'
+20:21.922  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00092.png'
+20:34.875  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00093.png'
+20:48.203  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00094.png'
+21:01.157  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00095.png'
+21:14.188  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00096.png'
+[v4  1261.6s]   frame 96/240  13.0s  elapsed 20.4 min  eta 30.6 min
+21:27.172  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00097.png'
+21:40.266  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00098.png'
+21:53.422  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00099.png'
+22:06.594  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00100.png'
+[v4  1314.0s]   cooldown 15s after 100 frames
+22:35.063  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00101.png'
+22:48.328  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00102.png'
+23:01.657  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00103.png'
+23:14.969  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00104.png'
+[v4  1382.4s]   frame 104/240  13.3s  elapsed 22.4 min  eta 29.3 min
+23:28.203  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00105.png'
+23:41.516  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00106.png'
+23:54.875  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00107.png'
+24:08.547  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00108.png'
+24:21.922  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00109.png'
+24:35.375  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00110.png'
+24:48.891  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00111.png'
+25:02.594  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00112.png'
+[v4  1490.0s]   frame 112/240  13.6s  elapsed 24.2 min  eta 27.7 min
+25:16.266  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00113.png'
+25:30.047  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00114.png'
+25:44.563  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00115.png'
+25:59.125  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00116.png'
+26:13.813  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00117.png'
+26:28.844  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00118.png'
+26:43.469  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00119.png'
+26:58.063  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00120.png'
+[v4  1605.5s]   frame 120/240  14.6s  elapsed 26.1 min  eta 26.1 min
+[v4  1605.5s]   cooldown 15s after 120 frames
+27:27.500  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00121.png'
+27:42.000  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00122.png'
+27:56.766  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00123.png'
+28:11.516  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00124.png'
+28:26.266  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00125.png'
+28:41.250  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00126.png'
+28:56.266  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00127.png'
+29:11.157  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00128.png'
+[v4  1738.6s]   frame 128/240  14.9s  elapsed 28.4 min  eta 24.8 min
+29:26.078  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00129.png'
+29:41.000  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00130.png'
+29:55.891  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00131.png'
+30:10.750  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00132.png'
+30:25.610  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00133.png'
+30:40.547  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00134.png'
+30:55.516  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00135.png'
+31:10.328  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00136.png'
+[v4  1857.8s]   frame 136/240  14.8s  elapsed 30.3 min  eta 23.2 min
+31:25.157  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00137.png'
+31:40.000  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00138.png'
+31:54.891  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00139.png'
+32:10.125  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00140.png'
+[v4  1917.5s]   cooldown 15s after 140 frames
+32:41.532  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00141.png'
+32:57.828  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00142.png'
+33:14.141  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00143.png'
+33:30.516  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00144.png'
+[v4  1997.9s]   frame 144/240  16.3s  elapsed 32.7 min  eta 21.8 min
+33:46.860  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00145.png'
+34:03.203  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00146.png'
+34:19.641  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00147.png'
+34:36.063  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00148.png'
+34:52.578  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00149.png'
+35:09.157  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00150.png'
+35:25.657  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00151.png'
+35:42.266  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00152.png'
+[v4  2129.7s]   frame 152/240  16.6s  elapsed 34.9 min  eta 20.2 min
+35:58.813  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00153.png'
+36:15.594  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00154.png'
+36:32.219  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00155.png'
+36:48.813  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00156.png'
+37:05.391  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00157.png'
+37:22.000  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00158.png'
+37:38.610  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00159.png'
+37:55.219  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00160.png'
+[v4  2262.6s]   frame 160/240  16.6s  elapsed 37.1 min  eta 18.5 min
+[v4  2262.6s]   cooldown 15s after 160 frames
+38:26.875  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00161.png'
+38:43.532  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00162.png'
+39:00.219  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00163.png'
+39:16.844  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00164.png'
+39:33.360  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00165.png'
+39:49.797  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00166.png'
+40:06.078  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00167.png'
+40:22.313  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00168.png'
+[v4  2409.7s]   frame 168/240  16.2s  elapsed 39.5 min  eta 16.9 min
+40:38.625  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00169.png'
+40:54.938  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00170.png'
+41:11.235  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00171.png'
+41:27.688  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00172.png'
+41:44.203  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00173.png'
+42:00.735  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00174.png'
+42:17.391  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00175.png'
+42:33.969  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00176.png'
+[v4  2541.4s]   frame 176/240  16.5s  elapsed 41.7 min  eta 15.2 min
+42:50.469  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00177.png'
+43:07.000  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00178.png'
+43:23.485  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00179.png'
+43:39.985  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00180.png'
+[v4  2607.4s]   cooldown 15s after 180 frames
+44:11.500  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00181.png'
+44:28.016  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00182.png'
+44:44.547  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00183.png'
+45:01.063  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00184.png'
+[v4  2688.5s]   frame 184/240  16.5s  elapsed 44.2 min  eta 13.5 min
+45:17.750  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00185.png'
+45:34.485  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00186.png'
+45:51.063  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00187.png'
+46:07.641  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00188.png'
+46:24.032  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00189.png'
+46:40.485  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00190.png'
+46:56.985  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00191.png'
+47:13.625  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00192.png'
+[v4  2821.0s]   frame 192/240  16.6s  elapsed 46.4 min  eta 11.6 min
+47:30.047  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00193.png'
+47:46.485  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00194.png'
+48:02.922  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00195.png'
+48:19.313  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00196.png'
+48:35.719  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00197.png'
+48:52.125  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00198.png'
+49:08.532  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00199.png'
+49:24.922  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00200.png'
+[v4  2952.4s]   frame 200/240  16.4s  elapsed 48.6 min  eta 9.7 min
+[v4  2952.4s]   cooldown 15s after 200 frames
+49:56.313  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00201.png'
+50:12.766  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00202.png'
+50:29.141  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00203.png'
+50:45.516  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00204.png'
+51:01.828  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00205.png'
+51:18.094  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00206.png'
+51:34.375  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00207.png'
+51:50.657  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00208.png'
+[v4  3098.1s]   frame 208/240  16.3s  elapsed 51.0 min  eta 7.8 min
+52:07.047  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00209.png'
+52:23.547  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00210.png'
+52:39.782  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00211.png'
+52:56.078  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00212.png'
+53:12.328  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00213.png'
+53:28.547  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00214.png'
+53:44.735  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00215.png'
+54:00.953  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00216.png'
+[v4  3228.4s]   frame 216/240  16.2s  elapsed 53.2 min  eta 5.9 min
+54:17.219  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00217.png'
+54:33.469  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00218.png'
+54:49.719  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00219.png'
+55:05.844  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00220.png'
+[v4  3293.3s]   cooldown 15s after 220 frames
+55:37.016  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00221.png'
+55:53.235  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00222.png'
+56:09.344  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00223.png'
+56:25.453  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00224.png'
+[v4  3372.9s]   frame 224/240  16.1s  elapsed 55.6 min  eta 4.0 min
+56:41.485  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00225.png'
+56:57.563  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00226.png'
+57:13.625  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00227.png'
+57:29.625  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00228.png'
+57:45.797  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00229.png'
+58:01.782  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00230.png'
+58:17.875  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00231.png'
+58:34.141  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00232.png'
+[v4  3501.6s]   frame 232/240  16.2s  elapsed 57.7 min  eta 2.0 min
+58:50.235  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00233.png'
+59:06.250  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00234.png'
+59:22.282  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00235.png'
+59:38.422  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00236.png'
+59:54.407  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00237.png'
+01:00:10.328  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00238.png'
+01:00:26.422  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00239.png'
+01:00:42.453  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video2\video_orbit\f00240.png'
+[v4  3629.9s]   frame 240/240  16.0s  elapsed 59.9 min  eta 0.0 min
+[v4  3629.9s] video frames complete in 59.9 min
+[v4  3629.9s] video done
+BlenderMCP addon unregistered
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

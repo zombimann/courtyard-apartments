@@ -1,0 +1,115 @@
+﻿blender.exe : Traceback (most recent call last):
+At line:4 char:1
++ & $b -b "Courtyard Apartments 50x100 v3.blend" --python scripts\rende ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Traceback (most recent call last)::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  File "C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\modules\addon_utils.py", line 544, in enable
+    mod.register()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Roaming\Blender Foundation\Blender\5.2\extensions\blender_org\bonsai\__init__.py", line 
+269, in register
+    bonsai.bim.register()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Roaming\Blender 
+Foundation\Blender\5.2\extensions\.local\lib\python3.13\site-packages\bonsai\bim\__init__.py", line 292, in register
+    mod.register()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Roaming\Blender 
+Foundation\Blender\5.2\extensions\.local\lib\python3.13\site-packages\bonsai\bim\module\light\__init__.py", line 67, 
+in register
+    file.chmod(file.stat().st_mode | stat.S_IEXEC)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Blender Foundation\Blender 5.2\5.2\python\Lib\pathlib\_local.py", line 738, in chmod
+    os.chmod(self, mode, follow_symlinks=follow_symlinks)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [WinError 5] Access is denied: 'C:\\Users\\Admin\\AppData\\Roaming\\Blender 
+Foundation\\Blender\\5.2\\extensions\\.local\\lib\\python3.13\\site-packages\\pyradiance\\bin\\3ds2mgf.exe'
+00:27.828  blend            | Read blend: "C:\Users\Admin\Documents\Personal projects\Blender house design\Courtyard Apartments 50x100 v3.blend"
+Error in bpy.app.handlers.load_post[4]:
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Roaming\Blender 
+Foundation\Blender\5.2\extensions\.local\lib\python3.13\site-packages\bonsai\bim\handler.py", line 573, in load_post
+    _apply_user_preferences()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Roaming\Blender 
+Foundation\Blender\5.2\extensions\.local\lib\python3.13\site-packages\bonsai\bim\handler.py", line 470, in 
+_apply_user_preferences
+    if not preferences.should_setup_toolbar:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'should_setup_toolbar'
+Error in bpy.app.handlers.load_post[4]:
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Roaming\Blender 
+Foundation\Blender\5.2\extensions\.local\lib\python3.13\site-packages\bonsai\bim\handler.py", line 573, in load_post
+    _apply_user_preferences()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Roaming\Blender 
+Foundation\Blender\5.2\extensions\.local\lib\python3.13\site-packages\bonsai\bim\handler.py", line 470, in 
+_apply_user_preferences
+    if not preferences.should_setup_toolbar:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'should_setup_toolbar'
+Exception in module register(): C:\Users\Admin\AppData\Roaming\Blender Foundation\Blender\5.2\extensions\blender_org\bonsai\__init__.py
+BlenderMCP addon registered
+[hero] output -> C:\Users\Admin\Documents\Personal projects\Blender house design\render\hero
+[hero] shot filter: all
+[hero] annotation/helper objects hidden from render: 52
+[hero] engine=BLENDER_EEVEE 1920x1080 samples=96 quality=final view=Khronos PBR Neutral/None
+[hero] compositor unavailable ('CompositorNodeGlare' object has no attribute 'glare_type'); rendering without bloom
+C:\Users\Admin\Documents\Personal projects\Blender house design\scripts\render_hero_v3.py:231: DeprecationWarning: 
+'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat.use_nodes = True
+[hero] materials rebuilt: 24 ok, 0 failed
+[hero] glazed wall openings cut: 43 panel(s) across 28 wall(s); 0 panel(s) were already in an opening
+[hero] furniture re-dressed: 37 object(s)
+[hero] site context built: 56 objects
+[hero] foliage meshes subdivided + displaced: 36
+[hero] leaf clusters added: 65980 faces / 3299 clumps over 36 planting masses
+[hero] planting cores darkened: 36 mesh(es) -> Mat_Foliage_Core
+C:\Users\Admin\Documents\Personal projects\Blender house design\scripts\render_hero_v3.py:1106: DeprecationWarning: 
+'World.use_nodes' is expected to be removed in Blender 6.0
+  world.use_nodes = True
+[hero]   (skip) use_soft_falloff: 'SunLight' object has no attribute 'use_soft_falloff'
+[hero] 6 hero cameras placed
+[hero] camera clearance check: 0 problem(s)
+[hero]   ray 01: GF_Tree_Stem_1(Mat_Tree_Trunk)@7.2m -> GF_Tree_Stem_1(Mat_Tree_Trunk)@7.4m -> L1_2BedR_Loggia_Rail_South(Mat_Dark_Steel)@14.9m -> L1_2BedR_Loggia_Rail_South(Mat_Dark_Steel)@15.0m -> L1_2BedR_Loggia_Planter(Mat_ISSB_Terracotta)@15.3m -> L1_2BedR_Part_Spine_Rear(Mat_ISSB_Terracotta)@20.3m -> L1_2BedR_Part_Spine_Rear(Mat_ISSB_Terracotta)@20.5m
+[hero]   ray 02: Hero_LeafClusters(Mat_Garden_Foliage)@12.4m -> Hero_LeafClusters(Mat_Garden_Foliage)@12.5m -> Hero_LeafClusters(Mat_Garden_Foliage)@12.7m -> Hero_LeafClusters(Mat_Garden_Foliage)@12.8m -> GF_Tree_Canopy_1(Mat_Foliage_Core)@12.8m -> GF_Tree_Canopy_2(Mat_Foliage_Core)@12.9m -> Hero_LeafClusters(Mat_Garden_Foliage)@12.9m
+[hero]   ray 03: L2_1Bed_Wall_Street_Kit(Mat_Stone_Render)@31.1m -> L2_1Bed_Living_Glazing(Mat_Glass_Arch)@32.3m -> L2_1Bed_Living_Glazing(Mat_Glass_Arch)@32.4m -> L2_1Bed_Wall_Gallery_Rear(Mat_ISSB_Terracotta)@37.0m -> L2_1Bed_Wall_Gallery_Rear(Mat_ISSB_Terracotta)@37.2m -> Slab_L3_FrontBlock(Mat_RC_Slab)@38.3m -> Slab_L3_LeftWing(Mat_RC_Slab)@38.7m
+[hero]   ray 04: L3_2BedL_Living_Glaze(Mat_Glass_Arch)@3.0m -> L3_2BedL_Living_Glaze(Mat_Glass_Arch)@3.1m -> Col_L3_x6.30_y11.2(Mat_Concrete)@3.3m -> Hero_LeafClusters(Mat_Garden_Foliage)@4.1m -> Hero_LeafClusters(Mat_Garden_Foliage)@4.2m -> Hero_LeafClusters(Mat_Garden_Foliage)@4.3m -> Hero_LeafClusters(Mat_Garden_Foliage)@4.3m
+[hero]   ray 05: Col_L2_x6.30_y15.1(Mat_Concrete)@9.1m -> Col_L2_x6.30_y15.1(Mat_Concrete)@9.1m -> L2_2BedL_Courtyard_Wall(Mat_ISSB_Terracotta)@9.3m -> L2_2BedL_Courtyard_Wall(Mat_ISSB_Terracotta)@9.4m -> Slab_L2_LeftWing(Mat_RC_Slab)@10.5m -> Slab_L2_LeftWing(Mat_RC_Slab)@11.0m -> L1_2BedL_Spine_Wall(Mat_ISSB_Terracotta)@13.9m
+[hero]   ray 06: Parapet_Roof_West(Mat_Concrete)@17.5m -> Parapet_Roof_North(Mat_Concrete)@17.5m -> Parapet_Roof_North(Mat_Concrete)@17.8m -> Site_Ground(Mat_Site_Asphalt)@424.2m -> sky
+[hero]   L3_2BedL_Courtyard_Wall: 20 polys after opening cuts
+[hero]   L2_2BedL_Courtyard_Wall: 20 polys after opening cuts
+[hero] rendering 6 shot(s)
+[hero] 
+[hero] ==========================================================================
+[hero]   01_Courtyard_Garden  (courtyard rig, 20 mm)
+[hero]   Eye level on the podium at the courtyard's west end, looking east under the feature tree down the light-well: lawn, north-wing colonnade and stacked balconies left, south gallery right.
+[hero] ==========================================================================
+[hero] rig 'courtyard': sun bearing=231.0 elev=73.0 dir=(0.184,-0.227,0.956) energy=6.40 sky=0.25 exp=-0.10
+07:28.719  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\hero\01_Courtyard_Garden.png'
+[hero]   -> C:\Users\Admin\Documents\Personal projects\Blender house design\render\hero\01_Courtyard_Garden.png  (2225 KB, 402.0s)
+[hero] 
+[hero] ==========================================================================
+[hero]   02_Courtyard_Void_Aerial  (courtyard rig, 45 mm)
+[hero]   High above the west end looking down the void (camera rolled 90 deg so the 15.7 m slot runs across the 16:9 frame): garden layout, tree canopy from above, all four balcony tiers and the colonnade arcade.
+[hero] ==========================================================================
+[hero] rig 'courtyard': sun bearing=231.0 elev=73.0 dir=(0.184,-0.227,0.956) energy=6.40 sky=0.25 exp=-0.10
+12:58.500  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\hero\02_Courtyard_Void_Aerial.png'
+[hero]   -> C:\Users\Admin\Documents\Personal projects\Blender house design\render\hero\02_Courtyard_Void_Aerial.png  (2406 KB, 329.8s)
+[hero] 
+[hero] ==========================================================================
+[hero]   03_Street_Facade  (golden rig, 28 mm)
+[hero]   From the carriageway at golden hour: the full 20 m west elevation, timber fins, car portal, guardhouse, pedestrian gate.
+[hero] ==========================================================================
+[hero] rig 'golden': sun bearing=214.0 elev=11.0 dir=(0.814,-0.549,0.191) energy=5.60 sky=0.22 exp=+0.10
+15:05.047  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\hero\03_Street_Facade.png'
+[hero]   -> C:\Users\Admin\Documents\Personal projects\Blender house design\render\hero\03_Street_Facade.png  (1943 KB, 126.4s)
+[hero] 
+[hero] ==========================================================================
+[hero]   04_LivingRoom_L3_Courtyard  (courtyard rig, 24 mm)
+[hero]   Inside the north-wing L3 living room (clear space X 2.55-6.15, Y 7.30-13.50), looking through the 3.5 m glazed wall across the void.
+[hero] ==========================================================================
+[hero] rig 'courtyard': sun bearing=231.0 elev=73.0 dir=(0.184,-0.227,0.956) energy=6.40 sky=0.25 exp=-0.10

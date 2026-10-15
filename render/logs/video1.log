@@ -1,0 +1,381 @@
+﻿blender.exe : Traceback (most recent call last):
+At line:3 char:1
++ & $b -b "Courtyard Apartments 50x100 v3.blend" --python scripts\rende ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Traceback (most recent call last)::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  File "C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\modules\addon_utils.py", line 544, in enable
+    mod.register()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Roaming\Blender Foundation\Blender\5.2\extensions\blender_org\bonsai\__init__.py", line 
+269, in register
+    bonsai.bim.register()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Roaming\Blender 
+Foundation\Blender\5.2\extensions\.local\lib\python3.13\site-packages\bonsai\bim\__init__.py", line 292, in register
+    mod.register()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Roaming\Blender 
+Foundation\Blender\5.2\extensions\.local\lib\python3.13\site-packages\bonsai\bim\module\light\__init__.py", line 67, 
+in register
+    file.chmod(file.stat().st_mode | stat.S_IEXEC)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Blender Foundation\Blender 5.2\5.2\python\Lib\pathlib\_local.py", line 738, in chmod
+    os.chmod(self, mode, follow_symlinks=follow_symlinks)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [WinError 5] Access is denied: 'C:\\Users\\Admin\\AppData\\Roaming\\Blender 
+Foundation\\Blender\\5.2\\extensions\\.local\\lib\\python3.13\\site-packages\\pyradiance\\bin\\3ds2mgf.exe'
+Error in bpy.app.handlers.load_post[4]:
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Roaming\Blender 
+Foundation\Blender\5.2\extensions\.local\lib\python3.13\site-packages\bonsai\bim\handler.py", line 573, in load_post
+    _apply_user_preferences()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Roaming\Blender 
+Foundation\Blender\5.2\extensions\.local\lib\python3.13\site-packages\bonsai\bim\handler.py", line 470, in 
+_apply_user_preferences
+    if not preferences.should_setup_toolbar:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'should_setup_toolbar'
+00:13.688  blend            | Read blend: "C:\Users\Admin\Documents\Personal projects\Blender house design\Courtyard Apartments 50x100 v3.blend"
+Error in bpy.app.handlers.load_post[4]:
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Roaming\Blender 
+Foundation\Blender\5.2\extensions\.local\lib\python3.13\site-packages\bonsai\bim\handler.py", line 573, in load_post
+    _apply_user_preferences()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Roaming\Blender 
+Foundation\Blender\5.2\extensions\.local\lib\python3.13\site-packages\bonsai\bim\handler.py", line 470, in 
+_apply_user_preferences
+    if not preferences.should_setup_toolbar:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'should_setup_toolbar'
+Exception in module register(): C:\Users\Admin\AppData\Roaming\Blender Foundation\Blender\5.2\extensions\blender_org\bonsai\__init__.py
+BlenderMCP addon registered
+[v4     0.0s] mode=video out=C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1 shots=all
+[v4     0.0s] annotations/helpers hidden: 52
+[v4     0.0s] engine=BLENDER_EEVEE 810x1440 samples=20 quality=draft aspect=wide
+C:\Users\Admin\Documents\Personal projects\Blender house design\scripts\render_v4.py:195: DeprecationWarning: 
+'Material.use_nodes' is expected to be removed in Blender 6.0
+  m.use_nodes = True
+[v4     0.1s]   (skip) use_backtrace: 'Material' object has no attribute 'use_backtrace'
+[v4     0.1s] materials built: 31
+[v4     0.1s] material slots re-styled: 707
+[v4     0.1s] internal partitions plastered: 56
+[v4     5.8s] glazed openings cut: 43 panels across 28 walls (0 already open)
+[v4     5.8s] furniture re-dressed: 37
+[v4     5.8s] site context: 63 objects
+[v4     5.8s] planting cores darkened: 36
+[v4     6.0s]     leaf cards 'tree': 1019 cards
+[v4     6.0s]     leaf cards 'bed': 496 cards
+[v4     6.3s]     placed 'pot0': scale=1.746 bbox X[7.08,8.82] Y[8.43,10.01] Z[1.36,2.46]
+[v4     6.5s]     placed 'pot1': scale=1.229 bbox X[10.96,12.24] Y[10.05,11.20] Z[1.36,2.14]
+[v4     6.7s]     placed 'pot2': scale=1.302 bbox X[7.45,8.45] Y[18.62,19.58] Z[1.36,2.18]
+[v4     6.9s]     placed 'pot3': scale=1.297 bbox X[10.92,12.28] Y[17.73,18.96] Z[1.36,2.18]
+[v4     7.1s]     placed 'pot4': scale=1.541 bbox X[2.45,3.75] Y[10.99,12.19] Z[16.30,17.27]
+[v4     7.3s]     placed 'pot5': scale=1.523 bbox X[4.20,5.60] Y[13.70,14.97] Z[16.30,17.26]
+[v4     7.3s] potted plants placed: 6
+[v4     7.3s] glazing units given reveal frames: 41
+[v4     7.8s] balustrades given vertical-bar infill: 12
+[v4    14.5s] detail joined to 6 objects
+[v4    14.5s] detail objects: 6
+[v4    41.0s] bevelled structural objects: 163
+[v4    41.6s] box-projected UVs: 780 meshes / 21813 faces
+C:\Users\Admin\Documents\Personal projects\Blender house design\scripts\render_v4.py:1242: DeprecationWarning: 
+'World.use_nodes' is expected to be removed in Blender 6.0
+  w.use_nodes = True
+[v4    41.6s] 8 cameras placed
+[v4    41.6s]   !! camera 01_Courtyard_Garden inside V4_Cards_bed
+[v4    41.6s]   !! camera 04_LivingRoom_L3 inside V4_Cards_bed
+[v4    41.6s]   !! camera 05_L3_Gallery_Overlook inside V4_Cards_bed
+[v4    41.6s] camera clearance: 3 problem(s)
+[v4    41.6s] video 'fly': 240 frames from 1, 810x1440, out=C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly
+01:43.563  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00001.png'
+[v4    89.6s]   frame 1/240  48.1s  elapsed 0.8 min  eta 191.4 min
+02:00.422  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00002.png'
+02:17.281  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00003.png'
+02:34.141  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00004.png'
+02:50.969  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00005.png'
+03:07.797  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00006.png'
+03:24.563  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00007.png'
+03:41.344  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00008.png'
+[v4   207.4s]   frame 8/240  16.8s  elapsed 2.8 min  eta 80.2 min
+03:58.250  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00009.png'
+04:15.485  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00010.png'
+04:32.797  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00011.png'
+04:50.188  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00012.png'
+05:07.578  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00013.png'
+05:24.953  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00014.png'
+05:42.735  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00015.png'
+06:00.922  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00016.png'
+[v4   347.1s]   frame 16/240  18.2s  elapsed 5.1 min  eta 71.3 min
+06:20.110  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00017.png'
+06:43.578  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00018.png'
+07:05.485  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00019.png'
+07:27.172  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00020.png'
+[v4   433.3s]   cooldown 15s after 20 frames
+07:59.953  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00021.png'
+08:17.766  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00022.png'
+08:36.938  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00023.png'
+08:58.078  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00024.png'
+[v4   524.2s]   frame 24/240  21.1s  elapsed 8.0 min  eta 72.4 min
+09:19.031  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00025.png'
+09:40.000  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00026.png'
+10:00.938  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00027.png'
+10:22.000  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00028.png'
+10:43.672  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00029.png'
+11:05.110  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00030.png'
+11:26.641  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00031.png'
+11:49.047  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00032.png'
+[v4   695.2s]   frame 32/240  22.4s  elapsed 10.9 min  eta 70.8 min
+12:11.063  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00033.png'
+12:33.047  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00034.png'
+12:54.906  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00035.png'
+13:16.469  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00036.png'
+13:39.250  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00037.png'
+14:02.141  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00038.png'
+14:23.516  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00039.png'
+14:45.844  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00040.png'
+[v4   872.0s]   frame 40/240  22.3s  elapsed 13.8 min  eta 69.2 min
+[v4   872.0s]   cooldown 15s after 40 frames
+15:20.156  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00041.png'
+15:39.360  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00042.png'
+16:04.485  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00043.png'
+16:35.594  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00044.png'
+17:07.563  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00045.png'
+17:40.797  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00046.png'
+18:12.719  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00047.png'
+18:44.938  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00048.png'
+[v4  1111.1s]   frame 48/240  32.2s  elapsed 17.8 min  eta 71.3 min
+19:16.813  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00049.png'
+19:45.922  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00050.png'
+20:13.906  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00051.png'
+20:40.110  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00052.png'
+21:08.672  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00053.png'
+21:34.844  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00054.png'
+21:59.875  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00055.png'
+22:24.922  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00056.png'
+[v4  1331.0s]   frame 56/240  25.0s  elapsed 21.5 min  eta 70.6 min
+22:50.625  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00057.png'
+23:17.203  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00058.png'
+23:43.360  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00059.png'
+24:09.672  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00060.png'
+[v4  1435.8s]   cooldown 15s after 60 frames
+24:50.266  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00061.png'
+25:15.297  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00062.png'
+25:43.922  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00063.png'
+26:11.906  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00064.png'
+[v4  1558.0s]   frame 64/240  28.0s  elapsed 25.3 min  eta 69.5 min
+26:40.438  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00065.png'
+27:12.172  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00066.png'
+27:41.656  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00067.png'
+28:13.656  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00068.png'
+28:45.641  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00069.png'
+29:15.172  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00070.png'
+29:50.766  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00071.png'
+30:28.594  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00072.png'
+[v4  1814.7s]   frame 72/240  37.8s  elapsed 29.6 min  eta 69.0 min
+31:04.110  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00073.png'
+31:35.188  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00074.png'
+32:06.000  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00075.png'
+32:35.766  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00076.png'
+33:05.219  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00077.png'
+33:27.735  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00078.png'
+34:02.938  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00079.png'
+34:39.391  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00080.png'
+[v4  2065.5s]   frame 80/240  36.4s  elapsed 33.7 min  eta 67.5 min
+[v4  2065.5s]   cooldown 15s after 80 frames
+35:34.110  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00081.png'
+36:14.110  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00082.png'
+36:53.985  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00083.png'
+37:33.672  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00084.png'
+38:11.516  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00085.png'
+38:49.469  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00086.png'
+39:25.469  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00087.png'
+40:02.906  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00088.png'
+[v4  2389.0s]   frame 88/240  37.4s  elapsed 39.1 min  eta 67.6 min
+40:34.422  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00089.png'
+41:07.672  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00090.png'
+41:36.281  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00091.png'
+42:02.969  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00092.png'
+42:26.406  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00093.png'
+42:54.672  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00094.png'
+43:21.125  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00095.png'
+43:47.906  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00096.png'
+[v4  2614.0s]   frame 96/240  26.8s  elapsed 42.9 min  eta 64.3 min
+44:11.828  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00097.png'
+44:32.906  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00098.png'
+44:54.125  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00099.png'
+45:13.766  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00100.png'
+[v4  2699.9s]   cooldown 15s after 100 frames
+45:47.688  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00101.png'
+46:05.844  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00102.png'
+46:25.328  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00103.png'
+46:45.313  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00104.png'
+[v4  2791.4s]   frame 104/240  20.0s  elapsed 45.8 min  eta 59.9 min
+47:07.531  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00105.png'
+47:31.000  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00106.png'
+47:55.485  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00107.png'
+48:18.063  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00108.png'
+48:41.750  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00109.png'
+49:04.813  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00110.png'
+49:21.938  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00111.png'
+49:37.891  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00112.png'
+[v4  2964.0s]   frame 112/240  16.0s  elapsed 48.7 min  eta 55.7 min
+49:53.813  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00113.png'
+50:09.000  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00114.png'
+50:23.906  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00115.png'
+50:38.813  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00116.png'
+50:53.297  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00117.png'
+51:06.750  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00118.png'
+51:19.547  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00119.png'
+51:31.391  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00120.png'
+[v4  3077.5s]   frame 120/240  11.8s  elapsed 50.6 min  eta 50.6 min
+[v4  3077.5s]   cooldown 15s after 120 frames
+51:58.766  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00121.png'
+52:08.547  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00122.png'
+52:22.016  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00123.png'
+52:35.563  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00124.png'
+52:47.860  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00125.png'
+52:59.703  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00126.png'
+53:12.797  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00127.png'
+53:26.469  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00128.png'
+[v4  3192.6s]   frame 128/240  13.7s  elapsed 52.5 min  eta 46.0 min
+53:39.938  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00129.png'
+53:54.031  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00130.png'
+54:06.969  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00131.png'
+54:19.844  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00132.png'
+54:33.766  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00133.png'
+54:47.188  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00134.png'
+55:00.688  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00135.png'
+55:15.375  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00136.png'
+[v4  3301.5s]   frame 136/240  14.7s  elapsed 54.3 min  eta 41.5 min
+55:36.141  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00137.png'
+55:52.141  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00138.png'
+56:15.235  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00139.png'
+56:37.500  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00140.png'
+[v4  3383.6s]   cooldown 15s after 140 frames
+57:15.156  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00141.png'
+57:36.844  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00142.png'
+57:58.938  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00143.png'
+58:19.391  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00144.png'
+[v4  3485.5s]   frame 144/240  20.4s  elapsed 57.4 min  eta 38.3 min
+58:40.969  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00145.png'
+59:02.797  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00146.png'
+59:24.875  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00147.png'
+59:47.141  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00148.png'
+01:00:09.375  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00149.png'
+01:00:31.672  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00150.png'
+01:00:54.344  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00151.png'
+01:01:17.188  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00152.png'
+[v4  3663.3s]   frame 152/240  22.8s  elapsed 60.4 min  eta 34.9 min
+01:01:47.328  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00153.png'
+01:02:10.203  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00154.png'
+01:02:42.266  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00155.png'
+01:03:12.594  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00156.png'
+01:03:42.547  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00157.png'
+01:04:15.766  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00158.png'
+01:04:44.110  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00159.png'
+01:05:14.781  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00160.png'
+[v4  3900.9s]   frame 160/240  30.7s  elapsed 64.3 min  eta 32.2 min
+[v4  3900.9s]   cooldown 15s after 160 frames
+01:06:00.360  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00161.png'
+01:06:34.625  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00162.png'
+01:07:08.469  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00163.png'
+01:07:38.703  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00164.png'
+01:08:08.875  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00165.png'
+01:08:38.360  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00166.png'
+01:08:58.547  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00167.png'
+01:09:18.485  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00168.png'
+[v4  4144.6s]   frame 168/240  19.9s  elapsed 68.4 min  eta 29.3 min
+01:09:37.344  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00169.png'
+01:09:55.735  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00170.png'
+01:10:17.563  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00171.png'
+01:10:42.328  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00172.png'
+01:11:04.110  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00173.png'
+01:11:20.969  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00174.png'
+01:11:36.375  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00175.png'
+01:11:52.985  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00176.png'
+[v4  4299.1s]   frame 176/240  16.6s  elapsed 71.0 min  eta 25.8 min
+01:12:06.672  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00177.png'
+01:12:23.188  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00178.png'
+01:12:39.703  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00179.png'
+01:12:58.313  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00180.png'
+[v4  4364.4s]   cooldown 15s after 180 frames
+01:13:32.219  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00181.png'
+01:13:49.344  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00182.png'
+01:14:06.563  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00183.png'
+01:14:23.719  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00184.png'
+[v4  4449.8s]   frame 184/240  17.1s  elapsed 73.5 min  eta 22.4 min
+01:14:38.516  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00185.png'
+01:14:53.375  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00186.png'
+01:15:07.485  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00187.png'
+01:15:18.016  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00188.png'
+01:15:26.969  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00189.png'
+01:15:36.125  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00190.png'
+01:15:44.906  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00191.png'
+01:15:53.422  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00192.png'
+[v4  4539.5s]   frame 192/240  8.5s  elapsed 75.0 min  eta 18.7 min
+01:16:01.828  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00193.png'
+01:16:10.344  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00194.png'
+01:16:19.203  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00195.png'
+01:16:28.000  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00196.png'
+01:16:36.625  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00197.png'
+01:16:45.344  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00198.png'
+01:16:54.281  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00199.png'
+01:17:03.594  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00200.png'
+[v4  4609.7s]   frame 200/240  9.3s  elapsed 76.1 min  eta 15.2 min
+[v4  4609.7s]   cooldown 15s after 200 frames
+01:17:27.797  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00201.png'
+01:17:36.735  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00202.png'
+01:17:45.735  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00203.png'
+01:17:54.813  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00204.png'
+01:18:04.047  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00205.png'
+01:18:13.391  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00206.png'
+01:18:23.141  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00207.png'
+01:18:33.156  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00208.png'
+[v4  4699.3s]   frame 208/240  10.0s  elapsed 77.6 min  eta 11.9 min
+01:18:43.594  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00209.png'
+01:18:54.047  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00210.png'
+01:19:04.516  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00211.png'
+01:19:15.219  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00212.png'
+01:19:25.813  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00213.png'
+01:19:36.063  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00214.png'
+01:19:46.297  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00215.png'
+01:19:56.485  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00216.png'
+[v4  4782.6s]   frame 216/240  10.2s  elapsed 79.0 min  eta 8.8 min
+01:20:06.906  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00217.png'
+01:20:17.188  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00218.png'
+01:20:27.344  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00219.png'
+01:20:37.563  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00220.png'
+[v4  4823.7s]   cooldown 15s after 220 frames
+01:21:02.531  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00221.png'
+01:21:12.860  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00222.png'
+01:21:23.078  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00223.png'
+01:21:33.297  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00224.png'
+[v4  4879.4s]   frame 224/240  10.2s  elapsed 80.6 min  eta 5.8 min
+01:21:43.469  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00225.png'
+01:21:53.797  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00226.png'
+01:22:04.110  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00227.png'
+01:22:14.485  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00228.png'
+01:22:25.047  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00229.png'
+01:22:35.360  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00230.png'
+01:22:45.719  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00231.png'
+01:22:56.016  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00232.png'
+[v4  4962.1s]   frame 232/240  10.3s  elapsed 82.0 min  eta 2.8 min
+01:23:06.266  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00233.png'
+01:23:16.672  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00234.png'
+01:23:27.156  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00235.png'
+01:23:37.469  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00236.png'
+01:23:47.844  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00237.png'
+01:23:58.047  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00238.png'
+01:24:08.297  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00239.png'
+01:24:18.563  render           | Saved: 'C:\Users\Admin\Documents\Personal projects\Blender house design\render\video1\video_fly\f00240.png'
+[v4  5044.7s]   frame 240/240  10.3s  elapsed 83.4 min  eta 0.0 min
+[v4  5044.7s] video frames complete in 83.4 min
+[v4  5044.7s] video done
+BlenderMCP addon unregistered
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

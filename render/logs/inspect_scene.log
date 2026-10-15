@@ -1,0 +1,867 @@
+﻿blender.exe : Traceback (most recent call last):
+At line:2 char:1
++ & $b -b "Courtyard Apartments 50x100 v3.blend" --python inspect_scene ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Traceback (most recent call last)::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  File "C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\modules\addon_utils.py", line 544, in enable
+    mod.register()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Roaming\Blender Foundation\Blender\5.2\extensions\blender_org\bonsai\__init__.py", line 
+269, in register
+    bonsai.bim.register()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Roaming\Blender 
+Foundation\Blender\5.2\extensions\.local\lib\python3.13\site-packages\bonsai\bim\__init__.py", line 292, in register
+    mod.register()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Roaming\Blender 
+Foundation\Blender\5.2\extensions\.local\lib\python3.13\site-packages\bonsai\bim\module\light\__init__.py", line 67, 
+in register
+    file.chmod(file.stat().st_mode | stat.S_IEXEC)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Blender Foundation\Blender 5.2\5.2\python\Lib\pathlib\_local.py", line 738, in chmod
+    os.chmod(self, mode, follow_symlinks=follow_symlinks)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [WinError 5] Access is denied: 'C:\\Users\\Admin\\AppData\\Roaming\\Blender 
+Foundation\\Blender\\5.2\\extensions\\.local\\lib\\python3.13\\site-packages\\pyradiance\\bin\\3ds2mgf.exe'
+Error in bpy.app.handlers.load_post[4]:
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Roaming\Blender 
+Foundation\Blender\5.2\extensions\.local\lib\python3.13\site-packages\bonsai\bim\handler.py", line 573, in load_post
+    _apply_user_preferences()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Roaming\Blender 
+Foundation\Blender\5.2\extensions\.local\lib\python3.13\site-packages\bonsai\bim\handler.py", line 470, in 
+_apply_user_preferences
+    if not preferences.should_setup_toolbar:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'should_setup_toolbar'
+00:13.094  blend            | Read blend: "C:\Users\Admin\Documents\Personal projects\Blender house design\Courtyard Apartments 50x100 v3.blend"
+Error in bpy.app.handlers.load_post[4]:
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Roaming\Blender 
+Foundation\Blender\5.2\extensions\.local\lib\python3.13\site-packages\bonsai\bim\handler.py", line 573, in load_post
+    _apply_user_preferences()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Roaming\Blender 
+Foundation\Blender\5.2\extensions\.local\lib\python3.13\site-packages\bonsai\bim\handler.py", line 470, in 
+_apply_user_preferences
+    if not preferences.should_setup_toolbar:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'should_setup_toolbar'
+00:13.406  cycles           | WARNING CUEW initialization failed: Error opening the library
+00:13.406  cycles           | WARNING HIPEW initialization failed: Error opening HIP dynamic library
+Exception in module register(): C:\Users\Admin\AppData\Roaming\Blender Foundation\Blender\5.2\extensions\blender_org\bonsai\__init__.py
+BlenderMCP addon registered
+
+==============================================================================
+  BLENDER: 5.2.2 LTS
+  FILE   : C:\Users\Admin\Documents\Personal projects\Blender house design\Courtyard Apartments 50x100 v3.blend
+  ENGINE : BLENDER_EEVEE
+==============================================================================
+
+--- COMPUTE DEVICES ---
+  [CPU] AMD Athlon Gold 3150U  use=False
+  cycles.device = NONE
+
+--- COLLECTIONS ---
+* Scene Collection  (objs=0, hide_render=False)
+  * Annotations  (objs=22, hide_render=False)
+  * B1_Basement  (objs=31, hide_render=False)
+  * GF_Ground  (objs=116, hide_render=False)
+  * L1_Floor  (objs=88, hide_render=False)
+  * L2_Floor  (objs=88, hide_render=False)
+  * L3_Floor  (objs=88, hide_render=False)
+  * L4_Floor  (objs=88, hide_render=False)
+  * Roof  (objs=58, hide_render=False)
+  * Structure  (objs=166, hide_render=False)
+
+--- OBJECTS: 745 total ---
+  CAMERA    : 16
+  CURVE     : 3
+  EMPTY     : 2
+  FONT      : 5
+  LIGHT     : 2
+  MESH      : 717
+
+--- SCENE BOUNDS (all meshes, world space, metres) ---
+  min = (  -2.500,   -2.400,   -3.200)
+  max = (  15.240,   30.480,   20.100)
+  size= (  17.740,   32.880,   23.300)
+  centre = (6.370, 14.040, 8.450)
+
+--- NAMED OBJECTS (non-mesh + key meshes) ---
+  Camera_01_Street_View              loc=(   7.62, -18.00,   1.65) lens=24.0mm
+  Camera_02_Aerial_34                loc=( -22.00, -18.00,  26.00) lens=28.0mm
+  Camera_03_Courtyard_Eye            loc=(  10.00,   8.00,   2.50) lens=28.0mm
+  Camera_04_L3_Gallery               loc=(  14.20,   9.00,  11.80) lens=24.0mm
+  Camera_05_Roof_Garden              loc=(   3.00,   9.00,  17.85) lens=28.0mm
+  Camera_06_Section_Cutaway          loc=( -26.00,  15.24,   8.00) lens=24.0mm
+  Camera_07_Floor_Plans              loc=(   7.62,  15.24,  40.00) lens=50.0mm
+  Camera_08_Long_Section             loc=(   7.62, -35.00,   8.00) lens=50.0mm
+  Camera_CarDescent_Cam              loc=(   1.89,  -3.00,   1.20) lens=24.0mm
+  Camera_CarDescent_Cam_Target       loc=(   1.89,  -0.30,   1.33)
+  Camera_Walkthrough_Cam             loc=(   6.48,  -6.00,   1.60) lens=28.0mm
+  Camera_Walkthrough_Cam_Target      loc=(   6.48,   6.00,   2.50)
+  Prod_01_Courtyard_Garden           loc=(   8.00,  11.00,   2.50) lens=24.0mm
+  Prod_02_Courtyard_BirdsEye         loc=(   9.85,  15.00,  22.00) lens=20.0mm
+  Prod_03_Street_Facade              loc=(  -6.00, -12.00,   5.00) lens=35.0mm
+  Prod_04_LivingRoom_L1              loc=(   3.50,  12.00,   5.80) lens=28.0mm
+  Prod_05_Balcony_L3                 loc=(  13.80,  14.00,  11.80) lens=28.0mm
+  Prod_06_Roof_Pergola               loc=(   5.50,  10.00,  17.80) lens=24.0mm
+  Sky_Fill                           loc=(   7.62,  15.00,  30.00) type=SUN energy=2.00
+  Sun_Nairobi                        loc=(   7.62, -20.00,  25.00) type=SUN energy=6.00
+
+--- MATERIALS (20) ---
+  CONFLICT_Red                                 users=7
+  Mat_Annotation_Text                          users=1
+  Mat_Bay_Accessible                           users=1
+  Mat_Bay_EV                                   users=2
+  Mat_Concrete                                 users=161
+  Mat_Courtyard_Lawn                           users=1
+  Mat_Dark_Steel                               users=85
+  Mat_Epoxy_Floor                              users=9
+  Mat_Garden_Foliage                           users=36
+  Mat_Glass_Arch                               users=43
+  Mat_Hazard_Yellow                            users=5
+  Mat_ISSB_Terracotta                          users=146
+  Mat_Line_White                               users=8
+  Mat_Permeable_Paver                          users=34
+  Mat_RC_Slab                                  users=40
+  Mat_Ramp_Groove                              users=5
+  Mat_Roller_Shutter                           users=1
+  Mat_Stone_Render                             users=23
+  Mat_Tree_Trunk                               users=3
+  Mat_Warm_Timber                              users=106
+
+--- MESH DETAIL ---
+  name                                         minZ     maxZ   sizeX   sizeY
+  Bay_01_Accessible                           -2.00    -2.00    5.00    3.60
+  Bay_02                                      -2.00    -2.00    5.00    2.57
+  Bay_02_Line                                 -1.99    -1.99    5.00    0.10
+  Bay_03                                      -2.00    -2.00    5.00    2.57
+  Bay_03_Line                                 -1.99    -1.99    5.00    0.10
+  Bay_04                                      -2.00    -2.00    5.00    2.57
+  Bay_04_Line                                 -1.99    -1.99    5.00    0.10
+  Bay_05                                      -2.00    -2.00    5.00    2.58
+  Bay_05_Line                                 -1.99    -1.99    5.00    0.10
+  Bay_06                                      -2.00    -2.00    2.86    4.98
+  Bay_06_Line                                 -1.99    -1.99    0.10    4.98
+  Bay_07                                      -2.00    -2.00    2.87    4.98
+  Bay_07_Line                                 -1.99    -1.99    0.10    4.98
+  Bay_08                                      -2.00    -2.00    2.86    4.98
+  Bay_08_Line                                 -1.99    -1.99    0.10    4.98
+  Bay_09                                      -2.00    -2.00    2.86    4.98
+  Bay_09_Line                                 -1.99    -1.99    0.10    4.98
+  CONFLICT_s18_FrontSetback                    0.92     0.92   15.24    6.00
+  CONFLICT_s19_Left                            9.00     9.00    1.50   30.48
+  CONFLICT_s19_Right                           9.00     9.00    1.50   30.48
+  Col_B1_x3.48_y13.9                          -2.00     0.90    0.40    0.40
+  Col_B1_x3.48_y19.1                          -2.00     0.90    0.40    0.40
+  Col_B1_x3.48_y23.0                          -2.00     0.90    0.40    0.40
+  Col_B1_x3.48_y30.2                          -2.00     0.90    0.40    0.40
+  Col_B1_x3.48_y5.2                           -2.00     0.90    0.40    0.40
+  Col_B1_x3.48_y8.8                           -2.00     0.90    0.40    0.40
+  Col_B1_x6.30_y13.9                          -2.00     0.90    0.40    0.40
+  Col_B1_x6.30_y19.1                          -2.00     0.90    0.40    0.40
+  Col_B1_x6.30_y23.0                          -2.00     0.90    0.40    0.40
+  Col_B1_x6.30_y30.2                          -2.00     0.90    0.40    0.40
+  Col_B1_x6.30_y5.2                           -2.00     0.90    0.40    0.40
+  Col_B1_x6.30_y8.8                           -2.00     0.90    0.40    0.40
+  Col_B1_x8.48_y13.9                          -2.00     0.90    0.40    0.40
+  Col_B1_x8.48_y19.1                          -2.00     0.90    0.40    0.40
+  Col_B1_x8.48_y8.8                           -2.00     0.90    0.40    0.40
+  Col_GF_Colonnade_x6.30_y13.9                 0.90     4.20    0.40    0.40
+  Col_GF_Colonnade_x6.30_y19.1                 0.90     4.20    0.40    0.40
+  Col_GF_Colonnade_x6.30_y23.0                 0.90     4.20    0.40    0.40
+  Col_GF_Colonnade_x6.30_y5.2                  0.90     4.20    0.40    0.40
+  Col_GF_Colonnade_x6.30_y8.8                  0.90     4.20    0.40    0.40
+  Col_GF_x10.49_y0.3                           0.90     4.20    0.40    0.40
+  Col_GF_x10.49_y23.0                          0.90     4.20    0.40    0.40
+  Col_GF_x10.49_y30.2                          0.90     4.20    0.40    0.40
+  Col_GF_x10.49_y5.2                           0.90     4.20    0.40    0.40
+  Col_GF_x3.48_y0.3                            0.90     4.20    0.40    0.40
+  Col_GF_x3.48_y23.0                           0.90     4.20    0.40    0.40
+  Col_GF_x3.48_y30.2                           0.90     4.20    0.40    0.40
+  Col_GF_x3.48_y5.2                            0.90     4.20    0.40    0.40
+  Col_L1_x10.49_y0.3                           4.20     7.20    0.30    0.30
+  Col_L1_x10.49_y23.0                          4.20     7.20    0.30    0.30
+  Col_L1_x10.49_y30.2                          4.20     7.20    0.30    0.30
+  Col_L1_x10.49_y5.8                           4.20     7.20    0.30    0.30
+  Col_L1_x13.44_y15.1                          4.20     7.20    0.30    0.30
+  Col_L1_x13.44_y23.0                          4.20     7.20    0.30    0.30
+  Col_L1_x13.44_y7.3                           4.20     7.20    0.30    0.30
+  Col_L1_x3.48_y0.3                            4.20     7.20    0.30    0.30
+  Col_L1_x3.48_y23.0                           4.20     7.20    0.30    0.30
+  Col_L1_x3.48_y30.2                           4.20     7.20    0.30    0.30
+  Col_L1_x3.48_y5.8                            4.20     7.20    0.30    0.30
+  Col_L1_x3.48_y7.3                            4.20     7.20    0.30    0.30
+  Col_L1_x6.30_y11.2                           4.20     7.20    0.30    0.30
+  Col_L1_x6.30_y15.1                           4.20     7.20    0.30    0.30
+  Col_L1_x6.30_y19.1                           4.20     7.20    0.30    0.30
+  Col_L1_x6.30_y23.0                           4.20     7.20    0.30    0.30
+  Col_L1_x6.30_y7.3                            4.20     7.20    0.30    0.30
+  Col_L2_x10.49_y0.3                           7.20    10.20    0.30    0.30
+  Col_L2_x10.49_y23.0                          7.20    10.20    0.30    0.30
+  Col_L2_x10.49_y30.2                          7.20    10.20    0.30    0.30
+  Col_L2_x10.49_y5.8                           7.20    10.20    0.30    0.30
+  Col_L2_x13.44_y15.1                          7.20    10.20    0.30    0.30
+  Col_L2_x13.44_y23.0                          7.20    10.20    0.30    0.30
+  Col_L2_x13.44_y7.3                           7.20    10.20    0.30    0.30
+  Col_L2_x3.48_y0.3                            7.20    10.20    0.30    0.30
+  Col_L2_x3.48_y23.0                           7.20    10.20    0.30    0.30
+  Col_L2_x3.48_y30.2                           7.20    10.20    0.30    0.30
+  Col_L2_x3.48_y5.8                            7.20    10.20    0.30    0.30
+  Col_L2_x3.48_y7.3                            7.20    10.20    0.30    0.30
+  Col_L2_x6.30_y11.2                           7.20    10.20    0.30    0.30
+  Col_L2_x6.30_y15.1                           7.20    10.20    0.30    0.30
+  Col_L2_x6.30_y19.1                           7.20    10.20    0.30    0.30
+  Col_L2_x6.30_y23.0                           7.20    10.20    0.30    0.30
+  Col_L2_x6.30_y7.3                            7.20    10.20    0.30    0.30
+  Col_L3_x10.49_y0.3                          10.20    13.20    0.30    0.30
+  Col_L3_x10.49_y23.0                         10.20    13.20    0.30    0.30
+  Col_L3_x10.49_y30.2                         10.20    13.20    0.30    0.30
+  Col_L3_x10.49_y5.8                          10.20    13.20    0.30    0.30
+  Col_L3_x13.44_y15.1                         10.20    13.20    0.30    0.30
+  Col_L3_x13.44_y23.0                         10.20    13.20    0.30    0.30
+  Col_L3_x13.44_y7.3                          10.20    13.20    0.30    0.30
+  Col_L3_x3.48_y0.3                           10.20    13.20    0.30    0.30
+  Col_L3_x3.48_y23.0                          10.20    13.20    0.30    0.30
+  Col_L3_x3.48_y30.2                          10.20    13.20    0.30    0.30
+  Col_L3_x3.48_y5.8                           10.20    13.20    0.30    0.30
+  Col_L3_x3.48_y7.3                           10.20    13.20    0.30    0.30
+  Col_L3_x6.30_y11.2                          10.20    13.20    0.30    0.30
+  Col_L3_x6.30_y15.1                          10.20    13.20    0.30    0.30
+  Col_L3_x6.30_y19.1                          10.20    13.20    0.30    0.30
+  Col_L3_x6.30_y23.0                          10.20    13.20    0.30    0.30
+  Col_L3_x6.30_y7.3                           10.20    13.20    0.30    0.30
+  Col_L4_x10.49_y0.3                          13.20    16.20    0.30    0.30
+  Col_L4_x10.49_y23.0                         13.20    16.20    0.30    0.30
+  Col_L4_x10.49_y30.2                         13.20    16.20    0.30    0.30
+  Col_L4_x10.49_y5.8                          13.20    16.20    0.30    0.30
+  Col_L4_x13.44_y15.1                         13.20    16.20    0.30    0.30
+  Col_L4_x13.44_y23.0                         13.20    16.20    0.30    0.30
+  Col_L4_x13.44_y7.3                          13.20    16.20    0.30    0.30
+  Col_L4_x3.48_y0.3                           13.20    16.20    0.30    0.30
+  Col_L4_x3.48_y23.0                          13.20    16.20    0.30    0.30
+  Col_L4_x3.48_y30.2                          13.20    16.20    0.30    0.30
+  Col_L4_x3.48_y5.8                           13.20    16.20    0.30    0.30
+  Col_L4_x3.48_y7.3                           13.20    16.20    0.30    0.30
+  Col_L4_x6.30_y11.2                          13.20    16.20    0.30    0.30
+  Col_L4_x6.30_y15.1                          13.20    16.20    0.30    0.30
+  Col_L4_x6.30_y19.1                          13.20    16.20    0.30    0.30
+  Col_L4_x6.30_y23.0                          13.20    16.20    0.30    0.30
+  Col_L4_x6.30_y7.3                           13.20    16.20    0.30    0.30
+  Core_Breeze_Band_0                           0.00     0.06    2.28    0.21
+  Core_Breeze_Band_1                           1.00     1.06    2.28    0.21
+  Core_Breeze_Band_10                         10.00    10.06    2.28    0.21
+  Core_Breeze_Band_11                         11.00    11.06    2.28    0.21
+  Core_Breeze_Band_12                         12.00    12.06    2.28    0.21
+  Core_Breeze_Band_13                         13.00    13.06    2.28    0.21
+  Core_Breeze_Band_14                         14.00    14.06    2.28    0.21
+  Core_Breeze_Band_15                         15.00    15.06    2.28    0.21
+  Core_Breeze_Band_2                           2.00     2.06    2.28    0.21
+  Core_Breeze_Band_3                           3.00     3.06    2.28    0.21
+  Core_Breeze_Band_4                           4.00     4.06    2.28    0.21
+  Core_Breeze_Band_5                           5.00     5.06    2.28    0.21
+  Core_Breeze_Band_6                           6.00     6.06    2.28    0.21
+  Core_Breeze_Band_7                           7.00     7.06    2.28    0.21
+  Core_Breeze_Band_8                           8.00     8.06    2.28    0.21
+  Core_Breeze_Band_9                           9.00     9.06    2.28    0.21
+  Core_Breeze_Block_Screen                     0.90    16.20    2.20    0.15
+  Core_Lift_Shaft_FullHeight                  -2.00    19.80    2.20    2.20
+  Core_Stair_Enclosure_FullHeight             -2.00    19.00    2.25    4.90
+  Floor_Basement_Finish                       -2.00    -1.98   14.64   29.88
+  Floor_Lift_Lobby_B1                         -1.99    -1.99    3.52    2.80
+  GF_Access_Ramp_Part1                         0.01     0.45    1.20    4.00
+  GF_Access_Ramp_Part2                         0.45     0.90    3.50    1.20
+  GF_Colonnade_Bench_Base_1                    0.90     1.32    0.50    2.80
+  GF_Colonnade_Bench_Base_2                    0.90     1.32    0.50    4.35
+  GF_Colonnade_Bench_Base_3                    0.90     1.32    0.50    4.35
+  GF_Colonnade_Bench_Base_4                    0.90     1.32    0.50    3.10
+  GF_Colonnade_Bench_Seat_1                    1.32     1.36    0.56    2.80
+  GF_Colonnade_Bench_Seat_2                    1.32     1.36    0.56    4.35
+  GF_Colonnade_Bench_Seat_3                    1.32     1.36    0.56    4.35
+  GF_Colonnade_Bench_Seat_4                    1.32     1.36    0.56    3.10
+  GF_Colonnade_Floor                           0.91     0.91    2.70   17.80
+  GF_Colonnade_Foliage_1                       1.40     1.70    0.56    0.31
+  GF_Colonnade_Foliage_2                       1.40     1.70    0.56    0.31
+  GF_Colonnade_Foliage_3                       1.40     1.70    0.56    0.31
+  GF_Colonnade_Foliage_4                       1.40     1.70    0.56    0.31
+  GF_Colonnade_Planter_1                       0.90     1.50    0.60    0.35
+  GF_Colonnade_Planter_2                       0.90     1.50    0.60    0.35
+  GF_Colonnade_Planter_3                       0.90     1.50    0.60    0.35
+  GF_Colonnade_Planter_4                       0.90     1.50    0.60    0.35
+  GF_Core_Entry_Frame                          0.90     3.60    2.30    0.16
+  GF_Core_Glass_Entry                          0.90     3.50    2.20    0.10
+  GF_Courtyard_Lawn_Soil                       0.90     1.20    5.30   11.00
+  GF_Courtyard_Lawn_Turf                       1.21     1.21    5.30   11.00
+  GF_Entry_Step_1                              0.00     0.18    1.20    0.35
+  GF_Entry_Step_2                              0.00     0.36    1.20    0.35
+  GF_Entry_Step_3                              0.00     0.54    1.20    0.35
+  GF_Entry_Step_4                              0.00     0.72    1.20    0.35
+  GF_Entry_Step_5                              0.00     0.90    1.20    0.35
+  GF_Gate_Lintel                               2.25     2.40    1.60    0.10
+  GF_Gate_Post_Left                            0.00     2.40    0.12    0.10
+  GF_Gate_Post_Right                           0.00     2.40    0.12    0.10
+  GF_Guard_CCTV_Monitor                        0.90     1.25    0.50    0.15
+  GF_Guard_Chamfer_Wall                        0.15     3.20    0.32    0.60
+  GF_Guard_Desk                                0.15     0.90    1.20    0.60
+  GF_Guard_Plinth                              0.00     0.15    2.20    3.00
+  GF_Guard_WC_Wall                             0.15     2.65    1.20    0.12
+  GF_Guard_Wall_East_Courtyard                 0.15     3.20    2.20    0.15
+  GF_Guard_Wall_North                          0.15     3.20    0.15    2.40
+  GF_Guard_Wall_South                          0.15     3.20    0.15    3.00
+  GF_Guard_Wall_West                           0.15     3.20    1.88    0.15
+  GF_Guard_Window_Courtyard                    1.10     2.20    1.10    0.19
+  GF_Guard_Window_Gate                         1.00     2.20    0.19    1.20
+  GF_Guard_Window_Ramp                         1.00     2.20    0.23    0.42
+  GF_Laundry_Sink_Bench                        0.90     1.75    0.80    1.80
+  GF_Laundry_Yard_Floor                        0.91     0.91    3.30    7.18
+  GF_Lawn_Bench_Wood_1                         1.35     1.39    0.34    3.00
+  GF_Lawn_Bench_Wood_2                         1.35     1.39    0.34    3.00
+  GF_Lawn_Seat_Wall_East                       0.90     1.35    0.30   11.00
+  GF_Lawn_Seat_Wall_North                      0.90     1.35    5.90    0.30
+  GF_Lawn_Seat_Wall_South                      0.90     1.35    5.90    0.30
+  GF_Lawn_Seat_Wall_West                       0.90     1.35    0.30   11.00
+  GF_Path_East_Gallery                         0.91     0.91    0.94   11.00
+  GF_Path_North_Cross                          0.91     0.91    7.14    1.20
+  GF_Path_South_Cross                          0.91     0.91    7.14    3.50
+  GF_Pedestrian_Entry_Floor                    0.01     0.01    1.60    5.20
+  GF_Pedestrian_Intercom_Post                  0.00     1.40    0.15    0.15
+  GF_Portal_Lintel_Beam                        3.10     3.40    3.48    0.60
+  GF_Portal_Pier_North                         0.00     3.40    0.30    0.60
+  GF_Portal_Pier_South                         0.00     3.40    0.30    0.60
+  GF_Portal_Sectional_Door                     0.00     2.90    2.88    0.06
+  GF_Portal_Signal_Green                       2.45     2.56    0.04    0.11
+  GF_Portal_Signal_Red                         2.62     2.73    0.04    0.11
+  GF_Portal_Traffic_Signal                     2.40     2.80    0.15    0.15
+  GF_Rain_Garden_Bed                           0.90     1.10    1.60    2.70
+  GF_Rain_Garden_Plants                        1.10     1.45    1.50    2.60
+  GF_Ramp_Climbers_Trellis                     1.20     3.60    0.05   17.80
+  GF_Ramp_Rail_1                               0.00     1.20    0.05    4.00
+  GF_Ramp_Rail_2                               0.45     1.80    3.50    0.05
+  GF_Ramp_Screen_Coping                        3.95     4.03    0.19   23.00
+  GF_Ramp_Screen_Wall                          0.90     3.95    0.15   23.00
+  GF_Rear_Entry_Door                           0.90     3.10    0.90    0.10
+  GF_Rear_Kitchen_Counter                      0.90     1.80    2.20    0.60
+  GF_Rear_Kitchen_Wall_West                    0.90     3.70    0.15    4.00
+  GF_Rear_Living_Glazing                       0.90     3.40    3.00    0.08
+  GF_Rear_Living_Glazing_Frame                 0.90     3.45    3.10    0.14
+  GF_Rear_Master_Window                        1.80     3.30    2.50    0.08
+  GF_Rear_Part_BathMaster                      0.90     3.70    0.15    3.18
+  GF_Rear_Part_Bed2                            0.90     3.70    0.15    3.18
+  GF_Rear_Part_BedMaster                       0.90     3.70    0.15    4.00
+  GF_Rear_Part_Spine                           0.90     3.70    7.00    0.15
+  GF_Rear_Wall_Boundary_East                   0.90     4.20   15.24    0.30
+  GF_Rear_Wall_Boundary_North                  0.90     4.20    0.30    7.48
+  GF_Rear_Wall_Boundary_South                  0.90     4.20    0.30    7.48
+  GF_Rear_Wall_Courtyard_1                     0.90     3.95    2.70    0.15
+  GF_Rear_Wall_Courtyard_2                     0.90     3.95    0.30    0.15
+  GF_Rear_Wall_Courtyard_3                     0.90     3.95    1.00    0.15
+  GF_Rear_Wall_Courtyard_4                     0.90     3.95    0.94    0.15
+  GF_Shop_Counter                              0.00     0.90    2.00    0.60
+  GF_Shop_Display_Shelves                      0.00     2.40    0.18    3.50
+  GF_Shop_Floor                                0.01     0.01    3.21    5.20
+  GF_Shop_Glazed_Door                          0.00     3.00    2.75    0.05
+  GF_Shop_Roller_Shutter                       0.00     3.20    2.85    0.08
+  GF_Shop_Wall_East_Side                       0.00     4.00    0.15    5.00
+  GF_Shop_Wall_Rear_Courtyard                  0.00     4.00    3.21    0.20
+  GF_Shop_Wall_West_Side                       0.00     4.00    0.15    5.00
+  GF_Shrub_Bed_Plants                          1.45     2.05    1.30   14.70
+  GF_Shrub_Bed_Soil                            0.90     1.45    1.30   14.70
+  GF_Shrub_Bed_Wall                            0.90     1.50    0.20   14.70
+  GF_Store_Louver_Door                         0.15     2.35    0.19    1.40
+  GF_Store_Meter_Box                           1.00     2.00    0.25    1.20
+  GF_Store_Wall_East                           0.15     3.20    2.20    0.15
+  GF_Store_Wall_South                          0.15     3.20    0.15    2.20
+  GF_Store_Waste_Bins                          0.15     1.05    1.20    0.70
+  GF_Tree_Canopy_1                             3.70     8.10    4.18    4.40
+  GF_Tree_Canopy_2                             4.60     8.00    3.23    3.40
+  GF_Tree_Canopy_3                             4.20     7.80    3.42    3.60
+  GF_Tree_Planter_Box                          0.90     2.10    2.40    2.40
+  GF_Tree_Planter_Coping                       2.10     2.18    2.50    2.50
+  GF_Tree_Planter_Soil                         2.00     2.10    2.10    2.10
+  GF_Tree_Stem_1                               2.10     5.30    0.24    0.24
+  GF_Tree_Stem_2                               2.10     5.60    0.18    0.18
+  GF_Tree_Stem_3                               2.10     5.10    0.20    0.20
+  L1_1Bed_Balc_Balustrade                      4.20     5.30    3.52    0.05
+  L1_1Bed_Balc_Floor                           4.21     4.21    3.52    1.20
+  L1_1Bed_Balc_Planter                         4.20     4.60    3.48    0.35
+  L1_1Bed_Balc_Plants                          4.55     4.80    3.44    0.31
+  L1_1Bed_Bed                                  4.20     4.75    1.80    2.00
+  L1_1Bed_DiningTable                          4.20     4.95    1.40    0.80
+  L1_1Bed_Entry_Door                           4.20     6.30    0.90    0.08
+  L1_1Bed_Living_Glazing                       4.20     6.60    3.20    0.08
+  L1_1Bed_Living_Wall_Recess                   4.20     7.00    3.52    0.15
+  L1_1Bed_Part_Bath_X                          4.20     7.00    0.15    2.20
+  L1_1Bed_Part_Bath_Y                          4.20     7.00    2.99    0.15
+  L1_1Bed_Part_Bed                             4.20     7.00    0.15    4.60
+  L1_1Bed_Sofa                                 4.20     4.95    2.00    0.85
+  L1_1Bed_Wall_Gallery_Rear                    4.20     7.00    7.49    0.15
+  L1_1Bed_Wall_Street_Bed                      4.20     7.00    3.18    0.20
+  L1_1Bed_Wall_Street_Kit                      4.20     7.00    3.49    0.20
+  L1_1Bed_Win_Street_Bed                       5.10     6.60    2.00    0.10
+  L1_1Bed_Win_Street_Kit                       5.30     6.60    1.80    0.10
+  L1_2BedL_Bed2                                4.20     4.75    1.60    2.00
+  L1_2BedL_Bed2_Win                            5.10     6.60    0.08    2.00
+  L1_2BedL_BedMaster                           4.20     4.75    1.80    2.00
+  L1_2BedL_Courtyard_Wall                      4.20     7.00    0.15   15.70
+  L1_2BedL_DiningTable                         4.20     4.95    1.60    0.90
+  L1_2BedL_Entry_Door                          4.20     6.30    0.90    0.10
+  L1_2BedL_Kitchen_Counter                     4.20     5.10    0.60    3.20
+  L1_2BedL_Living_Glaze                        4.20     6.60    0.08    3.50
+  L1_2BedL_Master_Glaze                        4.20     6.60    0.08    3.00
+  L1_2BedL_Part_Bath1                          4.20     7.00    2.10    0.15
+  L1_2BedL_Part_Bath2                          4.20     7.00    2.10    0.15
+  L1_2BedL_Part_Bed2_Master                    4.20     7.00    3.90    0.15
+  L1_2BedL_Part_DryingYard                     4.20     7.00    2.10    0.15
+  L1_2BedL_Part_Living_Bed2                    4.20     7.00    3.90    0.15
+  L1_2BedL_Sofa                                4.20     4.95    2.10    0.90
+  L1_2BedL_Spine_Wall                          4.20     7.00    0.15   15.70
+  L1_2BedL_Wall_Gallery                        4.20     7.00    6.30    0.15
+  L1_2BedR_Bed2_Win                            5.10     6.60    2.50    0.08
+  L1_2BedR_Courtyard_Wall_1                    4.20     7.00    6.00    0.15
+  L1_2BedR_Courtyard_Wall_2                    4.20     7.00    1.94    0.15
+  L1_2BedR_Entry_Door                          4.20     6.30    0.90    0.10
+  L1_2BedR_Living_Glaze                        4.20     6.60    3.80    0.08
+  L1_2BedR_Loggia_Floor                        4.21     4.21    4.70    1.20
+  L1_2BedR_Loggia_Planter                      4.20     4.60    4.60    0.30
+  L1_2BedR_Loggia_Plants                       4.55     4.80    4.56    0.26
+  L1_2BedR_Loggia_Rail_East                    4.20     5.30    0.05    1.20
+  L1_2BedR_Loggia_Rail_South                   4.20     5.30    4.70    0.05
+  L1_2BedR_Loggia_Rail_West                    4.20     5.30    0.05    1.20
+  L1_2BedR_Loggia_Slab                         4.00     4.20    4.70    1.20
+  L1_2BedR_Master_Win                          5.10     6.60    2.20    0.08
+  L1_2BedR_Part_Baths                          4.20     7.00    0.15    3.18
+  L1_2BedR_Part_Kitchen                        4.20     7.00    0.15    3.18
+  L1_2BedR_Part_Living_Bed2                    4.20     7.00    0.15    4.00
+  L1_2BedR_Part_Living_Master                  4.20     7.00    0.15    4.00
+  L1_2BedR_Part_Spine_Rear                     4.20     7.00   14.64    0.15
+  L1_Balc_Living_Floor                         4.21     4.21    1.20    3.20
+  L1_Balc_Living_Planter                       4.20     4.60    0.25    3.20
+  L1_Balc_Living_Plants                        4.55     4.80    0.21    3.10
+  L1_Balc_Living_Rail_East                     4.20     5.30    0.05    3.20
+  L1_Balc_Living_Rail_North                    4.20     5.30    1.20    0.05
+  L1_Balc_Living_Rail_South                    4.20     5.30    1.20    0.05
+  L1_Balc_Living_Slab                          4.00     4.20    1.20    3.20
+  L1_Balc_Master_Floor                         4.21     4.21    1.20    3.20
+  L1_Balc_Master_Planter                       4.20     4.60    0.25    3.20
+  L1_Balc_Master_Plants                        4.55     4.80    0.21    3.10
+  L1_Balc_Master_Rail_East                     4.20     5.30    0.05    3.20
+  L1_Balc_Master_Rail_North                    4.20     5.30    1.20    0.05
+  L1_Balc_Master_Rail_South                    4.20     5.30    1.20    0.05
+  L1_Balc_Master_Slab                          4.00     4.20    1.20    3.20
+  L1_Boundary_Wall_East                        4.20     7.00   15.24    0.30
+  L1_Boundary_Wall_North                       4.20     7.00    0.30   30.48
+  L1_Boundary_Wall_South                       4.20     7.00    0.30   30.48
+  L1_Front_Gallery_Balustrade                  4.20     5.30    7.14    0.05
+  L1_Front_Gallery_Floor                       4.21     4.21    7.49    1.50
+  L1_Front_Gallery_Planter                     4.20     4.60    7.04    0.25
+  L1_Front_Gallery_Plants                      4.55     4.75    7.00    0.21
+  L1_Right_Gallery_Balustrade                  4.20     5.30    0.05   15.70
+  L1_Right_Gallery_Floor                       4.21     4.21    1.50   15.70
+  L1_Right_Gallery_Planter                     4.20     4.60    0.30   15.70
+  L1_Right_Gallery_Plants                      4.55     4.80    0.26   15.60
+  L1_Store_Door                                4.20     6.30    0.10    0.80
+  L1_Store_Wall_East                           4.20     7.00    0.15    1.50
+  L1_Vent_Shaft_1                              4.20     7.00    0.80    0.80
+  L1_Vent_Shaft_2                              4.20     7.00    0.80    0.80
+  L2_1Bed_Balc_Balustrade                      7.20     8.30    3.52    0.05
+  L2_1Bed_Balc_Floor                           7.21     7.21    3.52    1.20
+  L2_1Bed_Balc_Planter                         7.20     7.60    3.48    0.35
+  L2_1Bed_Balc_Plants                          7.55     7.80    3.44    0.31
+  L2_1Bed_Bed                                  7.20     7.75    1.80    2.00
+  L2_1Bed_DiningTable                          7.20     7.95    1.40    0.80
+  L2_1Bed_Entry_Door                           7.20     9.30    0.90    0.08
+  L2_1Bed_Living_Glazing                       7.20     9.60    3.20    0.08
+  L2_1Bed_Living_Wall_Recess                   7.20    10.00    3.52    0.15
+  L2_1Bed_Part_Bath_X                          7.20    10.00    0.15    2.20
+  L2_1Bed_Part_Bath_Y                          7.20    10.00    2.99    0.15
+  L2_1Bed_Part_Bed                             7.20    10.00    0.15    4.60
+  L2_1Bed_Sofa                                 7.20     7.95    2.00    0.85
+  L2_1Bed_Wall_Gallery_Rear                    7.20    10.00    7.49    0.15
+  L2_1Bed_Wall_Street_Bed                      7.20    10.00    3.18    0.20
+  L2_1Bed_Wall_Street_Kit                      7.20    10.00    3.49    0.20
+  L2_1Bed_Win_Street_Bed                       8.10     9.60    2.00    0.10
+  L2_1Bed_Win_Street_Kit                       8.30     9.60    1.80    0.10
+  L2_2BedL_Bed2                                7.20     7.75    1.60    2.00
+  L2_2BedL_Bed2_Win                            8.10     9.60    0.08    2.00
+  L2_2BedL_BedMaster                           7.20     7.75    1.80    2.00
+  L2_2BedL_Courtyard_Wall                      7.20    10.00    0.15   15.70
+  L2_2BedL_DiningTable                         7.20     7.95    1.60    0.90
+  L2_2BedL_Entry_Door                          7.20     9.30    0.90    0.10
+  L2_2BedL_Kitchen_Counter                     7.20     8.10    0.60    3.20
+  L2_2BedL_Living_Glaze                        7.20     9.60    0.08    3.50
+  L2_2BedL_Master_Glaze                        7.20     9.60    0.08    3.00
+  L2_2BedL_Part_Bath1                          7.20    10.00    2.10    0.15
+  L2_2BedL_Part_Bath2                          7.20    10.00    2.10    0.15
+  L2_2BedL_Part_Bed2_Master                    7.20    10.00    3.90    0.15
+  L2_2BedL_Part_DryingYard                     7.20    10.00    2.10    0.15
+  L2_2BedL_Part_Living_Bed2                    7.20    10.00    3.90    0.15
+  L2_2BedL_Sofa                                7.20     7.95    2.10    0.90
+  L2_2BedL_Spine_Wall                          7.20    10.00    0.15   15.70
+  L2_2BedL_Wall_Gallery                        7.20    10.00    6.30    0.15
+  L2_2BedR_Bed2_Win                            8.10     9.60    2.50    0.08
+  L2_2BedR_Courtyard_Wall_1                    7.20    10.00    6.00    0.15
+  L2_2BedR_Courtyard_Wall_2                    7.20    10.00    1.94    0.15
+  L2_2BedR_Entry_Door                          7.20     9.30    0.90    0.10
+  L2_2BedR_Living_Glaze                        7.20     9.60    3.80    0.08
+  L2_2BedR_Loggia_Floor                        7.21     7.21    4.70    1.20
+  L2_2BedR_Loggia_Planter                      7.20     7.60    4.60    0.30
+  L2_2BedR_Loggia_Plants                       7.55     7.80    4.56    0.26
+  L2_2BedR_Loggia_Rail_East                    7.20     8.30    0.05    1.20
+  L2_2BedR_Loggia_Rail_South                   7.20     8.30    4.70    0.05
+  L2_2BedR_Loggia_Rail_West                    7.20     8.30    0.05    1.20
+  L2_2BedR_Loggia_Slab                         7.00     7.20    4.70    1.20
+  L2_2BedR_Master_Win                          8.10     9.60    2.20    0.08
+  L2_2BedR_Part_Baths                          7.20    10.00    0.15    3.18
+  L2_2BedR_Part_Kitchen                        7.20    10.00    0.15    3.18
+  L2_2BedR_Part_Living_Bed2                    7.20    10.00    0.15    4.00
+  L2_2BedR_Part_Living_Master                  7.20    10.00    0.15    4.00
+  L2_2BedR_Part_Spine_Rear                     7.20    10.00   14.64    0.15
+  L2_Balc_Living_Floor                         7.21     7.21    1.20    3.20
+  L2_Balc_Living_Planter                       7.20     7.60    0.25    3.20
+  L2_Balc_Living_Plants                        7.55     7.80    0.21    3.10
+  L2_Balc_Living_Rail_East                     7.20     8.30    0.05    3.20
+  L2_Balc_Living_Rail_North                    7.20     8.30    1.20    0.05
+  L2_Balc_Living_Rail_South                    7.20     8.30    1.20    0.05
+  L2_Balc_Living_Slab                          7.00     7.20    1.20    3.20
+  L2_Balc_Master_Floor                         7.21     7.21    1.20    3.20
+  L2_Balc_Master_Planter                       7.20     7.60    0.25    3.20
+  L2_Balc_Master_Plants                        7.55     7.80    0.21    3.10
+  L2_Balc_Master_Rail_East                     7.20     8.30    0.05    3.20
+  L2_Balc_Master_Rail_North                    7.20     8.30    1.20    0.05
+  L2_Balc_Master_Rail_South                    7.20     8.30    1.20    0.05
+  L2_Balc_Master_Slab                          7.00     7.20    1.20    3.20
+  L2_Boundary_Wall_East                        7.20    10.00   15.24    0.30
+  L2_Boundary_Wall_North                       7.20    10.00    0.30   30.48
+  L2_Boundary_Wall_South                       7.20    10.00    0.30   30.48
+  L2_Front_Gallery_Balustrade                  7.20     8.30    7.14    0.05
+  L2_Front_Gallery_Floor                       7.21     7.21    7.49    1.50
+  L2_Front_Gallery_Planter                     7.20     7.60    7.04    0.25
+  L2_Front_Gallery_Plants                      7.55     7.75    7.00    0.21
+  L2_Right_Gallery_Balustrade                  7.20     8.30    0.05   15.70
+  L2_Right_Gallery_Floor                       7.21     7.21    1.50   15.70
+  L2_Right_Gallery_Planter                     7.20     7.60    0.30   15.70
+  L2_Right_Gallery_Plants                      7.55     7.80    0.26   15.60
+  L2_Store_Door                                7.20     9.30    0.10    0.80
+  L2_Store_Wall_East                           7.20    10.00    0.15    1.50
+  L2_Vent_Shaft_1                              7.20    10.00    0.80    0.80
+  L2_Vent_Shaft_2                              7.20    10.00    0.80    0.80
+  L3_1Bed_Balc_Balustrade                     10.20    11.30    3.52    0.05
+  L3_1Bed_Balc_Floor                          10.21    10.21    3.52    1.20
+  L3_1Bed_Balc_Planter                        10.20    10.60    3.48    0.35
+  L3_1Bed_Balc_Plants                         10.55    10.80    3.44    0.31
+  L3_1Bed_Bed                                 10.20    10.75    1.80    2.00
+  L3_1Bed_DiningTable                         10.20    10.95    1.40    0.80
+  L3_1Bed_Entry_Door                          10.20    12.30    0.90    0.08
+  L3_1Bed_Living_Glazing                      10.20    12.60    3.20    0.08
+  L3_1Bed_Living_Wall_Recess                  10.20    13.00    3.52    0.15
+  L3_1Bed_Part_Bath_X                         10.20    13.00    0.15    2.20
+  L3_1Bed_Part_Bath_Y                         10.20    13.00    2.99    0.15
+  L3_1Bed_Part_Bed                            10.20    13.00    0.15    4.60
+  L3_1Bed_Sofa                                10.20    10.95    2.00    0.85
+  L3_1Bed_Wall_Gallery_Rear                   10.20    13.00    7.49    0.15
+  L3_1Bed_Wall_Street_Bed                     10.20    13.00    3.18    0.20
+  L3_1Bed_Wall_Street_Kit                     10.20    13.00    3.49    0.20
+  L3_1Bed_Win_Street_Bed                      11.10    12.60    2.00    0.10
+  L3_1Bed_Win_Street_Kit                      11.30    12.60    1.80    0.10
+  L3_2BedL_Bed2                               10.20    10.75    1.60    2.00
+  L3_2BedL_Bed2_Win                           11.10    12.60    0.08    2.00
+  L3_2BedL_BedMaster                          10.20    10.75    1.80    2.00
+  L3_2BedL_Courtyard_Wall                     10.20    13.00    0.15   15.70
+  L3_2BedL_DiningTable                        10.20    10.95    1.60    0.90
+  L3_2BedL_Entry_Door                         10.20    12.30    0.90    0.10
+  L3_2BedL_Kitchen_Counter                    10.20    11.10    0.60    3.20
+  L3_2BedL_Living_Glaze                       10.20    12.60    0.08    3.50
+  L3_2BedL_Master_Glaze                       10.20    12.60    0.08    3.00
+  L3_2BedL_Part_Bath1                         10.20    13.00    2.10    0.15
+  L3_2BedL_Part_Bath2                         10.20    13.00    2.10    0.15
+  L3_2BedL_Part_Bed2_Master                   10.20    13.00    3.90    0.15
+  L3_2BedL_Part_DryingYard                    10.20    13.00    2.10    0.15
+  L3_2BedL_Part_Living_Bed2                   10.20    13.00    3.90    0.15
+  L3_2BedL_Sofa                               10.20    10.95    2.10    0.90
+  L3_2BedL_Spine_Wall                         10.20    13.00    0.15   15.70
+  L3_2BedL_Wall_Gallery                       10.20    13.00    6.30    0.15
+  L3_2BedR_Bed2_Win                           11.10    12.60    2.50    0.08
+  L3_2BedR_Courtyard_Wall_1                   10.20    13.00    6.00    0.15
+  L3_2BedR_Courtyard_Wall_2                   10.20    13.00    1.94    0.15
+  L3_2BedR_Entry_Door                         10.20    12.30    0.90    0.10
+  L3_2BedR_Living_Glaze                       10.20    12.60    3.80    0.08
+  L3_2BedR_Loggia_Floor                       10.21    10.21    4.70    1.20
+  L3_2BedR_Loggia_Planter                     10.20    10.60    4.60    0.30
+  L3_2BedR_Loggia_Plants                      10.55    10.80    4.56    0.26
+  L3_2BedR_Loggia_Rail_East                   10.20    11.30    0.05    1.20
+  L3_2BedR_Loggia_Rail_South                  10.20    11.30    4.70    0.05
+  L3_2BedR_Loggia_Rail_West                   10.20    11.30    0.05    1.20
+  L3_2BedR_Loggia_Slab                        10.00    10.20    4.70    1.20
+  L3_2BedR_Master_Win                         11.10    12.60    2.20    0.08
+  L3_2BedR_Part_Baths                         10.20    13.00    0.15    3.18
+  L3_2BedR_Part_Kitchen                       10.20    13.00    0.15    3.18
+  L3_2BedR_Part_Living_Bed2                   10.20    13.00    0.15    4.00
+  L3_2BedR_Part_Living_Master                 10.20    13.00    0.15    4.00
+  L3_2BedR_Part_Spine_Rear                    10.20    13.00   14.64    0.15
+  L3_Balc_Living_Floor                        10.21    10.21    1.20    3.20
+  L3_Balc_Living_Planter                      10.20    10.60    0.25    3.20
+  L3_Balc_Living_Plants                       10.55    10.80    0.21    3.10
+  L3_Balc_Living_Rail_East                    10.20    11.30    0.05    3.20
+  L3_Balc_Living_Rail_North                   10.20    11.30    1.20    0.05
+  L3_Balc_Living_Rail_South                   10.20    11.30    1.20    0.05
+  L3_Balc_Living_Slab                         10.00    10.20    1.20    3.20
+  L3_Balc_Master_Floor                        10.21    10.21    1.20    3.20
+  L3_Balc_Master_Planter                      10.20    10.60    0.25    3.20
+  L3_Balc_Master_Plants                       10.55    10.80    0.21    3.10
+  L3_Balc_Master_Rail_East                    10.20    11.30    0.05    3.20
+  L3_Balc_Master_Rail_North                   10.20    11.30    1.20    0.05
+  L3_Balc_Master_Rail_South                   10.20    11.30    1.20    0.05
+  L3_Balc_Master_Slab                         10.00    10.20    1.20    3.20
+  L3_Boundary_Wall_East                       10.20    13.00   15.24    0.30
+  L3_Boundary_Wall_North                      10.20    13.00    0.30   30.48
+  L3_Boundary_Wall_South                      10.20    13.00    0.30   30.48
+  L3_Front_Gallery_Balustrade                 10.20    11.30    7.14    0.05
+  L3_Front_Gallery_Floor                      10.21    10.21    7.49    1.50
+  L3_Front_Gallery_Planter                    10.20    10.60    7.04    0.25
+  L3_Front_Gallery_Plants                     10.55    10.75    7.00    0.21
+  L3_Right_Gallery_Balustrade                 10.20    11.30    0.05   15.70
+  L3_Right_Gallery_Floor                      10.21    10.21    1.50   15.70
+  L3_Right_Gallery_Planter                    10.20    10.60    0.30   15.70
+  L3_Right_Gallery_Plants                     10.55    10.80    0.26   15.60
+  L3_Store_Door                               10.20    12.30    0.10    0.80
+  L3_Store_Wall_East                          10.20    13.00    0.15    1.50
+  L3_Vent_Shaft_1                             10.20    13.00    0.80    0.80
+  L3_Vent_Shaft_2                             10.20    13.00    0.80    0.80
+  L4_1Bed_Balc_Balustrade                     13.20    14.30    3.52    0.05
+  L4_1Bed_Balc_Floor                          13.21    13.21    3.52    1.20
+  L4_1Bed_Balc_Planter                        13.20    13.60    3.48    0.35
+  L4_1Bed_Balc_Plants                         13.55    13.80    3.44    0.31
+  L4_1Bed_Bed                                 13.20    13.75    1.80    2.00
+  L4_1Bed_DiningTable                         13.20    13.95    1.40    0.80
+  L4_1Bed_Entry_Door                          13.20    15.30    0.90    0.08
+  L4_1Bed_Living_Glazing                      13.20    15.60    3.20    0.08
+  L4_1Bed_Living_Wall_Recess                  13.20    16.00    3.52    0.15
+  L4_1Bed_Part_Bath_X                         13.20    16.00    0.15    2.20
+  L4_1Bed_Part_Bath_Y                         13.20    16.00    2.99    0.15
+  L4_1Bed_Part_Bed                            13.20    16.00    0.15    4.60
+  L4_1Bed_Sofa                                13.20    13.95    2.00    0.85
+  L4_1Bed_Wall_Gallery_Rear                   13.20    16.00    7.49    0.15
+  L4_1Bed_Wall_Street_Bed                     13.20    16.00    3.18    0.20
+  L4_1Bed_Wall_Street_Kit                     13.20    16.00    3.49    0.20
+  L4_1Bed_Win_Street_Bed                      14.10    15.60    2.00    0.10
+  L4_1Bed_Win_Street_Kit                      14.30    15.60    1.80    0.10
+  L4_2BedL_Bed2                               13.20    13.75    1.60    2.00
+  L4_2BedL_Bed2_Win                           14.10    15.60    0.08    2.00
+  L4_2BedL_BedMaster                          13.20    13.75    1.80    2.00
+  L4_2BedL_Courtyard_Wall                     13.20    16.00    0.15   15.70
+  L4_2BedL_DiningTable                        13.20    13.95    1.60    0.90
+  L4_2BedL_Entry_Door                         13.20    15.30    0.90    0.10
+  L4_2BedL_Kitchen_Counter                    13.20    14.10    0.60    3.20
+  L4_2BedL_Living_Glaze                       13.20    15.60    0.08    3.50
+  L4_2BedL_Master_Glaze                       13.20    15.60    0.08    3.00
+  L4_2BedL_Part_Bath1                         13.20    16.00    2.10    0.15
+  L4_2BedL_Part_Bath2                         13.20    16.00    2.10    0.15
+  L4_2BedL_Part_Bed2_Master                   13.20    16.00    3.90    0.15
+  L4_2BedL_Part_DryingYard                    13.20    16.00    2.10    0.15
+  L4_2BedL_Part_Living_Bed2                   13.20    16.00    3.90    0.15
+  L4_2BedL_Sofa                               13.20    13.95    2.10    0.90
+  L4_2BedL_Spine_Wall                         13.20    16.00    0.15   15.70
+  L4_2BedL_Wall_Gallery                       13.20    16.00    6.30    0.15
+  L4_2BedR_Bed2_Win                           14.10    15.60    2.50    0.08
+  L4_2BedR_Courtyard_Wall_1                   13.20    16.00    6.00    0.15
+  L4_2BedR_Courtyard_Wall_2                   13.20    16.00    1.94    0.15
+  L4_2BedR_Entry_Door                         13.20    15.30    0.90    0.10
+  L4_2BedR_Living_Glaze                       13.20    15.60    3.80    0.08
+  L4_2BedR_Loggia_Floor                       13.21    13.21    4.70    1.20
+  L4_2BedR_Loggia_Planter                     13.20    13.60    4.60    0.30
+  L4_2BedR_Loggia_Plants                      13.55    13.80    4.56    0.26
+  L4_2BedR_Loggia_Rail_East                   13.20    14.30    0.05    1.20
+  L4_2BedR_Loggia_Rail_South                  13.20    14.30    4.70    0.05
+  L4_2BedR_Loggia_Rail_West                   13.20    14.30    0.05    1.20
+  L4_2BedR_Loggia_Slab                        13.00    13.20    4.70    1.20
+  L4_2BedR_Master_Win                         14.10    15.60    2.20    0.08
+  L4_2BedR_Part_Baths                         13.20    16.00    0.15    3.18
+  L4_2BedR_Part_Kitchen                       13.20    16.00    0.15    3.18
+  L4_2BedR_Part_Living_Bed2                   13.20    16.00    0.15    4.00
+  L4_2BedR_Part_Living_Master                 13.20    16.00    0.15    4.00
+  L4_2BedR_Part_Spine_Rear                    13.20    16.00   14.64    0.15
+  L4_Balc_Living_Floor                        13.21    13.21    1.20    3.20
+  L4_Balc_Living_Planter                      13.20    13.60    0.25    3.20
+  L4_Balc_Living_Plants                       13.55    13.80    0.21    3.10
+  L4_Balc_Living_Rail_East                    13.20    14.30    0.05    3.20
+  L4_Balc_Living_Rail_North                   13.20    14.30    1.20    0.05
+  L4_Balc_Living_Rail_South                   13.20    14.30    1.20    0.05
+  L4_Balc_Living_Slab                         13.00    13.20    1.20    3.20
+  L4_Balc_Master_Floor                        13.21    13.21    1.20    3.20
+  L4_Balc_Master_Planter                      13.20    13.60    0.25    3.20
+  L4_Balc_Master_Plants                       13.55    13.80    0.21    3.10
+  L4_Balc_Master_Rail_East                    13.20    14.30    0.05    3.20
+  L4_Balc_Master_Rail_North                   13.20    14.30    1.20    0.05
+  L4_Balc_Master_Rail_South                   13.20    14.30    1.20    0.05
+  L4_Balc_Master_Slab                         13.00    13.20    1.20    3.20
+  L4_Boundary_Wall_East                       13.20    16.00   15.24    0.30
+  L4_Boundary_Wall_North                      13.20    16.00    0.30   30.48
+  L4_Boundary_Wall_South                      13.20    16.00    0.30   30.48
+  L4_Front_Gallery_Balustrade                 13.20    14.30    7.14    0.05
+  L4_Front_Gallery_Floor                      13.21    13.21    7.49    1.50
+  L4_Front_Gallery_Planter                    13.20    13.60    7.04    0.25
+  L4_Front_Gallery_Plants                     13.55    13.75    7.00    0.21
+  L4_Right_Gallery_Balustrade                 13.20    14.30    0.05   15.70
+  L4_Right_Gallery_Floor                      13.21    13.21    1.50   15.70
+  L4_Right_Gallery_Planter                    13.20    13.60    0.30   15.70
+  L4_Right_Gallery_Plants                     13.55    13.80    0.26   15.60
+  L4_Store_Door                               13.20    15.30    0.10    0.80
+  L4_Store_Wall_East                          13.20    16.00    0.15    1.50
+  L4_Vent_Shaft_1                             13.20    16.00    0.80    0.80
+  L4_Vent_Shaft_2                             13.20    16.00    0.80    0.80
+  North_Arrow                                  0.10     0.10    0.70    0.80
+  Parapet_Roof_Courtyard_East                 16.20    17.30    0.30   15.70
+  Parapet_Roof_Courtyard_West                 16.20    17.30    0.30   15.70
+  Parapet_Roof_East                           16.20    17.30   15.24    0.30
+  Parapet_Roof_North                          16.20    17.30    0.30   30.48
+  Parapet_Roof_South                          16.20    17.30    0.30   30.48
+  Parapet_Roof_West                           16.20    17.30   15.24    0.30
+  Pedestrian_Walkway_B1                       -1.99    -1.99    1.20   11.10
+  Ramp_Kerb_Barrier                           -2.00     0.60    0.22   23.00
+  Ramp_Slice_1                                -0.25     0.15    3.18    1.00
+  Ramp_Slice_2                                -0.30     0.15    3.18    5.00
+  Ramp_Slice_3                                -0.45    -0.05    3.18    2.40
+  Ramp_Slice_4                                -2.10    -0.20    3.18   12.20
+  Ramp_Slice_5                                -2.25    -1.85    3.18    2.40
+  Roof_Drain_Gully_0.5_23.5                   16.20    16.25    0.25    0.25
+  Roof_Drain_Gully_0.5_7.5                    16.20    16.25    0.25    0.25
+  Roof_Drain_Gully_14.8_23.5                  16.20    16.25    0.25    0.25
+  Roof_Drain_Gully_14.8_7.5                   16.20    16.25    0.25    0.25
+  Roof_Drying_Louvers                         16.20    18.00   13.00    0.05
+  Roof_Drying_Screen_Wall                     16.20    18.20   14.64    0.10
+  Roof_Garden_Bench_1                         16.20    16.65    2.00    0.50
+  Roof_Garden_Terrace_Floor                   16.21    16.21    5.70   10.00
+  Roof_Lift_Louver_Vent                       18.70    19.50    0.10    0.80
+  Roof_Lift_Motor_Slab                        19.80    20.00    2.20    2.20
+  Roof_Pergola_Beam_1                         18.80    19.00    4.40    0.15
+  Roof_Pergola_Beam_2                         18.80    19.00    4.40    0.15
+  Roof_Pergola_Post_x1.2_y10.2                16.20    18.80    0.16    0.16
+  Roof_Pergola_Post_x1.2_y13.0                16.20    18.80    0.16    0.16
+  Roof_Pergola_Post_x1.2_y15.8                16.20    18.80    0.16    0.16
+  Roof_Pergola_Post_x5.2_y10.2                16.20    18.80    0.16    0.16
+  Roof_Pergola_Post_x5.2_y13.0                16.20    18.80    0.16    0.16
+  Roof_Pergola_Post_x5.2_y15.8                16.20    18.80    0.16    0.16
+  Roof_Pergola_Rafter_10.5                    18.95    19.10    4.80    0.08
+  Roof_Pergola_Rafter_11.5                    18.95    19.10    4.80    0.08
+  Roof_Pergola_Rafter_12.5                    18.95    19.10    4.80    0.08
+  Roof_Pergola_Rafter_13.5                    18.95    19.10    4.80    0.08
+  Roof_Pergola_Rafter_14.5                    18.95    19.10    4.80    0.08
+  Roof_Pergola_Rafter_15.5                    18.95    19.10    4.80    0.08
+  Roof_Planter_Bed_1                          16.20    16.70    5.20    0.60
+  Roof_Planter_Bed_2                          16.20    16.70    5.20    0.60
+  Roof_Planter_Plants_1                       16.70    17.10    5.10    0.50
+  Roof_Planter_Plants_2                       16.70    17.10    5.10    0.50
+  Roof_SWH_Collector_1                        16.55    16.65    2.00    1.20
+  Roof_SWH_Collector_2                        16.55    16.65    2.00    1.20
+  Roof_SWH_Cylinder_1                         17.10    18.90    0.50    0.50
+  Roof_SWH_Cylinder_2                         17.10    18.90    0.50    0.50
+  Roof_Solar_PV_1                             16.50    16.56    1.60    1.10
+  Roof_Solar_PV_2                             16.50    16.56    1.60    1.10
+  Roof_Solar_PV_3                             16.50    16.56    1.60    1.10
+  Roof_Solar_PV_4                             16.50    16.56    1.60    1.10
+  Roof_Solar_PV_5                             16.50    16.56    1.60    1.10
+  Roof_Solar_PV_6                             16.50    16.56    1.60    1.10
+  Roof_Stair_Exit_Door                        16.20    18.30    1.00    0.10
+  Roof_Stair_Roof_Slab                        19.00    19.20    2.25    4.90
+  Roof_Tank_Leg_1                             16.20    18.20    0.12    0.12
+  Roof_Tank_Leg_2                             16.20    18.20    0.12    0.12
+  Roof_Tank_Leg_3                             16.20    18.20    0.12    0.12
+  Roof_Tank_Leg_4                             16.20    18.20    0.12    0.12
+  Roof_Tank_Platform                          18.10    18.20    2.20    2.40
+  Roof_Water_Tank_Domestic                    18.20    20.10    1.40    1.40
+  Roof_Water_Tank_Rainwater                   18.20    20.10    1.40    1.40
+  Room_Server_Utility_B1                      -2.00     0.90    2.94    2.80
+  Slab_Basement_Raft                          -2.30    -2.00   15.24   30.48
+  Slab_L1_FrontBlock                           4.00     4.20   10.49    7.30
+  Slab_L1_Gallery_FrontCore                    4.00     4.20    4.75    2.10
+  Slab_L1_LeftWing                             4.00     4.20    6.30   15.70
+  Slab_L1_RearBlock                            4.00     4.20   15.24    7.48
+  Slab_L1_RightGallery                         4.00     4.20    1.80   15.70
+  Slab_L2_FrontBlock                           7.00     7.20   10.49    7.30
+  Slab_L2_Gallery_FrontCore                    7.00     7.20    4.75    2.10
+  Slab_L2_LeftWing                             7.00     7.20    6.30   15.70
+  Slab_L2_RearBlock                            7.00     7.20   15.24    7.48
+  Slab_L2_RightGallery                         7.00     7.20    1.80   15.70
+  Slab_L3_FrontBlock                          10.00    10.20   10.49    7.30
+  Slab_L3_Gallery_FrontCore                   10.00    10.20    4.75    2.10
+  Slab_L3_LeftWing                            10.00    10.20    6.30   15.70
+  Slab_L3_RearBlock                           10.00    10.20   15.24    7.48
+  Slab_L3_RightGallery                        10.00    10.20    1.80   15.70
+  Slab_L4_FrontBlock                          13.00    13.20   10.49    7.30
+  Slab_L4_Gallery_FrontCore                   13.00    13.20    4.75    2.10
+  Slab_L4_LeftWing                            13.00    13.20    6.30   15.70
+  Slab_L4_RearBlock                           13.00    13.20   15.24    7.48
+  Slab_L4_RightGallery                        13.00    13.20    1.80   15.70
+  Slab_Podium_Courtyard                        0.65     0.90   11.76   17.80
+  Slab_Podium_Front                            0.65     0.90    7.01    5.20
+  Slab_Podium_RearBlock                        0.65     0.90   15.24    7.48
+  Slab_Roof_FrontBlock                        16.00    16.20   10.49    7.30
+  Slab_Roof_Gallery_FrontCore                 16.00    16.20    4.75    2.10
+  Slab_Roof_LeftWing                          16.00    16.20    6.30   15.70
+  Slab_Roof_RearBlock                         16.00    16.20   15.24    7.48
+  Slab_Roof_RightGallery                      16.00    16.20    1.80   15.70
+  Solid_Ground_Front_Block                    -2.00     0.00    7.01    5.20
+  Stair_B1_to_GF                              -2.00     0.99    1.20    4.76
+  Stair_GF_to_L1                               0.90     3.89    1.20    4.76
+  Stair_L1_to_L2                               4.20     7.19    1.20    4.76
+  Stair_L2_to_L3                               7.20    10.19    1.20    4.76
+  Stair_L3_to_L4                              10.20    13.19    1.20    4.76
+  Stair_L4_to_Roof                            13.20    16.19    1.20    4.76
+  Sump_Pit_Basement                           -3.20    -2.00    1.00    1.00
+  SunFin_RearCourtyard_1                       4.20    16.20    0.06    0.30
+  SunFin_RearCourtyard_2                       4.20    16.20    0.06    0.30
+  SunFin_RearCourtyard_3                       4.20    16.20    0.06    0.30
+  SunFin_RearCourtyard_4                       4.20    16.20    0.06    0.30
+  SunFin_RearCourtyard_5                       4.20    16.20    0.06    0.30
+  SunFin_RearCourtyard_6                       4.20    16.20    0.06    0.30
+  SunFin_RearCourtyard_7                       4.20    16.20    0.06    0.30
+  SunFin_RearCourtyard_8                       4.20    16.20    0.06    0.30
+  SunFin_Street_West_1                         4.20    16.20    0.06    0.30
+  SunFin_Street_West_10                        4.20    16.20    0.06    0.30
+  SunFin_Street_West_11                        4.20    16.20    0.06    0.30
+  SunFin_Street_West_12                        4.20    16.20    0.06    0.30
+  SunFin_Street_West_13                        4.20    16.20    0.06    0.30
+  SunFin_Street_West_14                        4.20    16.20    0.06    0.30
+  SunFin_Street_West_15                        4.20    16.20    0.06    0.30
+  SunFin_Street_West_16                        4.20    16.20    0.06    0.30
+  SunFin_Street_West_2                         4.20    16.20    0.06    0.30
+  SunFin_Street_West_3                         4.20    16.20    0.06    0.30
+  SunFin_Street_West_4                         4.20    16.20    0.06    0.30
+  SunFin_Street_West_5                         4.20    16.20    0.06    0.30
+  SunFin_Street_West_6                         4.20    16.20    0.06    0.30
+  SunFin_Street_West_7                         4.20    16.20    0.06    0.30
+  SunFin_Street_West_8                         4.20    16.20    0.06    0.30
+  SunFin_Street_West_9                         4.20    16.20    0.06    0.30
+  SunHood_L1_Bed2                              6.70     6.82    0.60    2.80
+  SunHood_L1_Living                            6.70     6.82    0.60    4.00
+  SunHood_L1_Master                            6.70     6.82    0.60    4.00
+  SunHood_L2_Bed2                              9.70     9.82    0.60    2.80
+  SunHood_L2_Living                            9.70     9.82    0.60    4.00
+  SunHood_L2_Master                            9.70     9.82    0.60    4.00
+  SunHood_L3_Bed2                             12.70    12.82    0.60    2.80
+  SunHood_L3_Living                           12.70    12.82    0.60    4.00
+  SunHood_L3_Master                           12.70    12.82    0.60    4.00
+  SunHood_L4_Bed2                             15.70    15.82    0.60    2.80
+  SunHood_L4_Living                           15.70    15.82    0.60    4.00
+  SunHood_L4_Master                           15.70    15.82    0.60    4.00
+  Tank_Water_Sunken                           -3.00    -2.00    2.70   10.00
+  Wall_Retaining_East                         -2.00     0.90   15.24    0.30
+  Wall_Retaining_North                        -2.00     0.90    0.30   30.48
+  Wall_Retaining_South                        -2.00     0.90    0.30   30.48
+  Wall_Retaining_West                         -2.00     0.00   11.76    0.30
+
+--- RENDER SETTINGS ---
+  res=1920x1080 @100%  view_transform=AgX
+  exposure=0.0  look=None
+==============================================================================
+
+BlenderMCP addon unregistered
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

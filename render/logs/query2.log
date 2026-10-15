@@ -1,0 +1,181 @@
+﻿blender.exe : Traceback (most recent call last):
+At line:2 char:1
++ & $b -b "Courtyard Apartments 50x100 v3.blend" --python query2.py 2>& ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Traceback (most recent call last)::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  File "C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\modules\addon_utils.py", line 544, in enable
+    mod.register()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Roaming\Blender Foundation\Blender\5.2\extensions\blender_org\bonsai\__init__.py", line 
+269, in register
+    bonsai.bim.register()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Roaming\Blender 
+Foundation\Blender\5.2\extensions\.local\lib\python3.13\site-packages\bonsai\bim\__init__.py", line 292, in register
+    mod.register()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Roaming\Blender 
+Foundation\Blender\5.2\extensions\.local\lib\python3.13\site-packages\bonsai\bim\module\light\__init__.py", line 67, 
+in register
+    file.chmod(file.stat().st_mode | stat.S_IEXEC)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Blender Foundation\Blender 5.2\5.2\python\Lib\pathlib\_local.py", line 738, in chmod
+    os.chmod(self, mode, follow_symlinks=follow_symlinks)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [WinError 5] Access is denied: 'C:\\Users\\Admin\\AppData\\Roaming\\Blender 
+Foundation\\Blender\\5.2\\extensions\\.local\\lib\\python3.13\\site-packages\\pyradiance\\bin\\3ds2mgf.exe'
+00:12.796  blend            | Read blend: "C:\Users\Admin\Documents\Personal projects\Blender house design\Courtyard Apartments 50x100 v3.blend"
+Error in bpy.app.handlers.load_post[4]:
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Roaming\Blender 
+Foundation\Blender\5.2\extensions\.local\lib\python3.13\site-packages\bonsai\bim\handler.py", line 573, in load_post
+    _apply_user_preferences()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Roaming\Blender 
+Foundation\Blender\5.2\extensions\.local\lib\python3.13\site-packages\bonsai\bim\handler.py", line 470, in 
+_apply_user_preferences
+    if not preferences.should_setup_toolbar:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'should_setup_toolbar'
+Error in bpy.app.handlers.load_post[4]:
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Roaming\Blender 
+Foundation\Blender\5.2\extensions\.local\lib\python3.13\site-packages\bonsai\bim\handler.py", line 573, in load_post
+    _apply_user_preferences()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Roaming\Blender 
+Foundation\Blender\5.2\extensions\.local\lib\python3.13\site-packages\bonsai\bim\handler.py", line 470, in 
+_apply_user_preferences
+    if not preferences.should_setup_toolbar:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'should_setup_toolbar'
+C:\Users\Admin\Documents\Personal projects\Blender house design\query2.py:49: DeprecationWarning: 'World.use_nodes' is 
+expected to be removed in Blender 6.0
+  print("  world:", sc.world.name if sc.world else None, "use_nodes:", sc.world.use_nodes if sc.world else None)
+C:\Users\Admin\Documents\Personal projects\Blender house design\query2.py:50: DeprecationWarning: 'World.use_nodes' is 
+expected to be removed in Blender 6.0
+  if sc.world and sc.world.use_nodes:
+Exception in module register(): C:\Users\Admin\AppData\Roaming\Blender Foundation\Blender\5.2\extensions\blender_org\bonsai\__init__.py
+BlenderMCP addon registered
+
+====================================================================================================
+  QUERY 2
+====================================================================================================
+
+--- ANNOTATION OBJECTS ---
+  CONFLICT_s18_FrontSetback                      MESH     hide_render=False hide_viewport=False
+  CONFLICT_s19_Left                              MESH     hide_render=False hide_viewport=False
+  CONFLICT_s19_Right                             MESH     hide_render=False hide_viewport=False
+  Camera_CarDescent_Cam                          CAMERA   hide_render=False hide_viewport=False
+  Camera_CarDescent_Cam_Target                   EMPTY    hide_render=False hide_viewport=False
+  Camera_Walkthrough_Cam                         CAMERA   hide_render=False hide_viewport=False
+  Camera_Walkthrough_Cam_Target                  EMPTY    hide_render=False hide_viewport=False
+  Car_Descent_Path                               CURVE    hide_render=False hide_viewport=False
+  Label_CONFLICT_s18                             FONT     hide_render=False hide_viewport=False
+  Label_CONFLICT_s19                             FONT     hide_render=False hide_viewport=False
+  Label_PASS_s143                                FONT     hide_render=False hide_viewport=False
+  Label_PASS_s205                                FONT     hide_render=False hide_viewport=False
+  North_Arrow                                    MESH     hide_render=False hide_viewport=False
+  North_Arrow_Label                              FONT     hide_render=False hide_viewport=False
+  Prod_01_Courtyard_Garden                       CAMERA   hide_render=False hide_viewport=False
+  Prod_02_Courtyard_BirdsEye                     CAMERA   hide_render=False hide_viewport=False
+  Prod_03_Street_Facade                          CAMERA   hide_render=False hide_viewport=False
+  Prod_04_LivingRoom_L1                          CAMERA   hide_render=False hide_viewport=False
+  Prod_05_Balcony_L3                             CAMERA   hide_render=False hide_viewport=False
+  Prod_06_Roof_Pergola                           CAMERA   hide_render=False hide_viewport=False
+  Swept_Path_Trajectory                          CURVE    hide_render=False hide_viewport=False
+  Walkthrough_Path                               CURVE    hide_render=False hide_viewport=False
+
+--- LIGHTS ---
+  Sky_Fill: SUN energy=2.0 color=(0.65, 0.78, 1.0) angle=0.0092
+      travels->( 0.000,-0.174,-0.985) elevation=  80.0deg azimuth= -90.0deg
+  Sun_Nairobi: SUN energy=6.0 color=(1.0, 0.92, 0.82) angle=0.0087
+      travels->( 0.212, 0.805,-0.554) elevation=  33.6deg azimuth=  75.3deg
+
+--- VIEW / COLOR MANAGEMENT ---
+  view_transform: AgX
+  look: None  exposure: 0.0  gamma: 1.0
+  world: World use_nodes: True
+    world node: OUTPUT_WORLD World Output
+    world node: BACKGROUND Background
+  engine: BLENDER_EEVEE  res: 1920 x 1080 @ 100
+  film_transparent: False
+  eevee.taa_render_samples: 64
+  eevee.use_raytracing: False
+  eevee.use_shadows: True
+
+--- ROOF SUB-PARTS ---
+  Roof_Pergola*                      X[  0.80,  5.60] Y[ 10.10, 15.88] Z[ 16.20, 19.10]  ctr=( 3.20,12.99,17.65)
+  Roof_Solar*                        X[  4.00,  9.20] Y[  1.00,  4.30] Z[ 16.50, 16.56]  ctr=( 6.60, 2.65,16.53)
+  Roof_Garden*                       X[  0.30,  6.00] Y[  8.00, 18.00] Z[ 16.20, 16.65]  ctr=( 3.15,13.00,16.43)
+  Roof_Planter*                      X[  0.50,  5.70] Y[  8.20, 17.80] Z[ 16.20, 17.10]  ctr=( 3.10,13.00,16.65)
+  Roof_Stair*                        X[ 12.69, 14.94] Y[  0.30,  5.25] Z[ 16.20, 19.20]  ctr=(13.81, 2.78,17.70)
+  Roof_Lift*                         X[ 10.45, 12.69] Y[  0.30,  2.50] Z[ 18.70, 20.00]  ctr=(11.57, 1.40,19.35)
+  Roof_Water*                        X[  1.40,  2.80] Y[  1.90,  4.50] Z[ 18.20, 20.10]  ctr=( 2.10, 3.20,19.15)
+  Roof_Tank*                         X[  1.00,  3.20] Y[  2.00,  4.40] Z[ 16.20, 18.20]  ctr=( 2.10, 3.20,17.20)
+  Roof_Planter*                      X[  0.50,  5.70] Y[  8.20, 17.80] Z[ 16.20, 17.10]  ctr=( 3.10,13.00,16.65)
+
+--- RESIDENTIAL / LIVING SPACES per level (sample) ---
+  L1 *Living*                        X[  2.40, 11.35] Y[  1.10, 27.00] Z[  4.00,  7.00]  ctr=( 6.87,14.05, 5.50)
+  L1 *Bed*                           X[  0.00, 14.94] Y[  0.00, 30.18] Z[  4.00,  7.00]  ctr=( 7.47,15.09, 5.50)
+  L1 *Kitchen*                       X[  0.35,  6.45] Y[  7.50, 30.18] Z[  4.20,  7.00]  ctr=( 3.40,18.84, 5.60)
+  L1 *Sofa*                          X[  3.00,  5.90] Y[  2.80,  9.90] Z[  4.20,  4.95]  ctr=( 4.45, 6.35, 4.57)
+  L1 *Dining*                        X[  3.00,  8.90] Y[  1.50, 12.70] Z[  4.20,  4.95]  ctr=( 5.95, 7.10, 4.57)
+  L2 *Living*                        X[  2.40, 11.35] Y[  1.10, 27.00] Z[  7.00, 10.00]  ctr=( 6.87,14.05, 8.50)
+  L2 *Bed*                           X[  0.00, 14.94] Y[  0.00, 30.18] Z[  7.00, 10.00]  ctr=( 7.47,15.09, 8.50)
+  L2 *Kitchen*                       X[  0.35,  6.45] Y[  7.50, 30.18] Z[  7.20, 10.00]  ctr=( 3.40,18.84, 8.60)
+  L2 *Sofa*                          X[  3.00,  5.90] Y[  2.80,  9.90] Z[  7.20,  7.95]  ctr=( 4.45, 6.35, 7.57)
+  L2 *Dining*                        X[  3.00,  8.90] Y[  1.50, 12.70] Z[  7.20,  7.95]  ctr=( 5.95, 7.10, 7.57)
+  L3 *Living*                        X[  2.40, 11.35] Y[  1.10, 27.00] Z[ 10.00, 13.00]  ctr=( 6.87,14.05,11.50)
+  L3 *Bed*                           X[  0.00, 14.94] Y[  0.00, 30.18] Z[ 10.00, 13.00]  ctr=( 7.47,15.09,11.50)
+  L3 *Kitchen*                       X[  0.35,  6.45] Y[  7.50, 30.18] Z[ 10.20, 13.00]  ctr=( 3.40,18.84,11.60)
+  L3 *Sofa*                          X[  3.00,  5.90] Y[  2.80,  9.90] Z[ 10.20, 10.95]  ctr=( 4.45, 6.35,10.57)
+  L3 *Dining*                        X[  3.00,  8.90] Y[  1.50, 12.70] Z[ 10.20, 10.95]  ctr=( 5.95, 7.10,10.57)
+  L4 *Living*                        X[  2.40, 11.35] Y[  1.10, 27.00] Z[ 13.00, 16.00]  ctr=( 6.87,14.05,14.50)
+  L4 *Bed*                           X[  0.00, 14.94] Y[  0.00, 30.18] Z[ 13.00, 16.00]  ctr=( 7.47,15.09,14.50)
+  L4 *Kitchen*                       X[  0.35,  6.45] Y[  7.50, 30.18] Z[ 13.20, 16.00]  ctr=( 3.40,18.84,14.60)
+  L4 *Sofa*                          X[  3.00,  5.90] Y[  2.80,  9.90] Z[ 13.20, 13.95]  ctr=( 4.45, 6.35,13.57)
+  L4 *Dining*                        X[  3.00,  8.90] Y[  1.50, 12.70] Z[ 13.20, 13.95]  ctr=( 5.95, 7.10,13.57)
+
+--- BALCONY objects L3 (detail) ---
+  L3_1Bed_Balc_Balustrade                      X[  3.48,  7.00] Y[  0.00,  0.05] Z[ 10.20, 11.30]
+  L3_1Bed_Balc_Floor                           X[  3.48,  7.00] Y[  0.00,  1.20] Z[ 10.21, 10.21]
+  L3_1Bed_Balc_Planter                         X[  3.50,  6.98] Y[  0.05,  0.40] Z[ 10.20, 10.60]
+  L3_1Bed_Balc_Plants                          X[  3.52,  6.96] Y[  0.07,  0.38] Z[ 10.55, 10.80]
+  L3_1Bed_Living_Glazing                       X[  3.60,  6.80] Y[  1.15,  1.23] Z[ 10.20, 12.60]
+  L3_2BedL_Courtyard_Wall                      X[  6.15,  6.30] Y[  7.30, 23.00] Z[ 10.20, 13.00]
+  L3_2BedL_Living_Glaze                        X[  6.22,  6.30] Y[  8.50, 12.00] Z[ 10.20, 12.60]
+  L3_2BedL_Master_Glaze                        X[  6.22,  6.30] Y[ 19.00, 22.00] Z[ 10.20, 12.60]
+  L3_2BedR_Courtyard_Wall_1                    X[  0.30,  6.30] Y[ 22.85, 23.00] Z[ 10.20, 13.00]
+  L3_2BedR_Courtyard_Wall_2                    X[ 11.50, 13.44] Y[ 22.85, 23.00] Z[ 10.20, 13.00]
+  L3_2BedR_Living_Glaze                        X[  7.00, 10.80] Y[ 22.92, 23.00] Z[ 10.20, 12.60]
+  L3_Balc_Living_Floor                         X[  6.30,  7.50] Y[  8.20, 11.40] Z[ 10.21, 10.21]
+  L3_Balc_Living_Planter                       X[  7.20,  7.45] Y[  8.20, 11.40] Z[ 10.20, 10.60]
+  L3_Balc_Living_Plants                        X[  7.22,  7.43] Y[  8.25, 11.35] Z[ 10.55, 10.80]
+  L3_Balc_Living_Rail_East                     X[  7.45,  7.50] Y[  8.20, 11.40] Z[ 10.20, 11.30]
+  L3_Balc_Living_Rail_North                    X[  6.30,  7.50] Y[  8.20,  8.25] Z[ 10.20, 11.30]
+  L3_Balc_Living_Rail_South                    X[  6.30,  7.50] Y[ 11.35, 11.40] Z[ 10.20, 11.30]
+  L3_Balc_Living_Slab                          X[  6.30,  7.50] Y[  8.20, 11.40] Z[ 10.00, 10.20]
+  L3_Balc_Master_Floor                         X[  6.30,  7.50] Y[ 19.20, 22.40] Z[ 10.21, 10.21]
+  L3_Balc_Master_Planter                       X[  7.20,  7.45] Y[ 19.20, 22.40] Z[ 10.20, 10.60]
+  L3_Balc_Master_Plants                        X[  7.22,  7.43] Y[ 19.25, 22.35] Z[ 10.55, 10.80]
+  L3_Balc_Master_Rail_East                     X[  7.45,  7.50] Y[ 19.20, 22.40] Z[ 10.20, 11.30]
+  L3_Balc_Master_Rail_North                    X[  6.30,  7.50] Y[ 19.20, 19.25] Z[ 10.20, 11.30]
+  L3_Balc_Master_Rail_South                    X[  6.30,  7.50] Y[ 22.35, 22.40] Z[ 10.20, 11.30]
+  L3_Balc_Master_Slab                          X[  6.30,  7.50] Y[ 19.20, 22.40] Z[ 10.00, 10.20]
+
+--- GF COURTYARD-FACING GLAZING (ground floor) ---
+  GF_Rear_Living_Glazing                       X[  7.50, 10.50] Y[ 22.95, 23.03] Z[  0.90,  3.40]
+  GF_Rear_Living_Glazing_Frame                 X[  7.45, 10.55] Y[ 22.92, 23.06] Z[  0.90,  3.45]
+  GF_Shop_Glazed_Door                          X[  7.50, 10.25] Y[  0.15,  0.20] Z[  0.00,  3.00]
+
+--- L1 EAST-WING (x>12) objects, to find what faces the courtyard ---
+  L1 east-wing cluster               X[ 13.44, 15.24] Y[  0.00, 30.48] Z[  4.00,  7.00]  ctr=(14.34,15.24, 5.50)
+====================================================================================================
+
+BlenderMCP addon unregistered
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

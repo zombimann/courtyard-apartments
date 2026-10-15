@@ -1,0 +1,121 @@
+﻿blender.exe : Traceback (most recent call last):
+At line:2 char:1
++ & $b -b "Courtyard Apartments 50x100 v3.blend" --python query_geometr ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Traceback (most recent call last)::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  File "C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\modules\addon_utils.py", line 544, in enable
+    mod.register()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Roaming\Blender Foundation\Blender\5.2\extensions\blender_org\bonsai\__init__.py", line 
+269, in register
+    bonsai.bim.register()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Roaming\Blender 
+Foundation\Blender\5.2\extensions\.local\lib\python3.13\site-packages\bonsai\bim\__init__.py", line 292, in register
+    mod.register()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Roaming\Blender 
+Foundation\Blender\5.2\extensions\.local\lib\python3.13\site-packages\bonsai\bim\module\light\__init__.py", line 67, 
+in register
+    file.chmod(file.stat().st_mode | stat.S_IEXEC)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Blender Foundation\Blender 5.2\5.2\python\Lib\pathlib\_local.py", line 738, in chmod
+    os.chmod(self, mode, follow_symlinks=follow_symlinks)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [WinError 5] Access is denied: 'C:\\Users\\Admin\\AppData\\Roaming\\Blender 
+Foundation\\Blender\\5.2\\extensions\\.local\\lib\\python3.13\\site-packages\\pyradiance\\bin\\3ds2mgf.exe'
+00:12.265  blend            | Read blend: "C:\Users\Admin\Documents\Personal projects\Blender house design\Courtyard Apartments 50x100 v3.blend"
+Error in bpy.app.handlers.load_post[4]:
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Roaming\Blender 
+Foundation\Blender\5.2\extensions\.local\lib\python3.13\site-packages\bonsai\bim\handler.py", line 573, in load_post
+    _apply_user_preferences()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Roaming\Blender 
+Foundation\Blender\5.2\extensions\.local\lib\python3.13\site-packages\bonsai\bim\handler.py", line 470, in 
+_apply_user_preferences
+    if not preferences.should_setup_toolbar:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'should_setup_toolbar'
+Error in bpy.app.handlers.load_post[4]:
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Roaming\Blender 
+Foundation\Blender\5.2\extensions\.local\lib\python3.13\site-packages\bonsai\bim\handler.py", line 573, in load_post
+    _apply_user_preferences()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Roaming\Blender 
+Foundation\Blender\5.2\extensions\.local\lib\python3.13\site-packages\bonsai\bim\handler.py", line 470, in 
+_apply_user_preferences
+    if not preferences.should_setup_toolbar:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'should_setup_toolbar'
+Traceback (most recent call last):
+  File "C:\Users\Admin\Documents\Personal projects\Blender house design\query_geometry.py", line 75, in <module>
+    show(p + '*', pref(p))
+    ~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\Personal projects\Blender house design\query_geometry.py", line 21, in show
+    if isinstance(objs_or_names[0], str):
+                  ~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+Exception in module register(): C:\Users\Admin\AppData\Roaming\Blender Foundation\Blender\5.2\extensions\blender_org\bonsai\__init__.py
+BlenderMCP addon registered
+
+====================================================================================================
+  GEOMETRY QUERY
+====================================================================================================
+
+--- COLLECTION ENVELOPES ---
+  Annotations                          X[ -2.50, 15.24] Y[ -2.40, 30.48] Z[  0.10,  9.00]  ctr=( 6.37,14.04, 4.55)
+  B1_Basement                          X[  0.00, 15.24] Y[  0.00, 30.48] Z[ -3.20,  0.90]  ctr=( 7.62,15.24,-1.15)
+  GF_Ground                            X[  0.00, 15.24] Y[ -0.10, 30.48] Z[  0.00,  8.10]  ctr=( 7.62,15.19, 4.05)
+  L1_Floor                             X[  0.00, 15.24] Y[  0.00, 30.48] Z[  4.00,  7.19]  ctr=( 7.62,15.24, 5.60)
+  L2_Floor                             X[  0.00, 15.24] Y[  0.00, 30.48] Z[  7.00, 10.19]  ctr=( 7.62,15.24, 8.60)
+  L3_Floor                             X[  0.00, 15.24] Y[  0.00, 30.48] Z[ 10.00, 13.19]  ctr=( 7.62,15.24,11.60)
+  L4_Floor                             X[  0.00, 15.24] Y[  0.00, 30.48] Z[ 13.00, 16.19]  ctr=( 7.62,15.24,14.60)
+  Roof                                 X[  0.00, 15.24] Y[  0.00, 30.48] Z[ 16.00, 20.10]  ctr=( 7.62,15.24,18.05)
+  Structure                            X[  0.00, 15.24] Y[ -0.30, 30.48] Z[ -2.00, 19.80]  ctr=( 7.62,15.09, 8.90)
+
+--- COURTYARD / GARDEN ---
+  GF_Courtyard*                        X[  7.20, 12.50] Y[  8.50, 19.50] Z[  0.90,  1.21]  ctr=( 9.85,14.00, 1.05)
+  GF_Lawn_*                            X[  6.88, 12.82] Y[  8.20, 19.80] Z[  0.90,  1.39]  ctr=( 9.85,14.00, 1.14)
+  GF_Tree_*                            X[  7.76, 11.94] Y[ 12.30, 16.70] Z[  0.90,  8.10]  ctr=( 9.85,14.50, 4.50)
+  GF_Path_*                            X[  6.30, 13.44] Y[  7.30, 23.00] Z[  0.91,  0.91]  ctr=( 9.87,15.15, 0.91)
+  GF_Colonnade*                        X[  3.60,  6.58] Y[  5.20, 23.00] Z[  0.90,  1.70]  ctr=( 5.09,14.10, 1.30)
+
+--- CIRCULATION CORE ---
+  Core_*                               X[ 10.45, 14.94] Y[  0.30,  5.33] Z[ -2.00, 19.80]  ctr=(12.69, 2.81, 8.90)
+
+--- STREET FRONTAGE (Y min) ---
+  GF_Guard*                            X[  3.48,  5.70] Y[  0.00,  3.02] Z[  0.00,  3.20]  ctr=( 4.59, 1.51, 1.60)
+  GF_Gate*                             X[  5.68,  7.28] Y[ -0.05,  0.05] Z[  0.00,  2.40]  ctr=( 6.48, 0.00, 1.20)
+  GF_Portal*                           X[  0.00,  3.48] Y[  0.00,  1.86] Z[  0.00,  3.40]  ctr=( 1.74, 0.93, 1.70)
+  GF_Pedestrian*                       X[  5.68,  7.28] Y[ -0.10,  5.20] Z[  0.00,  1.40]  ctr=( 6.48, 2.55, 0.70)
+  GF_Entry*                            X[  6.00,  7.20] Y[  3.20,  4.95] Z[  0.00,  0.90]  ctr=( 6.60, 4.07, 0.45)
+  GF_Shop*                             X[  7.28, 10.49] Y[  0.00,  5.20] Z[  0.00,  4.00]  ctr=( 8.88, 2.60, 2.00)
+  GF_Access_Ramp*                      X[  5.80, 10.50] Y[  1.20,  6.40] Z[  0.01,  0.90]  ctr=( 8.15, 3.80, 0.45)
+  GF_Ramp*                             X[  3.58, 10.50] Y[  0.00, 23.00] Z[  0.00,  4.03]  ctr=( 7.04,11.50, 2.02)
+
+--- WINGS: sample L1 objects by X side ---
+  L1 left of x=7.62                    X[  0.00, 15.24] Y[  0.00, 30.48] Z[  4.00,  7.19]  ctr=( 7.62,15.24, 5.60)
+  L1 right of x=7.62                   X[ 10.49, 15.24] Y[  0.00, 30.48] Z[  4.00,  7.00]  ctr=(12.86,15.24, 5.50)
+  L1 ALL                               X[  0.00, 15.24] Y[  0.00, 30.48] Z[  4.00,  7.19]  ctr=( 7.62,15.24, 5.60)
+
+--- BALCONIES (all levels) ---
+  L1_*Balc*                            X[  3.48,  7.50] Y[  0.00, 22.40] Z[  4.00,  5.30]  ctr=( 5.49,11.20, 4.65)
+  L2_*Balc*                            X[  3.48,  7.50] Y[  0.00, 20.80] Z[  7.00,  8.30]  ctr=( 5.49,10.40, 7.65)
+  L3_*Balc*                            X[  3.48,  7.50] Y[  0.00, 22.40] Z[ 10.00, 11.30]  ctr=( 5.49,11.20,10.65)
+  L4_*Balc*                            X[  3.48,  7.50] Y[  0.00, 20.80] Z[ 13.00, 14.30]  ctr=( 5.49,10.40,13.65)
+
+--- GLAZING (all) ---
+  *Glaz*/*Glass*/*Win*                 X[  3.60, 13.00] Y[  0.15, 23.06] Z[  0.00, 15.60]  ctr=( 8.30,11.60, 7.80)
+
+--- ROOF ---
+  Roof ALL                             X[  0.00, 15.24] Y[  0.00, 30.48] Z[ 16.00, 20.10]  ctr=( 7.62,15.24,18.05)
+  Roof_Pergola*                        X[  0.80,  5.60] Y[ 10.10, 15.88] Z[ 16.20, 19.10]  ctr=( 3.20,12.99,17.65)
+  Roof_Solar*                          X[  4.00,  9.20] Y[  1.00,  4.30] Z[ 16.50, 16.56]  ctr=( 6.60, 2.65,16.53)
+BlenderMCP addon unregistered
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

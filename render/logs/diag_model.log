@@ -1,0 +1,104 @@
+﻿blender.exe : Traceback (most recent call last):
+At line:2 char:1
++ & $b -b --python scripts\diagnostics\diag_model.py -- "C:\Users\Admin ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Traceback (most recent call last)::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  File "C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\modules\addon_utils.py", line 544, in enable
+    mod.register()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Roaming\Blender Foundation\Blender\5.2\extensions\blender_org\bonsai\__init__.py", line 
+269, in register
+    bonsai.bim.register()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Roaming\Blender 
+Foundation\Blender\5.2\extensions\.local\lib\python3.13\site-packages\bonsai\bim\__init__.py", line 292, in register
+    mod.register()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Roaming\Blender 
+Foundation\Blender\5.2\extensions\.local\lib\python3.13\site-packages\bonsai\bim\module\light\__init__.py", line 67, 
+in register
+    file.chmod(file.stat().st_mode | stat.S_IEXEC)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Blender Foundation\Blender 5.2\5.2\python\Lib\pathlib\_local.py", line 738, in chmod
+    os.chmod(self, mode, follow_symlinks=follow_symlinks)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [WinError 5] Access is denied: 'C:\\Users\\Admin\\AppData\\Roaming\\Blender 
+Foundation\\Blender\\5.2\\extensions\\.local\\lib\\python3.13\\site-packages\\pyradiance\\bin\\3ds2mgf.exe'
+Error in bpy.app.handlers.load_post[4]:
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Roaming\Blender 
+Foundation\Blender\5.2\extensions\.local\lib\python3.13\site-packages\bonsai\bim\handler.py", line 573, in load_post
+    _apply_user_preferences()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Roaming\Blender 
+Foundation\Blender\5.2\extensions\.local\lib\python3.13\site-packages\bonsai\bim\handler.py", line 470, in 
+_apply_user_preferences
+    if not preferences.should_setup_toolbar:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'should_setup_toolbar'
+C:\Users\Admin\Documents\Personal projects\Blender house design\scripts\diagnostics\diag_model.py:24: 
+DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  if not m.use_nodes:
+Exception in module register(): C:\Users\Admin\AppData\Roaming\Blender Foundation\Blender\5.2\extensions\blender_org\bonsai\__init__.py
+BlenderMCP addon registered
+=== importing C:\Users\Admin\Documents\Personal projects\Blender house design\assets\models\jacaranda_tree_1k.blend
+objects imported: 15
+meshes=15 verts=5092993 polys=3960517
+   jacaranda_tree_geometry_nodes                v=151320 p=141418 mats=['jacaranda_tree_branches']
+   jacaranda_tree_leaves_a_LOD0                 v=   294 p=   213 mats=['jacaranda_tree_branches', 'jacaranda_tree_leaves']
+   jacaranda_tree_leaves_a_LOD1                 v=   189 p=   144 mats=['jacaranda_tree_branches', 'jacaranda_tree_leaves']
+   jacaranda_tree_leaves_b_LOD0                 v=   239 p=   170 mats=['jacaranda_tree_branches', 'jacaranda_tree_leaves']
+   jacaranda_tree_leaves_b_LOD1                 v=   158 p=   121 mats=['jacaranda_tree_branches', 'jacaranda_tree_leaves']
+   jacaranda_tree_leaves_c_LOD0                 v=    36 p=    22 mats=['jacaranda_tree_leaves']
+   jacaranda_tree_leaves_c_LOD1                 v=    23 p=    17 mats=['jacaranda_tree_leaves']
+   jacaranda_tree_leaves_d_LOD0                 v=    37 p=    24 mats=['jacaranda_tree_leaves']
+
+--- materials ---
+  jacaranda_tree_branches            blend=HASHED alpha_linked=False base_linked=True
+      img name=jacaranda_tree_branches_nor_gl.png packed=False size=(0, 0)
+          path=C:\Users\Admin\Documents\Personal projects\Blender house design\assets\models\textures\jacaranda_tree_branches
+      img name=jacaranda_tree_branches_rough.png packed=False size=(0, 0)
+          path=C:\Users\Admin\Documents\Personal projects\Blender house design\assets\models\textures\jacaranda_tree_branches
+      img name=jacaranda_tree_branches_diff.png packed=False size=(0, 0)
+          path=C:\Users\Admin\Documents\Personal projects\Blender house design\assets\models\textures\jacaranda_tree_branches
+  jacaranda_tree_leaves              blend=HASHED alpha_linked=False base_linked=False
+      img name=jacaranda_tree_leaves_diff.png packed=False size=(0, 0)
+          path=C:\Users\Admin\Documents\Personal projects\Blender house design\assets\models\textures\jacaranda_tree_leaves_d
+      img name=jacaranda_tree_leaves_rough.png packed=False size=(0, 0)
+          path=C:\Users\Admin\Documents\Personal projects\Blender house design\assets\models\textures\jacaranda_tree_leaves_r
+      img name=jacaranda_tree_leaves_alpha.png packed=False size=(0, 0)
+          path=C:\Users\Admin\Documents\Personal projects\Blender house design\assets\models\textures\jacaranda_tree_leaves_a
+      img name=jacaranda_tree_leaves_nor_gl.png packed=False size=(0, 0)
+          path=C:\Users\Admin\Documents\Personal projects\Blender house design\assets\models\textures\jacaranda_tree_leaves_n
+  jacaranda_tree_trunk               blend=HASHED alpha_linked=False base_linked=True
+      img name=jacaranda_tree_trunk_diff.png packed=False size=(0, 0)
+          path=C:\Users\Admin\Documents\Personal projects\Blender house design\assets\models\textures\jacaranda_tree_trunk_di
+      img name=jacaranda_tree_trunk_rough.png packed=False size=(0, 0)
+          path=C:\Users\Admin\Documents\Personal projects\Blender house design\assets\models\textures\jacaranda_tree_trunk_ro
+      img name=jacaranda_tree_trunk_nor_gl.png packed=False size=(0, 0)
+          path=C:\Users\Admin\Documents\Personal projects\Blender house design\assets\models\textures\jacaranda_tree_trunk_no
+      img name=jacaranda_tree_branches_diff.png packed=False size=(0, 0)
+          path=C:\Users\Admin\Documents\Personal projects\Blender house design\assets\models\textures\jacaranda_tree_branches
+      img name=jacaranda_tree_branches_rough.png packed=False size=(0, 0)
+          path=C:\Users\Admin\Documents\Personal projects\Blender house design\assets\models\textures\jacaranda_tree_branches
+      img name=jacaranda_tree_branches_nor_gl.png packed=False size=(0, 0)
+          path=C:\Users\Admin\Documents\Personal projects\Blender house design\assets\models\textures\jacaranda_tree_branches
+
+--- new images ---
+  jacaranda_tree_branches_diff.png         size=(0, 0) packed=False exists=False path=C:\Users\Admin\Documents\Personal projects\Blender house design\assets\models\textures\jac
+  jacaranda_tree_branches_nor_gl.png       size=(0, 0) packed=False exists=False path=C:\Users\Admin\Documents\Personal projects\Blender house design\assets\models\textures\jac
+  jacaranda_tree_branches_rough.png        size=(0, 0) packed=False exists=False path=C:\Users\Admin\Documents\Personal projects\Blender house design\assets\models\textures\jac
+  jacaranda_tree_leaves_alpha.png          size=(0, 0) packed=False exists=False path=C:\Users\Admin\Documents\Personal projects\Blender house design\assets\models\textures\jac
+  jacaranda_tree_leaves_diff.png           size=(0, 0) packed=False exists=False path=C:\Users\Admin\Documents\Personal projects\Blender house design\assets\models\textures\jac
+  jacaranda_tree_leaves_nor_gl.png         size=(0, 0) packed=False exists=False path=C:\Users\Admin\Documents\Personal projects\Blender house design\assets\models\textures\jac
+  jacaranda_tree_leaves_rough.png          size=(0, 0) packed=False exists=False path=C:\Users\Admin\Documents\Personal projects\Blender house design\assets\models\textures\jac
+  jacaranda_tree_trunk_diff.png            size=(0, 0) packed=False exists=False path=C:\Users\Admin\Documents\Personal projects\Blender house design\assets\models\textures\jac
+  jacaranda_tree_trunk_nor_gl.png          size=(0, 0) packed=False exists=False path=C:\Users\Admin\Documents\Personal projects\Blender house design\assets\models\textures\jac
+  jacaranda_tree_trunk_rough.png           size=(0, 0) packed=False exists=False path=C:\Users\Admin\Documents\Personal projects\Blender house design\assets\models\textures\jac
+=== done
+BlenderMCP addon unregistered
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit
